@@ -1,0 +1,73 @@
+<STORIES>
+    <STORY>
+        <STORY_ID>0</STORY_ID>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+    </STORY>
+    
+    
+    <STORY>
+        <STORY_ID>1</STORY_ID>
+        +
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+    </STORY>
+    
+    
+    <STORY>
+        <STORY_ID>2</STORY_ID>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+        <VIDEO>Frage.mov</VIDEO>
+        <VIDEO>Geschichte_Frage.mov</VIDEO>
+        <VIDEO>idle_b.mov</VIDEO>
+    </STORY>
+    
+</STORIES>
+
+

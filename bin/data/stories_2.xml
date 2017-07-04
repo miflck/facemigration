@@ -1,0 +1,38 @@
+<STORIES>
+    <STORY>
+        <STORY_ID>0</STORY_ID>
+        <VIDEO>
+            <PATH>Frage.mov</PATH>
+           <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+        </VIDEO>
+        <VIDEO>
+            <PATH>idle_b.mov</PATH>
+            <LOOPSTATE>OF_LOOP_PALINDROME</LOOPSTATE>
+        </VIDEO>
+    
+    <VIDEO>
+        <PATH>Geschichte_Frage.mov</PATH>
+        <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+    </VIDEO>
+    <VIDEO>
+        <PATH>idle_b.mov</PATH>
+        <LOOPSTATE>OF_LOOP_PALINDROME</LOOPSTATE>
+    </VIDEO>
+    
+    <VIDEO>
+        <PATH>Frage.mov</PATH>
+        <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+    </VIDEO>
+    <VIDEO>
+        <PATH>idle_b.mov</PATH>
+        <LOOPSTATE>OF_LOOP_PALINDROME</LOOPSTATE>
+    </VIDEO>
+
+    
+    </STORY>
+    
+    
+    
+</STORIES>
+
+

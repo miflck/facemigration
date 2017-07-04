@@ -1,0 +1,225 @@
+//
+//  Videoplayer.cpp
+//  facemigration
+//
+//  Created by Flückiger Michael on 12.06.17.
+//
+//
+
+#include "Videoplayer.hpp"
+
+Videoplayer::Videoplayer(){
+}
+//--------------------------------------------------------------
+
+Videoplayer::~Videoplayer(){
+    
+}
+//--------------------------------------------------------------
+
+
+void Videoplayer::setup(){
+  /*  movieclip.load("movies/fingers.mov");
+    movieclip.setLoopState(OF_LOOP_NORMAL);
+    movieclip.play();
+    movieclip.setPaused(true);
+    
+    idle.load("movies/idle_b.mov");
+    idle.setLoopState(OF_LOOP_PALINDROME);
+    idle.play();
+    idle.setPaused(true);*/
+    
+    
+
+    
+    
+    //loadStory();
+    
+    state=-1;
+    bIsVideoLoaded=false;
+}
+//--------------------------------------------------------------
+
+void Videoplayer::update(){
+
+    if(state>=0){
+       videos[videoid].update();
+        if(videos[videoid].getIsMovieDone()){
+            setVideo(2);
+            videos[videoid].setLoopState(OF_LOOP_PALINDROME);
+            cout<<"*************** is done *************"<<endl;
+        };
+    }
+    
+    
+    
+    
+    
+    
+        /*
+    switch (state) {
+        
+        case 1:
+            videos[0].update();
+            break;
+     
+        case 2:
+            videos[1].update();
+            break;
+            
+        default:
+            break;
+    }*/
+    
+    
+
+}
+//--------------------------------------------------------------
+
+
+void Videoplayer::draw(){
+    if(state>=0){
+
+    videos[videoid].draw(0,0);
+    }
+    /*
+    switch (state) {
+        case 1:
+            videos[0].draw(20,20);
+            break;
+            
+        case 2:
+            videos[1].draw(50,50);
+            break;
+            
+        default:
+            break;
+    }*/
+    
+ 
+
+}
+
+
+
+void Videoplayer::setState(int _state){
+    state=_state;
+    
+    cout<<"State "<<state<<" videos: "<<videos.size()<<endl;
+   /*
+    
+    for (auto video:videos){
+        video.setPaused(true);
+    
+    }*
+    
+    videos[state].setPaused(false);
+    */
+    /*switch (state) {
+        case 1:
+            videos[0].setPaused(false);
+            videos[1].setPaused(true);
+            break;
+            
+        case 2:
+            videos[0].setPaused(true);
+            videos[1].setPaused(false);
+            break;
+            
+        default:
+            break;
+    }*/
+    
+
+}
+
+
+void Videoplayer::setVideo(int _id){
+    videoid=_id;
+    setState(0);
+    
+    cout<<"State "<<state<<" videoid: "<<videoid<<" videos: "<<videos.size()<<endl;
+    
+    
+    for (auto video:videos){
+        video.setPaused(true);
+        
+    }
+    
+    videos[videoid].setPaused(false);
+    
+    /*switch (state) {
+     case 1:
+     videos[0].setPaused(false);
+     videos[1].setPaused(true);
+     break;
+     
+     case 2:
+     videos[0].setPaused(true);
+     videos[1].setPaused(false);
+     break;
+     
+     default:
+     break;
+     }*/
+    
+    
+}
+
+
+//--------------------------------------------------------------
+
+void Videoplayer::loadStory(int num){
+    videos.clear();
+    bIsVideoLoaded=false;
+    
+    ofxXmlSettings storylines;
+    if(storylines.loadFile("stories.xml")){
+        storylines.pushTag("STORIES");
+            int numberOfSavedPoints = storylines.getNumTags("STORIES");
+                storylines.pushTag("STORY", num);
+                int numVids = storylines.getNumTags("VIDEO");
+                numberOfVideos=numVids;
+                for(int i = 0; i < numberOfVideos; i++){
+                    string myString = storylines.getValue("VIDEO", "",i);
+                    cout<<"-------------------"+myString<<endl;
+                    ofVideoPlayer mc;
+                    mc.load("movies/"+myString);
+                    mc.play();
+                    mc.setPaused(true);
+                    mc.setLoopState(OF_LOOP_NONE);
+                    videos.push_back(mc);
+                }
+                storylines.popTag();
+        storylines.popTag();
+        bIsVideoLoaded=true;
+    }
+    else{
+        ofLogError("Story file did not load!");
+    }
+    
+    
+    /*
+    
+    ofVideoPlayer mc;
+    mc.load("movies/fingers.mov");
+    mc.play();
+    mc.setPaused(true);
+    videos.push_back(mc);
+    ofVideoPlayer mc2;
+
+    mc2.load("movies/idle_b.mov");
+    mc2.play();
+    mc2.setPaused(true);
+    videos.push_back(mc2);
+     */
+}
+
+int Videoplayer::getNumberOfVideos(){
+    return numberOfVideos;
+}
+
+
+bool Videoplayer::getIsVideoLoaded(){
+    return bIsVideoLoaded;
+}
