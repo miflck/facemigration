@@ -83,7 +83,9 @@ void ofApp::keyReleased(int key){
         story++;
     }
     
-    
+    if(key=='n'){
+        videoplayer.forward();
+    }
     
     if(isdigit(key)) {
         

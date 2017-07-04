@@ -39,6 +39,8 @@ public:
     int getNumberOfVideos();
     bool getIsVideoLoaded();
     
+    void forward();
+    
 
 private:
     

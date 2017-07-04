@@ -43,9 +43,11 @@ void Videoplayer::setup(){
 void Videoplayer::update(){
 
     if(state>=0){
+        cout<<videoid<<endl;
        videos[videoid].update();
         if(videos[videoid].getIsMovieDone()){
-            setVideo(2);
+            videoid++;
+            setVideo(videoid);
             videos[videoid].setLoopState(OF_LOOP_PALINDROME);
             cout<<"*************** is done *************"<<endl;
         };
@@ -172,6 +174,8 @@ void Videoplayer::setVideo(int _id){
 void Videoplayer::loadStory(int num){
     videos.clear();
     bIsVideoLoaded=false;
+    state=-1;
+    videoid=-1;
     
     ofxXmlSettings storylines;
     if(storylines.loadFile("stories.xml")){
@@ -181,14 +185,22 @@ void Videoplayer::loadStory(int num){
                 int numVids = storylines.getNumTags("VIDEO");
                 numberOfVideos=numVids;
                 for(int i = 0; i < numberOfVideos; i++){
-                    string myString = storylines.getValue("VIDEO", "",i);
-                    cout<<"-------------------"+myString<<endl;
+                    storylines.pushTag("VIDEO", i);
+
+                    string myPath = storylines.getValue("PATH", "");
+                    int myloopstate = storylines.getValue("LOOPSTATE", 0);
+                    string loopstate = storylines.getValue("LOOPSTATE", "");
+
+                    cout<<"-------------------"+myPath<<" "<<myloopstate<<" "<<loopstate<<endl;
                     ofVideoPlayer mc;
-                    mc.load("movies/"+myString);
+                    mc.load("movies/"+myPath);
                     mc.play();
                     mc.setPaused(true);
-                    mc.setLoopState(OF_LOOP_NONE);
+                   if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
+                    if(loopstate=="OF_LOOP_PALINDROME") mc.setLoopState(OF_LOOP_PALINDROME);
                     videos.push_back(mc);
+                    storylines.popTag();
+
                 }
                 storylines.popTag();
         storylines.popTag();
@@ -223,3 +235,10 @@ int Videoplayer::getNumberOfVideos(){
 bool Videoplayer::getIsVideoLoaded(){
     return bIsVideoLoaded;
 }
+
+void Videoplayer::forward(){
+    if(videoid<numberOfVideos)videoid++;
+    setVideo(videoid);
+
+}
+
