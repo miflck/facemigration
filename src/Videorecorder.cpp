@@ -253,7 +253,7 @@ void Videorecorder::toggleRecording(){
 
         cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
         
-        myFileName="MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
+        myFileName="Recodings/MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
         vidRecorder->startRecording(myFileName);
         bIsPaused=true;
     }
