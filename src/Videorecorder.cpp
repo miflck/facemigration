@@ -27,15 +27,15 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
     XMLclips=_XMLclips;
     
     
-  //  XMLclips->addTag("RECORDINGSESSION");
-   // XMLclips->saveFile("clips.xml");
+    //  XMLclips->addTag("RECORDINGSESSION");
+    // XMLclips->saveFile("clips.xml");
     
     recordingSession=XMLclips->getNumTags("RECORDINGSESSION");
     cout<<" XMLclipsSession: "<<recordingSession<<endl;
-  //  clipNumber=XMLclips->getNumTags("RECORDINGSESSION:CLIP");
+    //  clipNumber=XMLclips->getNumTags("RECORDINGSESSION:CLIP");
     
- 
-
+    
+    
     // 1. Create a new recorder object.  ofPtr will manage this
     // pointer for us, so no need to delete later.
     vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
@@ -66,7 +66,7 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
     // vidRecorder->setVideoCodec(videoCodecs[2]);
     
     // 5. Initialize the grabber.
-    vidGrabber.setup(1280, 720);
+    vidGrabber.setup(1920, 1080);
     
     // If desired, you can disable the preview video.  This can
     // help help speed up recording and remove recording glitches.
@@ -79,32 +79,38 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
     // 7. If you'd like to launch the newly created video in Quicktime
     // you can enable it here.
     bLaunchInQuicktime = false;
-
+    
+    videoGrabberRect.set(0,0,vidGrabber.getWidth()/3,vidGrabber.getHeight()/3);
+    previewWindow.set(20, 20, vidGrabber.getWidth()/3,vidGrabber.getHeight()/3);
+    fullwidth.set(0,0,vidGrabber.getWidth(),vidGrabber.getHeight());
+    
+    
+    
 }
 //--------------------------------------------------------------
 
 
 void Videorecorder::update(){
-    if(!bIsPaused)vidGrabber.update();
+    //if(!bIsPaused)vidGrabber.update();
+    vidGrabber.update();
     
     if(recordedVideoPlayback.isLoaded()){
         recordedVideoPlayback.update();
     }
-
-
+    
+    
 }
 //--------------------------------------------------------------
 
 void Videorecorder::draw(){
-    ofRectangle previewWindow(20, 20, 640, 480);
-    ofRectangle playbackWindow(20+640, 20, 640, 480);
+    
+    
     
     // draw the background boxes
     ofPushStyle();
     ofSetColor(0);
     ofFill();
     ofDrawRectangle(previewWindow);
-    ofDrawRectangle(playbackWindow);
     ofPopStyle();
     
     // draw the preview if available
@@ -112,33 +118,21 @@ void Videorecorder::draw(){
         ofPushStyle();
         ofFill();
         ofSetColor(255);
-        // fit it into the preview window, but use the correct aspect ratio
-        ofRectangle videoGrabberRect(0,0,vidGrabber.getWidth(),vidGrabber.getHeight());
-        videoGrabberRect.scaleTo(previewWindow);
-        vidGrabber.draw(videoGrabberRect);
+        ofPushMatrix();
+        if(isSmall){
+            videoGrabberRect.scaleTo(previewWindow);
+            vidGrabber.draw(videoGrabberRect);
+        } else {
+            videoGrabberRect.scaleTo(fullwidth);
+            vidGrabber.draw(videoGrabberRect);
+        }
+        ofPopMatrix();
         ofPopStyle();
-    } else{
-        ofPushStyle();
-        // x out to show there is no video preview
-        ofSetColor(255);
-        ofSetLineWidth(3);
-        ofDrawLine(20, 20, 640+20, 480+20);
-        ofDrawLine(20+640, 20, 20, 480+20);
-        ofPopStyle();
+        
+        
     }
     
-    // draw the playback video
-    if(recordedVideoPlayback.isLoaded()){
-        ofPushStyle();
-        ofFill();
-        ofSetColor(255);
-        // fit it into the preview window, but use the correct aspect ratio
-        ofRectangle recordedRect(ofRectangle(0,0,recordedVideoPlayback.getWidth(),recordedVideoPlayback.getHeight()));
-        recordedRect.scaleTo(playbackWindow);
-        recordedVideoPlayback.draw(recordedRect);
-        ofPopStyle();
-    }
-    
+        
     ofPushStyle();
     ofNoFill();
     ofSetLineWidth(3);
@@ -187,37 +181,32 @@ void Videorecorder::draw(){
         ofDrawBitmapString(audioDevices[i], 20, startY+i*20);
     }
     ofPopStyle();
-
+    
 }
 
 //--------------------------------------------------------------
 void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
     // the ofQTKitGrabber sends a message with the file name and any errors when the video is done recording
     
-  //  XMLclips.addTag("");
+    //  XMLclips.addTag("");
     
     
-   // lastSessionNumber	= XMLclips->addTag("SESSION");
+    // lastSessionNumber	= XMLclips->addTag("SESSION");
     recordingSession=XMLclips->getNumTags("RECORDINGSESSION")-1;
     cout<<"--------------recordingSession "<<recordingSession<<endl;
     if( XMLclips->pushTag("RECORDINGSESSION", recordingSession) ){
         int tagNum = XMLclips->addTag("CLIP");
         XMLclips->setValue("CLIP:Number",  tagNum,tagNum);
         XMLclips->setValue("CLIP:Filename",  myFileName,tagNum);
-
+        
         XMLclips->popTag();
-       XMLclips->saveFile("clips.xml");
-
+        XMLclips->saveFile("clips.xml");
+        
     }
     
     
     if(e.error.empty()){
-        recordedVideoPlayback.load(e.videoPath);
-        recordedVideoPlayback.play();
-        
-        if(bLaunchInQuicktime) {
-            ofSystem("open " + e.videoPath);
-        }
+        cout<<"-------------- SAVED ----------------"<<endl;
     }
     else {
         ofLogError("videoSavedEvent") << "Video save error: " << e.error;
@@ -250,33 +239,33 @@ void Videorecorder::toggleRecording(){
         clipNumber=XMLclips->getNumTags("CLIP");
         XMLclips->popTag();
         XMLclips->saveFile("clips.xml");
-
+        
         cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
         
         myFileName="Recodings/MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
         vidRecorder->startRecording(myFileName);
         bIsPaused=true;
     }
-
-
+    
+    
 }
 //--------------------------------------------------------------
 
 
 void Videorecorder::addRecordingSession(){
-
+    
     
     int session=XMLclips->addTag("RECORDINGSESSION");
     XMLclips->pushTag("RECORDINGSESSION", session);
     int tagNum = XMLclips->addTag("SESSIONID");
-     XMLclips->setValue("SESSIONID",  ofGetTimestampString("%Y%m%d%H%M%S%i") ,tagNum);
+    XMLclips->setValue("SESSIONID",  ofGetTimestampString("%Y%m%d%H%M%S%i") ,tagNum);
     XMLclips->setValue("SESSION_TIME",  ofGetTimestampString() ,tagNum);
     XMLclips->setValue("SESSION_NUMBER",session,tagNum);
-
-
-      XMLclips->popTag();
+    
+    
+    XMLclips->popTag();
     XMLclips->saveFile("clips.xml");
-
+    
     
 }
 void Videorecorder::pauseRecording(bool p){

@@ -1,4 +1,5 @@
 #include "ofApp.h"
+#include "SessionController.hpp"
 
 
 
@@ -16,49 +17,119 @@ void ofApp::setup(){
     
     ofSetLogLevel(OF_LOG_VERBOSE);
     
+    /*
     recordedClips = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
 
     recordedClips->loadFile("clips.xml");
     recordingSession=recordedClips->getNumTags("RECORDINGSESSION");
     cout<<"Session: "<<recordingSession<<endl;
+    
+    
     videorecorder.setup(recordedClips);
     videoplayer.setup();
 
     story=0;
-
+    
+    ofImage img;
+    startScreens.push_back(ofImage(img));
+    startScreens.back().load("startscreens/startscreen.jpg");
+    startScreens.push_back(ofImage(img));
+    startScreens.back().load("startscreens/startscreen2.png");
+    startScreens.push_back(ofImage(img));
+    startScreens.back().load("startscreens/startscreen3.jpg");
+    startScreens.push_back(ofImage(img));
+    startScreens.back().load("startscreens/startscreen4.jpg");
+    startScreens.push_back(ofImage(img));
+    startScreens.back().load("startscreens/startscreen5.jpg");
+    */
+    
+    SC->initialize();
+    SC->setup();
+    
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    videorecorder.update();
-    videoplayer.update();
+ 
+    SC->update();
+
+   /* switch (state) {
+        case IDLE:
+            
+            break;
+        
+        case ACTIVE_SESSION_START:
+            videorecorder.update();
+
+            break;
+            
+        case ACTIVE_SESSION_RECORD:
+            videorecorder.update();
+            videoplayer.update();
+            break;
+            
+        case ACTIVE_SESSION_END:
+            break;
+            
+        default:
+            break;
+    }*/
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    videorecorder.draw();
-    videoplayer.draw();
+    
+    SC->draw();
+
+  /*  switch (state) {
+        case IDLE:
+            
+            break;
+            
+        case ACTIVE_SESSION_START:
+            videorecorder.draw();
+
+            drawInit();
+
+            break;
+            
+        case ACTIVE_SESSION_RECORD:
+            videoplayer.draw();
+            videorecorder.draw();
+
+            break;
+            
+        case ACTIVE_SESSION_END:
+            break;
+            
+        default:
+            break;
+    }*/
 
 }
+
+
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == ' '){
-        videorecorder.toggleRecording();
+   SC->videorecorder.toggleRecording();
     }
     
     //no data gets saved unless you hit the s key
     if(key == 's'){
-        recordedClips->saveFile("clips.xml");
+     //   recordedClips->saveFile("clips.xml");
     }
 
     
     if(key=='S'){
-        videorecorder.addRecordingSession();
+       // videorecorder.addRecordingSession();
     }
     
     if(key=='r'){
-        videorecorder.pauseRecording(false);
+       // videorecorder.pauseRecording(false);
     }
     
     if(key=='0'){
@@ -73,20 +144,30 @@ void ofApp::keyPressed(int key){
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
     if(key=='r'){
-        videorecorder.pauseRecording(true);
+      //  videorecorder.pauseRecording(true);
     }
     
     
     
     if(key=='l'){
-        videoplayer.loadStory(story);
-        story++;
+       // videoplayer.loadStory(story);
+       // story++;
     }
     
     if(key=='n'){
-        videoplayer.forward();
+        //videoplayer.forward();
+        //next();
+        
+        SC->next();
+        
     }
     
+    
+    if(key=='b'){
+        //screenInd++;
+    }
+    
+   /*
     if(isdigit(key)) {
         
      
@@ -96,7 +177,7 @@ void ofApp::keyReleased(int key){
         cout<<"+++++++++++++++ "<<videoplayer.getNumberOfVideos()<<endl;
         
         videoplayer.setVideo(i);
-    }
+    }*/
     
 
 }
@@ -138,6 +219,7 @@ void ofApp::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
+    cout<<"********** msg ********* "<<&msg<<endl;
 
 }
 

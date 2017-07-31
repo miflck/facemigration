@@ -1,6 +1,13 @@
 <STORIES>
     <STORY>
         <STORY_ID>0</STORY_ID>
+        
+        <INIT_VIDEO>
+            <PATH>start_idle.mov</PATH>
+            <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+        </INIT_VIDEO>
+        
+        
         <VIDEO>
             <PATH>Frage.mov</PATH>
            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
@@ -27,10 +34,7 @@
         <PATH>idle_b.mov</PATH>
         <LOOPSTATE>OF_LOOP_PALINDROME</LOOPSTATE>
     </VIDEO>
-
-    
     </STORY>
-    
     
     
 </STORIES>

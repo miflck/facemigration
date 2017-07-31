@@ -58,6 +58,13 @@ private:
     int lastSessionNumber;
     string myFileName;
     bool bIsPaused;
+    
+    bool isSmall=true;
+    
+    ofRectangle videoGrabberRect;
+    ofRectangle previewWindow;
+    
+    ofRectangle fullwidth;
 
 
 

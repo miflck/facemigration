@@ -4,7 +4,17 @@
 #include "Videorecorder.hpp"
 #include "Videoplayer.hpp"
 #include "ofxXmlSettings.h"
+#include "SessionController.hpp"
 
+
+
+#define IDLE 100
+#define ACTIVE_SESSION_START 110
+#define ACTIVE_SESSION_RECORD 120
+#define ACTIVE_SESSION_END 130
+
+
+#define START 110
 
 
 class ofApp : public ofBaseApp{
@@ -12,9 +22,6 @@ class ofApp : public ofBaseApp{
 	public:
     
     
-    static ofApp* getInstance();
-    void initialize();
-    bool isInitialized();
     
 		void setup();
 		void update();
@@ -32,22 +39,4 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    
-    
-    Videorecorder videorecorder;
-    Videoplayer videoplayer;
-
-    
-    ofPtr<ofxXmlSettings>	recordedClips;
-
-    
-    
-  //  ofxXmlSettings recordedClips;
-    
-    int recordingSession;
-    int clipNumber;
-
-    
-    int story;
-		
 };

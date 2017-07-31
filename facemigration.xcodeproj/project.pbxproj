@@ -24,6 +24,7 @@
 		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
 		FA600F9F1EDC013B004E293C /* Videorecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA600F9D1EDC013B004E293C /* Videorecorder.cpp */; };
 		FAEDF0B61EEEEFF200264248 /* Videoplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */; };
+		FAEFDBE61F13A92300D07317 /* SessionController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAEFDBE41F13A92300D07317 /* SessionController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		FA600F9E1EDC013B004E293C /* Videorecorder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Videorecorder.hpp; sourceTree = "<group>"; };
 		FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Videoplayer.cpp; sourceTree = "<group>"; };
 		FAEDF0B51EEEEFF200264248 /* Videoplayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Videoplayer.hpp; sourceTree = "<group>"; };
+		FAEFDBE41F13A92300D07317 /* SessionController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SessionController.cpp; sourceTree = "<group>"; };
+		FAEFDBE51F13A92300D07317 /* SessionController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SessionController.hpp; sourceTree = "<group>"; };
 		FC5DA1C87211D4F6377DA719 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tinyxmlparser.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -209,10 +212,12 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				FA600F9D1EDC013B004E293C /* Videorecorder.cpp */,
 				FA600F9E1EDC013B004E293C /* Videorecorder.hpp */,
-				FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */,
+				FA600F9D1EDC013B004E293C /* Videorecorder.cpp */,
 				FAEDF0B51EEEEFF200264248 /* Videoplayer.hpp */,
+				FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */,
+				FAEFDBE51F13A92300D07317 /* SessionController.hpp */,
+				FAEFDBE41F13A92300D07317 /* SessionController.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -315,6 +320,7 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				FAEFDBE61F13A92300D07317 /* SessionController.cpp in Sources */,
 				FA600F9F1EDC013B004E293C /* Videorecorder.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
 				FAEDF0B61EEEEFF200264248 /* Videoplayer.cpp in Sources */,
