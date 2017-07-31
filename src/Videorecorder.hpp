@@ -48,6 +48,10 @@ public:
     void addRecordingSession();
     void pauseRecording(bool p);
     
+    void setFullscreen(bool _fullscreen);
+    void setPreview(bool _preview);
+
+
     
 private:
     
@@ -59,11 +63,11 @@ private:
     string myFileName;
     bool bIsPaused;
     
-    bool isSmall=true;
-    
+    bool bIsFullscreen=false;
+    bool bHasPreview=false;
+
     ofRectangle videoGrabberRect;
     ofRectangle previewWindow;
-    
     ofRectangle fullwidth;
 
 

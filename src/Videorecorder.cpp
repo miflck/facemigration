@@ -107,11 +107,14 @@ void Videorecorder::draw(){
     
     
     // draw the background boxes
-    ofPushStyle();
+    /*ofPushStyle();
     ofSetColor(0);
     ofFill();
     ofDrawRectangle(previewWindow);
     ofPopStyle();
+    */
+    
+    cout<<bIsFullscreen<<" pr "<<bHasPreview<<endl;
     
     // draw the preview if available
     if(vidRecorder->hasPreview()){
@@ -119,20 +122,23 @@ void Videorecorder::draw(){
         ofFill();
         ofSetColor(255);
         ofPushMatrix();
-        if(isSmall){
-            videoGrabberRect.scaleTo(previewWindow);
-            vidGrabber.draw(videoGrabberRect);
-        } else {
+        if(bIsFullscreen){
             videoGrabberRect.scaleTo(fullwidth);
             vidGrabber.draw(videoGrabberRect);
         }
+         if(bHasPreview){
+            videoGrabberRect.scaleTo(previewWindow);
+            vidGrabber.draw(videoGrabberRect);
+        }
+        
+        
         ofPopMatrix();
         ofPopStyle();
         
         
     }
     
-        
+    if(bHasPreview){
     ofPushStyle();
     ofNoFill();
     ofSetLineWidth(3);
@@ -146,7 +152,7 @@ void Videorecorder::draw(){
     }
     ofDrawRectangle(previewWindow);
     ofPopStyle();
-    
+    }
     
     //draw instructions
     ofPushStyle();
@@ -272,6 +278,14 @@ void Videorecorder::pauseRecording(bool p){
     bIsPaused=p;
 }
 
+
+void Videorecorder::setFullscreen(bool _fullscreen){
+    bIsFullscreen=_fullscreen;
+}
+
+void Videorecorder::setPreview(bool _preview){
+    bHasPreview=_preview;
+}
 
 
 

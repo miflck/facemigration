@@ -16,6 +16,7 @@ void ofApp::setup(){
     ofSetVerticalSync(true);
     
     ofSetLogLevel(OF_LOG_VERBOSE);
+    ofBackground(255);
     
     /*
     recordedClips = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );

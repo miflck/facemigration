@@ -43,18 +43,39 @@ void SessionController::setup(){
     story=0;
 
     
-    // Startscreens
-    ofImage img;
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen.jpg");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen2.png");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen3.jpg");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen4.jpg");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen5.jpg");
+    XMLStartScreens = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+    XMLStartScreens->loadFile("startscreens.xml");
+    XMLStartScreens->pushTag("STARTSCREENS");
+    
+    int num = XMLStartScreens->getNumTags("SCREEN");
+    cout<<"Startscreens"<<num<<endl;
+    for(int i = 0; i < num; i++){
+        XMLStartScreens->pushTag("SCREEN", i);
+        string myPath = XMLStartScreens->getValue("PATH", "");
+        bool preview = XMLStartScreens->getValue("PREVIEW", 0);
+        bool previewimage = XMLStartScreens->getValue("PREVIEWIMAGE", 0);
+        bool fullscreen = XMLStartScreens->getValue("FULLSCREEN", 0);
+        startScreen s;
+        s.path=myPath;
+        s.bHasVideo=preview;
+        s.bHasPreviewImage=previewimage;
+        s.bHasFullImage=fullscreen;
+        XMLStartScreens->popTag();
+        startScreens.push_back(s);
+        startScreens.back().img.load(myPath);
+    }
+    
+    XMLStartScreens->popTag();
+
+    
+    
+    
+    for(int i=0;i<startScreens.size();i++){
+        cout<<"------------------"<<startScreens[i].path<<" "<<startScreens[i].bHasFullImage<<endl;
+    }
+    
+    
+    
     
     
     
@@ -87,6 +108,7 @@ void SessionController::update(){
             break;
             
         case ACTIVE_SESSION_START:
+            videoplayer.update();
             videorecorder.update();
             break;
             
@@ -120,8 +142,10 @@ void SessionController::draw(){
             break;
             
         case ACTIVE_SESSION_START:
+            videoplayer.draw();
             videorecorder.draw();
             drawInit();
+
             
             break;
             
@@ -149,7 +173,10 @@ void SessionController::drawInit(){
     ofTranslate(0, ofGetHeight());
     ofRotate(-90);
     
-    startScreens[screenInd].draw(0,0);
+    
+    startScreens[screenInd].img.draw(0,0);
+
+    
     ofPopMatrix();
 }
 
@@ -169,6 +196,7 @@ void SessionController::next(){
         case IDLE:
             setState(ACTIVE_SESSION_START);
             resetWelcomeScreen();
+      
 
 
             break;
@@ -176,9 +204,16 @@ void SessionController::next(){
         case ACTIVE_SESSION_START:
             if(screenInd<startScreens.size()-1){
                 screenInd++;
+                
+                
+                videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
+                videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
+                
             }else{
                 resetWelcomeScreen();
                 setState(ACTIVE_SESSION_RECORD);
+                videorecorder.setFullscreen(false);
+                videorecorder.setPreview(true);
             }
             break;
             

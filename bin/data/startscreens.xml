@@ -1,0 +1,55 @@
+<STARTSCREENS>
+    <SCREEN>
+        <PATH>startscreens/startscreen.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+    </SCREEN>
+    
+    
+    <SCREEN>
+        <PATH>startscreens/startscreen2.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+    </SCREEN>
+    
+    <SCREEN>
+        <PATH>startscreens/startscreen3.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>>
+    </SCREEN>
+    
+    <SCREEN>
+        <PATH>startscreens/startscreen4.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>1</FULLSCREEN>
+    </SCREEN>
+    
+    <SCREEN>
+        <PATH>startscreens/startscreen5.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>1</FULLSCREEN>
+
+    </SCREEN>
+    
+    <SCREEN>
+        <PATH>startscreens/startscreen6.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>1</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+    </SCREEN>
+    
+    <SCREEN>
+        <PATH>startscreens/startscreen7.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>1</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+    </SCREEN>
+
+</STARTSCREENS>
+
+

@@ -59,4 +59,20 @@
         <Number>14</Number>
         <Filename>Recodings/MyMovieFile_0_14.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/MyMovieFile_0_15.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>16</Number>
+        <Filename>Recodings/MyMovieFile_0_16.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>17</Number>
+        <Filename>Recodings/MyMovieFile_0_17.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>18</Number>
+        <Filename>Recodings/MyMovieFile_0_18.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>

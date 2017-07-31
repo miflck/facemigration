@@ -34,6 +34,16 @@
 
 
 
+struct startScreen{
+    string path;
+    bool bHasPreviewImage;
+    bool bHasFullImage;
+    bool bHasVideo;
+
+    ofImage img;
+};
+
+
 //for convenience
 #define SC SessionController::getInstance()
 
@@ -79,8 +89,11 @@ private:
     int state=STARTUP;
 
 
+    ofPtr<ofxXmlSettings>	XMLStartScreens;
+
+    vector<startScreen> startScreens;
+
     
-    vector<ofImage> startScreens;
     int screenInd=0;
     
     void drawInit();
