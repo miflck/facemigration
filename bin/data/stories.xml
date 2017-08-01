@@ -7,6 +7,12 @@
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
         </INIT_VIDEO>
         
+        <INIT_VIDEO>
+            <PATH>Frage.mov</PATH>
+            <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+        </INIT_VIDEO>
+        
+        
         
         <VIDEO>
             <PATH>Frage.mov</PATH>

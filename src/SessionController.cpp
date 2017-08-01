@@ -51,15 +51,23 @@ void SessionController::setup(){
     cout<<"Startscreens"<<num<<endl;
     for(int i = 0; i < num; i++){
         XMLStartScreens->pushTag("SCREEN", i);
+        bool hasImage=XMLStartScreens->getValue("HASIMAGE", 0);
         string myPath = XMLStartScreens->getValue("PATH", "");
         bool preview = XMLStartScreens->getValue("PREVIEW", 0);
         bool previewimage = XMLStartScreens->getValue("PREVIEWIMAGE", 0);
         bool fullscreen = XMLStartScreens->getValue("FULLSCREEN", 0);
+        bool hasVideo=XMLStartScreens->getValue("HASVIDEO", 0);
+        int videoIndex=XMLStartScreens->getValue("VIDEO", -1);
+
+
         startScreen s;
+        s.bHasImage=hasImage;
         s.path=myPath;
         s.bHasVideo=preview;
         s.bHasPreviewImage=previewimage;
         s.bHasFullImage=fullscreen;
+        s.bHasVideo=hasVideo;
+        s.initVideoIndex=videoIndex;
         XMLStartScreens->popTag();
         startScreens.push_back(s);
         startScreens.back().img.load(myPath);
@@ -87,7 +95,7 @@ void SessionController::setup(){
     videorecorder.setup(sessions);
 
 
-    videoplayer.loadStory(story);
+  //  videoplayer.loadStory(story);
 
     
 
@@ -145,8 +153,6 @@ void SessionController::draw(){
             videoplayer.draw();
             videorecorder.draw();
             drawInit();
-
-            
             break;
             
         case ACTIVE_SESSION_RECORD:
@@ -172,49 +178,29 @@ void SessionController::drawInit(){
     ofPushMatrix();
     ofTranslate(0, ofGetHeight());
     ofRotate(-90);
-    
-    
     startScreens[screenInd].img.draw(0,0);
-
-    
     ofPopMatrix();
 }
 
 
 void SessionController::next(){
     
-    cout<<"this state"<<state<<endl;
+    cout<<"this state "<<state<<endl;
     switch (state) {
             
         case STARTUP:
+            videoplayer.loadStory(story);
             setState(IDLE);
-            videoplayer.forward();
-
             break;
             
             
         case IDLE:
             setState(ACTIVE_SESSION_START);
             resetWelcomeScreen();
-      
-
-
             break;
             
         case ACTIVE_SESSION_START:
-            if(screenInd<startScreens.size()-1){
-                screenInd++;
-                
-                
-                videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
-                videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
-                
-            }else{
-                resetWelcomeScreen();
-                setState(ACTIVE_SESSION_RECORD);
-                videorecorder.setFullscreen(false);
-                videorecorder.setPreview(true);
-            }
+            handleInitScreens();
             break;
             
         case ACTIVE_SESSION_RECORD:
@@ -222,11 +208,7 @@ void SessionController::next(){
             break;
             
         case ACTIVE_SESSION_END:
-            // load new Story
-            videoplayer.loadStory(story);
-            resetWelcomeScreen();
-
-
+                setState(IDLE);
             break;
             
         default:
@@ -234,6 +216,31 @@ void SessionController::next(){
     }
     
     
+}
+
+
+void SessionController::handleInitScreens(){
+    
+    if(screenInd<startScreens.size()-1){
+        screenInd++;
+        
+       if(startScreens[screenInd].bHasVideo){
+            videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
+        }
+        
+        videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
+        videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
+        
+        
+        
+        
+    }else{
+        setState(ACTIVE_SESSION_RECORD);
+        videoplayer.setVideo(0);
+        videorecorder.setFullscreen(false);
+        videorecorder.setPreview(true);
+    }
+
 }
 
 

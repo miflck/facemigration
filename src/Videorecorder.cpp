@@ -49,7 +49,7 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
     
     // 3a. Optionally add audio to the recording stream.
     // vidRecorder->setAudioDeviceID(2);
-    // vidRecorder->setUseAudio(true);
+     vidRecorder->setUseAudio(true);
     
     // 4. Register for events so we'll know when videos finish saving.
     ofAddListener(vidRecorder->videoSavedEvent, this, &Videorecorder::videoSaved);
@@ -114,7 +114,6 @@ void Videorecorder::draw(){
     ofPopStyle();
     */
     
-    cout<<bIsFullscreen<<" pr "<<bHasPreview<<endl;
     
     // draw the preview if available
     if(vidRecorder->hasPreview()){

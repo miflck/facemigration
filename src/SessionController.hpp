@@ -35,11 +35,12 @@
 
 
 struct startScreen{
+    bool bHasImage;
     string path;
     bool bHasPreviewImage;
     bool bHasFullImage;
     bool bHasVideo;
-
+    int initVideoIndex;
     ofImage img;
 };
 
@@ -98,6 +99,8 @@ private:
     
     void drawInit();
     void resetWelcomeScreen();
+    
+    void handleInitScreens();
     
 
 };

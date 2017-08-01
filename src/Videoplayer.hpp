@@ -13,8 +13,11 @@
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
 
-#define QUESTION 100
+
+#define INIT 100
 #define IDLE 200
+#define SESSION 300
+
 
 
 
@@ -32,6 +35,7 @@ public:
     
     void setState(int state);
     void setVideo(int id);
+    void setInitVideo(int index);
 
     void loadStory(int num);
     
@@ -44,10 +48,12 @@ public:
 
 private:
     
-    ofVideoPlayer movieclip;
+    ofVideoPlayer *movieclip;
     ofVideoPlayer idle;
     
     vector<ofVideoPlayer> videos;
+    vector<ofVideoPlayer> initVideos;
+
     
     int state;
     int videoid;

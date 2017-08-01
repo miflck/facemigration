@@ -75,4 +75,24 @@
         <Number>18</Number>
         <Filename>Recodings/MyMovieFile_0_18.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>19</Number>
+        <Filename>Recodings/MyMovieFile_0_19.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>20</Number>
+        <Filename>Recodings/MyMovieFile_0_20.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>21</Number>
+        <Filename>Recodings/MyMovieFile_0_21.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>22</Number>
+        <Filename>Recodings/MyMovieFile_0_22.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>23</Number>
+        <Filename>Recodings/MyMovieFile_0_23.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>

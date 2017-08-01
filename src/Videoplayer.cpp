@@ -7,6 +7,8 @@
 //
 
 #include "Videoplayer.hpp"
+#include "SessionController.hpp"
+
 
 Videoplayer::Videoplayer(){
 }
@@ -31,7 +33,7 @@ void Videoplayer::setup(){
     
     
     
-    
+    movieclip= new ofVideoPlayer();
     
     //loadStory();
     
@@ -41,7 +43,17 @@ void Videoplayer::setup(){
 //--------------------------------------------------------------
 
 void Videoplayer::update(){
-    if(state>=0){
+    
+    if(movieclip->isLoaded()){
+    movieclip->update();
+    if(movieclip->getIsMovieDone()){
+        ofSendMessage("CLIP is done");
+        videoid++;
+        setVideo(videoid);
+    }
+    }
+    
+  /*  if(state>=0){
         //      cout<<videoid<<endl;
         videos[videoid].update();
         if(videos[videoid].getIsMovieDone()){
@@ -51,7 +63,7 @@ void Videoplayer::update(){
             videos[videoid].setLoopState(OF_LOOP_PALINDROME);
             cout<<"*************** is done *************"<<endl;
         };
-    }
+    }*/
     
     
     
@@ -80,9 +92,13 @@ void Videoplayer::update(){
 
 
 void Videoplayer::draw(){
-    if(state>=0){
+    movieclip->draw(0,0);
+    
+    /*if(state>=0){
         videos[videoid].draw(0,0);
-    }
+    }*/
+    
+    
     /*
      switch (state) {
      case 1:
@@ -135,18 +151,43 @@ void Videoplayer::setState(int _state){
 
 
 void Videoplayer::setVideo(int _id){
+    
+    if(_id>videos.size()-1){
+        SC->setState(ACTIVE_SESSION_END);
+    return;
+    }
+    
     videoid=_id;
     setState(0);
     
     cout<<"State "<<state<<" videoid: "<<videoid<<" videos: "<<videos.size()<<endl;
     
+    movieclip->setPaused(true);
     
+    //movieclip->close();
+    movieclip=&videos[videoid];
+    movieclip->setPaused(false);
+    
+    //movieclip=videos[videoid];
+    //movieclip.setPaused(false);
+    
+    
+   /* movieclip.setPaused(true);
+    movieclip.close();
+
+    movieclip=initVideos[videoid];
+    movieclip.setPaused(false);
+    */
+    
+    /*
     for (auto video:videos){
         video.setPaused(true);
         
     }
     
     videos[videoid].setPaused(false);
+    */
+    
     
     /*switch (state) {
      case 1:
@@ -167,10 +208,26 @@ void Videoplayer::setVideo(int _id){
 }
 
 
+void Videoplayer::setInitVideo(int _index){
+    setState(0);
+
+    cout<<"SET INIT VIDEO "<<_index<<endl;
+    videoid=_index;
+    movieclip->setPaused(true);
+
+    //movieclip->close();
+    movieclip=&initVideos[videoid];
+    movieclip->setPaused(false);
+}
+
+
+
 //--------------------------------------------------------------
 
 void Videoplayer::loadStory(int num){
     videos.clear();
+    initVideos.clear();
+
     bIsVideoLoaded=false;
     state=-1;
     videoid=-1;
@@ -181,7 +238,9 @@ void Videoplayer::loadStory(int num){
         int numberOfSavedPoints = storylines.getNumTags("STORIES");
         storylines.pushTag("STORY", num);
         
-        storylines.pushTag("INIT_VIDEO", 0);
+        int numInitVids = storylines.getNumTags("INIT_VIDEO");
+        for(int i = 0; i < numInitVids; i++){
+        storylines.pushTag("INIT_VIDEO", i);
         string myPath = storylines.getValue("PATH", "");
         string loopstate = storylines.getValue("LOOPSTATE", "");
         ofVideoPlayer mc;
@@ -192,10 +251,11 @@ void Videoplayer::loadStory(int num){
         if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
         if(loopstate=="OF_LOOP_NORMAL") mc.setLoopState(OF_LOOP_NORMAL);
         if(loopstate=="OF_LOOP_PALINDROME") mc.setLoopState(OF_LOOP_PALINDROME);
-        videos.push_back(mc);
+        initVideos.push_back(mc);
         storylines.popTag();
+        }
         
-        
+        cout<<".... init videos... "<<initVideos.size()<<endl;
         
         int numVids = storylines.getNumTags("VIDEO");
         numberOfVideos=numVids;
