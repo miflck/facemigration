@@ -49,17 +49,19 @@ void Videorecorder::setup(){
     
     // 4a.  If you would like to list available video codecs on your system,
     // uncomment the following code.
-    // vector<string> videoCodecs = vidRecorder->listVideoCodecs();
-    // for(size_t i = 0; i < videoCodecs.size(); i++){
-    //     ofLogVerbose("Available Video Codecs") << videoCodecs[i];
-    // }
+     vector<string> videoCodecs = vidRecorder->listVideoCodecs();
+     for(size_t i = 0; i < videoCodecs.size(); i++){
+         ofLogVerbose("Available Video Codecs") << videoCodecs[i];
+     }
     
     // 4b. You can set a custom / non-default codec in the following ways if desired.
-    // vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
-    // vidRecorder->setVideoCodec(videoCodecs[2]);
+    //vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
+     //vidRecorder->setVideoCodec(videoCodecs[0]);
     
     // 5. Initialize the grabber.
+//    vidGrabber.setup(1920, 1080);
     vidGrabber.setup(1920, 1080);
+
     
     // If desired, you can disable the preview video.  This can
     // help help speed up recording and remove recording glitches.
@@ -73,9 +75,9 @@ void Videorecorder::setup(){
     // you can enable it here.
     bLaunchInQuicktime = false;
     
-    videoGrabberRect.set(0,0,vidGrabber.getWidth()/3,vidGrabber.getHeight()/3);
-    previewWindow.set(20, 20, vidGrabber.getWidth()/3,vidGrabber.getHeight()/3);
-    fullwidth.set(0,0,vidGrabber.getWidth(),vidGrabber.getHeight());
+    videoGrabberRect.set(0,0,1920/3,1080/3);
+    previewWindow.set(20, 20, 1920/3,1080/3);
+    fullwidth.set(0,0,1920,1080);
     
     
     
@@ -130,21 +132,23 @@ void Videorecorder::draw(){
         
     }
     
-    if(bHasPreview){
+  //  if(bHasPreview){
     ofPushStyle();
-    ofNoFill();
-    ofSetLineWidth(3);
+    ofFill();
     if(vidRecorder->isRecording()){
         //make a nice flashy red record color
         int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
         ofSetColor(255, 255-flashRed, 255-flashRed);
+        ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
+
     }
-    else{
-        ofSetColor(255,80);
-    }
-    ofDrawRectangle(previewWindow);
+   // else{
+        //ofSetColor(255,80);
+      //  ofDrawRectangle(previewWindow);
+    //}
+    //ofDrawRectangle(previewWindow);
     ofPopStyle();
-    }
+    //}
     
     //draw instructions
     ofPushStyle();
@@ -210,9 +214,33 @@ void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
 //--------------------------------------------------------------
 
 void Videorecorder::startRecording(){
+    
+    
+    sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+    sessions->loadFile("sessions.xml");
+    recordingSession=sessions->getNumTags("RECORDINGSESSION")-1;
+    cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
+    
+    
+    sessions->pushTag("RECORDINGSESSION", recordingSession);
+    clipNumber=sessions->getNumTags("CLIP");
+    sessions->popTag();
+    sessions->saveFile("sessions.xml");
+    
+    cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
+    
+    myFileName="Recodings/MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
+    vidRecorder->startRecording(myFileName);
+    bIsPaused=true;
+    
+ 
 }
 //--------------------------------------------------------------
 void Videorecorder::stopRecording(){
+    if(vidRecorder->isRecording()){
+        vidRecorder->stopRecording();
+    }
+
 }
 //--------------------------------------------------------------
 void Videorecorder::toggleRecording(){

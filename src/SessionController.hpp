@@ -61,13 +61,21 @@ public:
     void makeNewSession();
     
     void clipIsDone();
-    
+    void setClipIsDone(bool _clipIsDone);
+    void handleRecordSession();
     
     Videoplayer videoplayer;
     void setState(int _state);
     
     
     Videorecorder videorecorder;
+    
+    
+    void startRecording();
+    void stopRecording();
+    void toggleRecording();
+    bool getIsRecording();
+    
 
 // STORYHANDLING
     void next();
@@ -103,6 +111,9 @@ private:
     
     void handleInitScreens();
     
+    bool bIsClipDone=false;
+    
+    bool bIsRecording=false;
 
 };
 

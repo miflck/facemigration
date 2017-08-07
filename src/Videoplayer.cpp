@@ -33,7 +33,7 @@ void Videoplayer::setup(){
     
     
     
-    movieclip= new ofVideoPlayer();
+    movieclip= new Video();
     
     //loadStory();
     
@@ -48,7 +48,6 @@ void Videoplayer::update(){
     movieclip->update();
     if(movieclip->getIsMovieDone()){
         ofSendMessage("CLIP is done");
-        SC->clipIsDone();
         videoid++;
         setVideo(videoid);
     }
@@ -169,6 +168,13 @@ void Videoplayer::setVideo(int _id){
     movieclip=&videos[videoid];
     movieclip->setPaused(false);
     
+    cout<<"Loopstate "<<movieclip->getLoopstate()<<endl;
+    if(movieclip->getLoopstate()=="OF_LOOP_NONE"){
+        SC->setClipIsDone(false);
+    }else{
+      SC->setClipIsDone(true);
+    }
+    
     //movieclip=videos[videoid];
     //movieclip.setPaused(false);
     
@@ -244,7 +250,8 @@ void Videoplayer::loadStory(int num){
         storylines.pushTag("INIT_VIDEO", i);
         string myPath = storylines.getValue("PATH", "");
         string loopstate = storylines.getValue("LOOPSTATE", "");
-        ofVideoPlayer mc;
+        
+        Video mc;
         mc.load("movies/"+myPath);
         mc.play();
         mc.setPaused(true);
@@ -252,6 +259,7 @@ void Videoplayer::loadStory(int num){
         if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
         if(loopstate=="OF_LOOP_NORMAL") mc.setLoopState(OF_LOOP_NORMAL);
         if(loopstate=="OF_LOOP_PALINDROME") mc.setLoopState(OF_LOOP_PALINDROME);
+        mc.setLoopstate(loopstate);
         initVideos.push_back(mc);
         storylines.popTag();
         }
@@ -268,20 +276,21 @@ void Videoplayer::loadStory(int num){
             string loopstate = storylines.getValue("LOOPSTATE", "");
             
             cout<<"-------------------"+myPath<<" "<<myloopstate<<" "<<loopstate<<endl;
-            ofVideoPlayer mc;
+            Video mc;
             mc.load("movies/"+myPath);
             mc.play();
             mc.setPaused(true);
             if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
             if(loopstate=="OF_LOOP_NORMAL"){
                mc.setLoopState(OF_LOOP_NORMAL);
-                 mc.setVolume(0);
+                mc.setVolume(0);
             }
 
             if(loopstate=="OF_LOOP_PALINDROME"){
                mc.setLoopState(OF_LOOP_PALINDROME);
                 mc.setVolume(0);
             }
+            mc.setLoopstate(loopstate);
             videos.push_back(mc);
             storylines.popTag();
             

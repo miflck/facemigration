@@ -23,6 +23,7 @@
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
 		FA600F9F1EDC013B004E293C /* Videorecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA600F9D1EDC013B004E293C /* Videorecorder.cpp */; };
+		FAC0B8A91F38A5DB00E400C2 /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC0B8A71F38A5DB00E400C2 /* Video.cpp */; };
 		FAEDF0B61EEEEFF200264248 /* Videoplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */; };
 		FAEFDBE61F13A92300D07317 /* SessionController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAEFDBE41F13A92300D07317 /* SessionController.cpp */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,8 @@
 		ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../../addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
 		FA600F9D1EDC013B004E293C /* Videorecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Videorecorder.cpp; sourceTree = "<group>"; };
 		FA600F9E1EDC013B004E293C /* Videorecorder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Videorecorder.hpp; sourceTree = "<group>"; };
+		FAC0B8A71F38A5DB00E400C2 /* Video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Video.cpp; sourceTree = "<group>"; };
+		FAC0B8A81F38A5DB00E400C2 /* Video.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Video.hpp; sourceTree = "<group>"; };
 		FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Videoplayer.cpp; sourceTree = "<group>"; };
 		FAEDF0B51EEEEFF200264248 /* Videoplayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Videoplayer.hpp; sourceTree = "<group>"; };
 		FAEFDBE41F13A92300D07317 /* SessionController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SessionController.cpp; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				FA600F9D1EDC013B004E293C /* Videorecorder.cpp */,
 				FAEDF0B51EEEEFF200264248 /* Videoplayer.hpp */,
 				FAEDF0B41EEEEFF200264248 /* Videoplayer.cpp */,
+				FAC0B8A71F38A5DB00E400C2 /* Video.cpp */,
+				FAC0B8A81F38A5DB00E400C2 /* Video.hpp */,
 				FAEFDBE51F13A92300D07317 /* SessionController.hpp */,
 				FAEFDBE41F13A92300D07317 /* SessionController.cpp */,
 			);
@@ -329,6 +334,7 @@
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
+				FAC0B8A91F38A5DB00E400C2 /* Video.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
 				63B57AC5BF4EF088491E0317 /* ofxXmlSettings.cpp in Sources */,

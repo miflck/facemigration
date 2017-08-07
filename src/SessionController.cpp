@@ -208,7 +208,8 @@ void SessionController::next(){
             break;
             
         case ACTIVE_SESSION_RECORD:
-            videoplayer.forward();
+            handleRecordSession();
+           // videoplayer.forward();
             break;
             
         case ACTIVE_SESSION_END:
@@ -260,9 +261,24 @@ void SessionController::resetWelcomeScreen(){
 }
 
 void SessionController::clipIsDone(){
+    bIsClipDone=true;
+    cout<<"Is done "<<bIsClipDone<<endl;
 
 }
 
+void SessionController::setClipIsDone(bool _clipIsDone){
+    bIsClipDone=_clipIsDone;
+    cout<<"Is done "<<bIsClipDone<<endl;
+if(bIsClipDone)startRecording();
+
+}
+
+
+
+void SessionController::handleRecordSession(){
+    if(bIsRecording)stopRecording();
+    if(bIsClipDone)videoplayer.forward();
+}
 
 
 void SessionController::makeNewSession(){
@@ -286,4 +302,27 @@ void SessionController::makeNewSession(){
     sessions->saveFile("sessions.xml");
     
     
+}
+
+
+void SessionController::startRecording(){
+    cout<<"is recording "<<bIsRecording<<endl;
+    if(!bIsRecording){
+        cout<<"start recording"<<endl;
+        videorecorder.startRecording();
+        bIsRecording=true;
+    }
+}
+void SessionController::stopRecording(){
+    if(bIsRecording){
+        videorecorder.stopRecording();
+        bIsRecording=false;
+    }
+}
+void SessionController::toggleRecording(){
+    videorecorder.toggleRecording();
+}
+
+bool SessionController::getIsRecording(){
+    return bIsRecording;
 }

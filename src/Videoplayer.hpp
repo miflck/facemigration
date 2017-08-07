@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
+#include "Video.hpp"
 
 
 #define INIT 100
@@ -47,13 +48,22 @@ public:
     
 
 private:
-    
+    /*
     ofVideoPlayer *movieclip;
+    
     ofVideoPlayer idle;
     
     vector<ofVideoPlayer> videos;
-    vector<ofVideoPlayer> initVideos;
+    vector<ofVideoPlayer> initVideos;*/
 
+    
+    Video *movieclip;
+    
+    Video idle;
+    
+    vector<Video> videos;
+    vector<Video> initVideos;
+    
     
     int state;
     int videoid;
