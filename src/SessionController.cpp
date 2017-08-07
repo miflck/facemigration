@@ -158,7 +158,6 @@ void SessionController::draw(){
         case ACTIVE_SESSION_RECORD:
             videoplayer.draw();
             videorecorder.draw();
-            
             break;
             
         case ACTIVE_SESSION_END:
@@ -262,4 +261,11 @@ void SessionController::makeNewSession(){
     sessions->loadFile("sessions.xml");
     recordingSession=unixT;
 
+}
+
+
+//--------------------------------------------------------------
+void SessionController::gotMessage(ofMessage msg){
+    cout<<"********** msg ********* "<<msg.message<<endl;
+    
 }

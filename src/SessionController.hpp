@@ -54,6 +54,9 @@ public:
     void initialize();
     bool isInitialized();
     virtual ~SessionController();
+    
+    void gotMessage(ofMessage msg);
+
 
     void setup();
     void update();

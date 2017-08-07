@@ -220,7 +220,7 @@ void ofApp::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-    cout<<"********** msg ********* "<<&msg<<endl;
+  //  cout<<"********** msg ********* "<<msg.message<<endl;
 
 }
 
