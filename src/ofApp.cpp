@@ -118,15 +118,15 @@ void ofApp::keyPressed(int key){
     if(key == ' '){
    SC->videorecorder.toggleRecording();
     }
-    
+
     //no data gets saved unless you hit the s key
     if(key == 's'){
      //   recordedClips->saveFile("clips.xml");
     }
 
     
-    if(key=='S'){
-       // videorecorder.addRecordingSession();
+    if(key=='s'){
+        SC->makeNewSession();
     }
     
     if(key=='r'){
@@ -139,8 +139,7 @@ void ofApp::keyPressed(int key){
     if(key=='1'){
         //videoplayer.setState(1);
     }
-    
-}
+   }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){

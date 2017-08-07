@@ -22,17 +22,10 @@ Videorecorder::~Videorecorder(){
 //--------------------------------------------------------------
 
 
-void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
-    
-    XMLclips=_XMLclips;
+void Videorecorder::setup(){
     
     
-    //  XMLclips->addTag("RECORDINGSESSION");
-    // XMLclips->saveFile("clips.xml");
-    
-    recordingSession=XMLclips->getNumTags("RECORDINGSESSION");
-    cout<<" XMLclipsSession: "<<recordingSession<<endl;
-    //  clipNumber=XMLclips->getNumTags("RECORDINGSESSION:CLIP");
+
     
     
     
@@ -191,21 +184,17 @@ void Videorecorder::draw(){
 
 //--------------------------------------------------------------
 void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
-    // the ofQTKitGrabber sends a message with the file name and any errors when the video is done recording
+    sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+    sessions->loadFile("sessions.xml");
     
-    //  XMLclips.addTag("");
-    
-    
-    // lastSessionNumber	= XMLclips->addTag("SESSION");
-    recordingSession=XMLclips->getNumTags("RECORDINGSESSION")-1;
-    cout<<"--------------recordingSession "<<recordingSession<<endl;
-    if( XMLclips->pushTag("RECORDINGSESSION", recordingSession) ){
-        int tagNum = XMLclips->addTag("CLIP");
-        XMLclips->setValue("CLIP:Number",  tagNum,tagNum);
-        XMLclips->setValue("CLIP:Filename",  myFileName,tagNum);
-        
-        XMLclips->popTag();
-        XMLclips->saveFile("clips.xml");
+    recordingSession=sessions->getNumTags("RECORDINGSESSION");
+    cout<<"-------------- recordingSession "<<recordingSession<<endl;
+    if( sessions->pushTag("RECORDINGSESSION", recordingSession-1) ){
+        int tagNum = sessions->addTag("CLIP");
+        sessions->setValue("CLIP:Number",  tagNum,tagNum);
+        sessions->setValue("CLIP:Filename",  myFileName,tagNum);
+        sessions->popTag();
+        sessions->saveFile("sessions.xml");
         
     }
     
@@ -239,14 +228,20 @@ void Videorecorder::toggleRecording(){
         if(recordedVideoPlayback.isLoaded()){
             recordedVideoPlayback.close();
         }
-        recordingSession=XMLclips->getNumTags("RECORDINGSESSION")-1;
-        XMLclips->pushTag("RECORDINGSESSION", recordingSession);
-        clipNumber=XMLclips->getNumTags("CLIP");
-        XMLclips->popTag();
-        XMLclips->saveFile("clips.xml");
+        
+        sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+        sessions->loadFile("sessions.xml");
+        recordingSession=sessions->getNumTags("RECORDINGSESSION")-1;
+        cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
+
+
+        sessions->pushTag("RECORDINGSESSION", recordingSession);
+        clipNumber=sessions->getNumTags("CLIP");
+        sessions->popTag();
+        sessions->saveFile("sessions.xml");
         
         cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
-        
+      
         myFileName="Recodings/MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
         vidRecorder->startRecording(myFileName);
         bIsPaused=true;
@@ -257,22 +252,7 @@ void Videorecorder::toggleRecording(){
 //--------------------------------------------------------------
 
 
-void Videorecorder::addRecordingSession(){
-    
-    
-    int session=XMLclips->addTag("RECORDINGSESSION");
-    XMLclips->pushTag("RECORDINGSESSION", session);
-    int tagNum = XMLclips->addTag("SESSIONID");
-    XMLclips->setValue("SESSIONID",  ofGetTimestampString("%Y%m%d%H%M%S%i") ,tagNum);
-    XMLclips->setValue("SESSION_TIME",  ofGetTimestampString() ,tagNum);
-    XMLclips->setValue("SESSION_NUMBER",session,tagNum);
-    
-    
-    XMLclips->popTag();
-    XMLclips->saveFile("clips.xml");
-    
-    
-}
+
 void Videorecorder::pauseRecording(bool p){
     bIsPaused=p;
 }

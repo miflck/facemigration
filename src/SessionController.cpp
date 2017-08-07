@@ -89,11 +89,14 @@ void SessionController::setup(){
     
     sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
     
-    sessions->loadFile("clips.xml");
+    sessions->loadFile("sessions.xml");
     recordingSession=sessions->getNumTags("RECORDINGSESSION");
     cout<<"Session: "<<recordingSession<<endl;
-    videorecorder.setup(sessions);
+    videorecorder.setup();
 
+    
+    
+    
 
   //  videoplayer.loadStory(story);
 
@@ -189,6 +192,7 @@ void SessionController::next(){
     switch (state) {
             
         case STARTUP:
+            makeNewSession();
             videoplayer.loadStory(story);
             setState(IDLE);
             break;
@@ -208,7 +212,7 @@ void SessionController::next(){
             break;
             
         case ACTIVE_SESSION_END:
-                setState(IDLE);
+                setState(STARTUP);
             break;
             
         default:
@@ -255,6 +259,11 @@ void SessionController::resetWelcomeScreen(){
     
 }
 
+void SessionController::clipIsDone(){
+
+}
+
+
 
 void SessionController::makeNewSession(){
     int unixT=ofGetUnixTime();
@@ -262,4 +271,19 @@ void SessionController::makeNewSession(){
     sessions->loadFile("sessions.xml");
     recordingSession=unixT;
 
+    int recordingSession=sessions->getNumTags("RECORDINGSESSION");
+    cout<<"Number of Sessions"<<recordingSession<<endl;
+
+    int session=sessions->addTag("RECORDINGSESSION");
+    sessions->pushTag("RECORDINGSESSION", session);
+    int tagNum = sessions->addTag("SESSIONID");
+    sessions->setValue("SESSIONID",  ofGetTimestampString("%Y%m%d%H%M%S%i") ,tagNum);
+    sessions->setValue("SESSION_TIME",  ofGetTimestampString() ,tagNum);
+    sessions->setValue("SESSION_NUMBER",session,tagNum);
+    
+    
+    sessions->popTag();
+    sessions->saveFile("sessions.xml");
+    
+    
 }

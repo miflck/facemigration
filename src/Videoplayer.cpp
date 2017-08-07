@@ -48,6 +48,7 @@ void Videoplayer::update(){
     movieclip->update();
     if(movieclip->getIsMovieDone()){
         ofSendMessage("CLIP is done");
+        SC->clipIsDone();
         videoid++;
         setVideo(videoid);
     }

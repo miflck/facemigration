@@ -23,7 +23,7 @@ public:
     Videorecorder();
     virtual ~Videorecorder();
     
-    void setup(ofPtr<ofxXmlSettings> XMLclips);
+    void setup();
     void update();
     void draw();
     
@@ -45,7 +45,6 @@ public:
     void startRecording();
     void stopRecording();
     void toggleRecording();
-    void addRecordingSession();
     void pauseRecording(bool p);
     
     void setFullscreen(bool _fullscreen);
@@ -55,10 +54,10 @@ public:
     
 private:
     
-    ofPtr<ofxXmlSettings> XMLclips;
-    
+    ofPtr<ofxXmlSettings>	sessions;
     int recordingSession;
     int clipNumber;
+    
     int lastSessionNumber;
     string myFileName;
     bool bIsPaused;

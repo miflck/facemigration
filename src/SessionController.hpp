@@ -60,6 +60,7 @@ public:
     void draw();
     void makeNewSession();
     
+    void clipIsDone();
     
     
     Videoplayer videoplayer;
