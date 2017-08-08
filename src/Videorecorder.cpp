@@ -100,16 +100,6 @@ void Videorecorder::update(){
 void Videorecorder::draw(){
     
     
-    
-    // draw the background boxes
-    /*ofPushStyle();
-    ofSetColor(0);
-    ofFill();
-    ofDrawRectangle(previewWindow);
-    ofPopStyle();
-    */
-    
-    
     // draw the preview if available
     if(vidRecorder->hasPreview()){
         ofPushStyle();
@@ -125,11 +115,8 @@ void Videorecorder::draw(){
             vidGrabber.draw(videoGrabberRect);
         }
         
-        
         ofPopMatrix();
         ofPopStyle();
-        
-        
     }
     
   //  if(bHasPreview){
@@ -142,47 +129,8 @@ void Videorecorder::draw(){
         ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
 
     }
-   // else{
-        //ofSetColor(255,80);
-      //  ofDrawRectangle(previewWindow);
-    //}
-    //ofDrawRectangle(previewWindow);
     ofPopStyle();
-    //}
-    
-    //draw instructions
-    ofPushStyle();
-    ofSetColor(255);
-    ofDrawBitmapString("' ' space bar to toggle recording", 680, 540);
-    ofDrawBitmapString("'v' switches video device", 680, 560);
-    ofDrawBitmapString("'a' switches audio device", 680, 580);
-    
-    //draw video device selection
-    ofDrawBitmapString("VIDEO DEVICE", 20, 540);
-    for(int i = 0; i < videoDevices.size(); i++){
-        if(i == vidRecorder->getVideoDeviceID()){
-            ofSetColor(255, 100, 100);
-        }
-        else{
-            ofSetColor(255);
-        }
-        ofDrawBitmapString(videoDevices[i], 20, 560+i*20);
-    }
-    
-    //draw audio device;
-    int startY = 580+20*videoDevices.size();
-    ofDrawBitmapString("AUDIO DEVICE", 20, startY);
-    startY += 20;
-    for(int i = 0; i < audioDevices.size(); i++){
-        if(i == vidRecorder->getAudioDeviceID()){
-            ofSetColor(255, 100, 100);
-        }
-        else{
-            ofSetColor(255);
-        }
-        ofDrawBitmapString(audioDevices[i], 20, startY+i*20);
-    }
-    ofPopStyle();
+ 
     
 }
 

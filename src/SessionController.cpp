@@ -58,16 +58,19 @@ void SessionController::setup(){
         bool fullscreen = XMLStartScreens->getValue("FULLSCREEN", 0);
         bool hasVideo=XMLStartScreens->getValue("HASVIDEO", 0);
         int videoIndex=XMLStartScreens->getValue("VIDEO", -1);
+        bool record=XMLStartScreens->getValue("RECORD", 0);
+
 
 
         startScreen s;
         s.bHasImage=hasImage;
         s.path=myPath;
-        s.bHasVideo=preview;
+        s.bHasPreview=preview;
         s.bHasPreviewImage=previewimage;
         s.bHasFullImage=fullscreen;
         s.bHasVideo=hasVideo;
         s.initVideoIndex=videoIndex;
+        s.record=record;
         XMLStartScreens->popTag();
         startScreens.push_back(s);
         startScreens.back().img.load(myPath);
@@ -78,10 +81,10 @@ void SessionController::setup(){
     
     
     
-    for(int i=0;i<startScreens.size();i++){
+    /*for(int i=0;i<startScreens.size();i++){
         cout<<"------------------"<<startScreens[i].path<<" "<<startScreens[i].bHasFullImage<<endl;
     }
-    
+    */
     
     
     
@@ -201,6 +204,8 @@ void SessionController::next(){
         case IDLE:
             setState(ACTIVE_SESSION_START);
             resetWelcomeScreen();
+            setInitToIdle();
+        
             break;
             
         case ACTIVE_SESSION_START:
@@ -223,6 +228,12 @@ void SessionController::next(){
     
 }
 
+void SessionController::setInitToIdle(){
+    cout<<"Set init to Idle"<<endl;
+    videoplayer.setInitVideo(0);
+    videoplayer.showVideo(true);
+
+}
 
 void SessionController::handleInitScreens(){
     
@@ -230,12 +241,25 @@ void SessionController::handleInitScreens(){
         screenInd++;
         
        if(startScreens[screenInd].bHasVideo){
-            videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
+           cout<<"I have a video"<<endl;
+           videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
+           videoplayer.showVideo(true);
+
+       }else{
+           videoplayer.stop();
+           videoplayer.showVideo(false);
+       }
+        
+        if(startScreens[screenInd].bHasPreview){
+            videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
+            videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
         }
+        if(startScreens[screenInd].record){
+            startRecording();
         
-        videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
-        videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
-        
+        }else{
+            stopRecording();
+        }
         
         
         
@@ -268,8 +292,39 @@ void SessionController::clipIsDone(){
 
 void SessionController::setClipIsDone(bool _clipIsDone){
     bIsClipDone=_clipIsDone;
+
     cout<<"Is done "<<bIsClipDone<<endl;
-if(bIsClipDone)startRecording();
+
+    switch (state) {
+            
+        case STARTUP:
+
+            break;
+            
+        case IDLE:
+      
+            
+            break;
+            
+        case ACTIVE_SESSION_START:
+            //stopRecording();
+            //if(bIsClipDone)startRecording();
+            next();
+            break;
+            
+        case ACTIVE_SESSION_RECORD:
+            if(bIsClipDone)startRecording();
+            break;
+            
+        case ACTIVE_SESSION_END:
+            setState(STARTUP);
+            break;
+
+            
+            
+            
+    }
+
 
 }
 

@@ -48,11 +48,34 @@ void ofApp::setup(){
     SC->setup();
     
     
+    
+    serial.listDevices();
+    vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
+    
+    // this should be set to whatever com port your serial device is connected to.
+    // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
+    // arduino users check in arduino app....
+    int baud = 9600;//115200;
+    serial.setup(0, baud); //open the first device
+    
+   // serial.setup("/dev/tty.usbserial-A70060V8", 9600);
+    serial.startContinuousRead();
+    ofAddListener(serial.NEW_MESSAGE,this,&ofApp::onNewMessage);
+    
+    message = "";
+    
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
- 
+    
+    if(requestRead)
+    {
+        serial.sendRequest();
+        requestRead = false;
+    }
+    
     SC->update();
 
    /* switch (state) {
@@ -227,3 +250,13 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
+
+
+
+void ofApp::onNewMessage(string & message)
+{
+    cout << "onNewMessage, message: " << message << "\n";
+    if(ofToInt(message)==1)SC->next();
+
+}
+

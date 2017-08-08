@@ -45,6 +45,8 @@ public:
     bool getIsVideoLoaded();
     
     void forward();
+    void stop();
+    void showVideo(bool _showVideo);
     
 
 private:
@@ -72,6 +74,8 @@ private:
 
     int numberOfVideos;
     bool bIsVideoLoaded;
+    
+    bool bShowVideo=false;
 
     
     

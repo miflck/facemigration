@@ -12,6 +12,15 @@
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
         </INIT_VIDEO>
         
+        <INIT_VIDEO>
+            <PATH>Frage.mov</PATH>
+            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+        </INIT_VIDEO>
+        
+        <INIT_VIDEO>
+            <PATH>start_idle.mov</PATH>
+            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+        </INIT_VIDEO>
         
         
         <VIDEO>

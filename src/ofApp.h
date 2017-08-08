@@ -5,6 +5,8 @@
 #include "Videoplayer.hpp"
 #include "ofxXmlSettings.h"
 #include "SessionController.hpp"
+#include "ofxSimpleSerial.h"
+
 
 
 
@@ -38,5 +40,14 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    
+    void		onNewMessage(string & message);
+    
+    ofxSimpleSerial	serial;
+    
+    string		message;
+    bool		requestRead;
+    
     
 };
