@@ -230,6 +230,7 @@ void SessionController::next(){
 
 void SessionController::setInitToIdle(){
     cout<<"Set init to Idle"<<endl;
+
     videoplayer.setInitVideo(0);
     videoplayer.showVideo(true);
 

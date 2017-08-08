@@ -116,6 +116,9 @@ void Videoplayer::setInitVideo(int _index){
     setState(INIT);
     
     cout<<"SET INIT VIDEO "<<_index<<endl;
+    
+    
+    
     videoid=_index;
     movieclip->setPaused(true);
     movieclip=&initVideos[videoid];
@@ -198,22 +201,7 @@ void Videoplayer::loadStory(int num){
         ofLogError("Story file did not load!");
     }
     
-    
-    /*
-     
-     ofVideoPlayer mc;
-     mc.load("movies/fingers.mov");
-     mc.play();
-     mc.setPaused(true);
-     videos.push_back(mc);
-     ofVideoPlayer mc2;
-     
-     mc2.load("movies/idle_b.mov");
-     mc2.play();
-     mc2.setPaused(true);
-     videos.push_back(mc2);
-     */
-}
+    }
 
 int Videoplayer::getNumberOfVideos(){
     return numberOfVideos;

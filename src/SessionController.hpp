@@ -117,6 +117,9 @@ private:
     bool bIsClipDone=false;
     
     bool bIsRecording=false;
+    
+    
+    
 
 };
 
