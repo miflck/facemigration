@@ -73,7 +73,7 @@ void Videoplayer::update(){
 
 void Videoplayer::draw(){
     if(bShowVideo){
-        movieclip->draw(0,0);
+        movieclip->draw(10,0);
     }
 }
 
@@ -153,7 +153,7 @@ void Videoplayer::loadStory(int num){
             mc.load("movies/"+myPath);
             mc.play();
             mc.setPaused(true);
-            mc.setVolume(0);
+           // mc.setVolume(0);
             if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
             if(loopstate=="OF_LOOP_NORMAL") mc.setLoopState(OF_LOOP_NORMAL);
             if(loopstate=="OF_LOOP_PALINDROME") mc.setLoopState(OF_LOOP_PALINDROME);
@@ -181,12 +181,12 @@ void Videoplayer::loadStory(int num){
             if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
             if(loopstate=="OF_LOOP_NORMAL"){
                 mc.setLoopState(OF_LOOP_NORMAL);
-                mc.setVolume(0);
+               // mc.setVolume(0);
             }
             
             if(loopstate=="OF_LOOP_PALINDROME"){
                 mc.setLoopState(OF_LOOP_PALINDROME);
-                mc.setVolume(0);
+                //mc.setVolume(0);
             }
             mc.setLoopstate(loopstate);
             videos.push_back(mc);

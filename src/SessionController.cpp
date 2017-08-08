@@ -333,7 +333,8 @@ void SessionController::setClipIsDone(bool _clipIsDone){
 
 void SessionController::handleRecordSession(){
     if(bIsRecording)stopRecording();
-    if(bIsClipDone)videoplayer.forward();
+   // if(bIsClipDone)videoplayer.forward();
+    videoplayer.forward();
 }
 
 

@@ -56,7 +56,7 @@ void Videorecorder::setup(){
     
     // 4b. You can set a custom / non-default codec in the following ways if desired.
     //vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
-     //vidRecorder->setVideoCodec(videoCodecs[0]);
+     vidRecorder->setVideoCodec(videoCodecs[0]);
     
     // 5. Initialize the grabber.
 //    vidGrabber.setup(1920, 1080);
@@ -76,7 +76,7 @@ void Videorecorder::setup(){
     bLaunchInQuicktime = false;
     
     videoGrabberRect.set(0,0,1920/3,1080/3);
-    previewWindow.set(20, 20, 1920/3,1080/3);
+    previewWindow.set(0, 0, 1920/3,1080/3);
     fullwidth.set(0,0,1920,1080);
     
     
