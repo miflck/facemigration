@@ -59,6 +59,7 @@ void SessionController::setup(){
         bool hasVideo=XMLStartScreens->getValue("HASVIDEO", 0);
         int videoIndex=XMLStartScreens->getValue("VIDEO", -1);
         bool record=XMLStartScreens->getValue("RECORD", 0);
+        bool skip=XMLStartScreens->getValue("SKIP", 1);
 
 
 
@@ -71,6 +72,7 @@ void SessionController::setup(){
         s.bHasVideo=hasVideo;
         s.initVideoIndex=videoIndex;
         s.record=record;
+        s.skip=skip;
         XMLStartScreens->popTag();
         startScreens.push_back(s);
         startScreens.back().img.load(myPath);
@@ -238,39 +240,39 @@ void SessionController::setInitToIdle(){
 
 void SessionController::handleInitScreens(){
     
+    //if(!startScreens[screenInd].skip)
+    
     if(screenInd<startScreens.size()-1){
         screenInd++;
         
-       if(startScreens[screenInd].bHasVideo){
-           cout<<"I have a video"<<endl;
-           videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
-           videoplayer.showVideo(true);
-
-       }else{
-           videoplayer.stop();
-           videoplayer.showVideo(false);
-       }
+        if(startScreens[screenInd].bHasVideo){
+            cout<<"I have a video"<<endl;
+            videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
+            videoplayer.showVideo(true);
+            
+        }else{
+            videoplayer.stop();
+            videoplayer.showVideo(false);
+        }
         
         if(startScreens[screenInd].bHasPreview){
             videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
             videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
         }
         if(startScreens[screenInd].record){
-           // startRecording();
-        
-        }else{
-           // stopRecording();
+            startRecording();
+            
         }
         stopRecording();
-        
-        
-    }else{
+    }
+    
+    if(screenInd>=startScreens.size()-1){
         setState(ACTIVE_SESSION_RECORD);
         videoplayer.setVideo(0);
         videorecorder.setFullscreen(false);
         videorecorder.setPreview(true);
     }
-
+    
 }
 
 
@@ -334,7 +336,7 @@ void SessionController::setClipIsDone(bool _clipIsDone){
 void SessionController::handleRecordSession(){
     //if(bIsRecording)
         stopRecording();
-   // if(bIsClipDone)videoplayer.forward();
+   if(bIsClipDone)videoplayer.forward();
     videoplayer.forward();
 }
 

@@ -43,6 +43,7 @@ struct startScreen{
     bool bHasVideo;
     int initVideoIndex;
     bool record;
+    bool skip;
     ofImage img;
 };
 

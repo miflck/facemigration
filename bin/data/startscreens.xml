@@ -8,6 +8,7 @@
         <HASVIDEO>0</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
     </SCREEN>
     
     <SCREEN>
@@ -19,6 +20,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -31,6 +33,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -43,6 +46,7 @@
         <HASVIDEO>0</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -55,6 +59,7 @@
         <HASVIDEO>0</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
 
 
     </SCREEN>
@@ -68,6 +73,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -80,6 +86,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>1</VIDEO>
         <RECORD>0</RECORD>
+        <SKIP>0</SIKP>
 
     </SCREEN>
     
@@ -93,8 +100,10 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>2</VIDEO>
         <RECORD>0</RECORD>
-        
+        <SKIP>0</SIKP>
+
     </SCREEN>
+    
     <SCREEN>
         <HASIMAGE>1</HASIMAGE>
         <PATH>startscreens/startscreen9.png</PATH>
@@ -104,7 +113,8 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>3</VIDEO>
         <RECORD>1</RECORD>
-        
+        <SKIP>1</SIKP>
+
     </SCREEN>
    
 </STARTSCREENS>

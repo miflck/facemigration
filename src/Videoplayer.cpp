@@ -129,8 +129,6 @@ void Videoplayer::setInitVideo(int _index){
     
     cout<<"SET INIT VIDEO "<<_index<<endl;
     
-    
-    
     videoid=_index;
     movieclip->setPaused(true);
     movieclip=initVideos[videoid];
@@ -210,7 +208,7 @@ void Videoplayer::loadStory(int num){
                 //mc.setVolume(0);
             }
             mc->setAutoRecording(autorecord);
-          //  mc.setLoopstate(loopstate);
+        mc->setLoopstate(loopstate);
             videos.push_back(mc);
             storylines.popTag();
             
@@ -237,7 +235,6 @@ bool Videoplayer::getIsVideoLoaded(){
 void Videoplayer::forward(){
     if(videoid<numberOfVideos)videoid++;
     setVideo(videoid);
-    
 }
 
 void Videoplayer::stop(){

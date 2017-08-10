@@ -990,3 +990,69 @@
     <SESSION_TIME>2017-08-10-21-12-47-231</SESSION_TIME>
     <SESSION_NUMBER>107</SESSION_NUMBER>
 </RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810212353577</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-23-53-577</SESSION_TIME>
+    <SESSION_NUMBER>108</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_108_0.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810212726346</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-27-26-346</SESSION_TIME>
+    <SESSION_NUMBER>109</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_109_0.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810213324554</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-33-24-554</SESSION_TIME>
+    <SESSION_NUMBER>110</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_110_0.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810213407610</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-34-07-610</SESSION_TIME>
+    <SESSION_NUMBER>111</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_111_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/MyMovieFile_111_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/MyMovieFile_111_2.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810213621298</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-36-21-298</SESSION_TIME>
+    <SESSION_NUMBER>112</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_112_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/MyMovieFile_112_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/MyMovieFile_112_2.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810213721446</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-37-21-446</SESSION_TIME>
+    <SESSION_NUMBER>113</SESSION_NUMBER>
+</RECORDINGSESSION>
