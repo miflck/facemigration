@@ -21,9 +21,7 @@ Videoplayer::~Videoplayer(){
 
 
 void Videoplayer::setup(){
-    shared_ptr<Video> a(new Video);
-    movieclip=a;
-
+    movieclip= new Video();
     // state=-1;
     bIsVideoLoaded=false;
     setState(IDLE);
@@ -106,7 +104,7 @@ void Videoplayer::setVideo(int _id){
     cout<<"State "<<state<<" videoid: "<<videoid<<" videos: "<<videos.size()<<endl;
     
     movieclip->setPaused(true);
-    movieclip=videos[videoid];
+    movieclip=&videos[videoid];
     movieclip->setPaused(false);
     
     cout<<"Loopstate "<<movieclip->getLoopstate()<<endl;
@@ -133,7 +131,7 @@ void Videoplayer::setInitVideo(int _index){
     
     videoid=_index;
     movieclip->setPaused(true);
-    movieclip=initVideos[videoid];
+    movieclip=&initVideos[videoid];
     movieclip->setPaused(false);
 }
 
@@ -161,17 +159,15 @@ void Videoplayer::loadStory(int num){
             string myPath = storylines.getValue("PATH", "");
             string loopstate = storylines.getValue("LOOPSTATE", "");
             
-            //Video mc;
-            shared_ptr<Video> mc(new Video);
-
-            mc->load("movies/"+myPath);
-            mc->play();
-            mc->setPaused(true);
+            Video mc;
+            mc.load("movies/"+myPath);
+            mc.play();
+            mc.setPaused(true);
            // mc.setVolume(0);
-            if(loopstate=="OF_LOOP_NONE") mc->setLoopState(OF_LOOP_NONE);
-            if(loopstate=="OF_LOOP_NORMAL") mc->setLoopState(OF_LOOP_NORMAL);
-            if(loopstate=="OF_LOOP_PALINDROME") mc->setLoopState(OF_LOOP_PALINDROME);
-            mc->setLoopstate(loopstate);
+            if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
+            if(loopstate=="OF_LOOP_NORMAL") mc.setLoopState(OF_LOOP_NORMAL);
+            if(loopstate=="OF_LOOP_PALINDROME") mc.setLoopState(OF_LOOP_PALINDROME);
+            mc.setLoopstate(loopstate);
             initVideos.push_back(mc);
             storylines.popTag();
         }
@@ -191,25 +187,22 @@ void Videoplayer::loadStory(int num){
 
             
             
-            cout<<"-loading-"+myPath<<" "<<" "<<loopstate<<" Autorecord: "<<autorecord<<endl;
-            
-            shared_ptr<Video> mc(new Video);
-
-            //Video mc;
-            mc->load("movies/"+myPath);
-            mc->play();
-            mc->setPaused(true);
-            if(loopstate=="OF_LOOP_NONE") mc->setLoopState(OF_LOOP_NONE);
+            cout<<"-loading-"+myPath<<" "<<" "<<loopstate<<"Autorecord: "<<autorecord<<endl;
+            Video mc;
+            mc.load("movies/"+myPath);
+            mc.play();
+            mc.setPaused(true);
+            if(loopstate=="OF_LOOP_NONE") mc.setLoopState(OF_LOOP_NONE);
             if(loopstate=="OF_LOOP_NORMAL"){
-                mc->setLoopState(OF_LOOP_NORMAL);
+                mc.setLoopState(OF_LOOP_NORMAL);
                // mc.setVolume(0);
             }
             
             if(loopstate=="OF_LOOP_PALINDROME"){
-                mc->setLoopState(OF_LOOP_PALINDROME);
+                mc.setLoopState(OF_LOOP_PALINDROME);
                 //mc.setVolume(0);
             }
-            mc->setAutoRecording(autorecord);
+            mc.setAutoRecording(autorecord);
           //  mc.setLoopstate(loopstate);
             videos.push_back(mc);
             storylines.popTag();

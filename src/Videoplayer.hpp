@@ -59,19 +59,19 @@ private:
     vector<ofVideoPlayer> initVideos;*/
 
     
-    //Video *movieclip;
+    Video *movieclip;
     
     
     
-    shared_ptr<Video> movieclip;
+    //shared_ptr<Video> movieclip;
 
     
-    //vector<Video> videos;
-    vector<shared_ptr<Video> > videos;
+    vector<Video> videos;
+    //vector<shared_ptr<Video> > videos;
 
     
-    //vector<Video> initVideos;
-    vector<shared_ptr<Video> > initVideos;
+    vector<Video> initVideos;
+    //vector<shared_ptr<Video> > initVideos;
 
     
     
