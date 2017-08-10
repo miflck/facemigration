@@ -36,47 +36,58 @@
         <VIDEO>
             <PATH>STORY1/01_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-            
+            <RECORD>0</RECORD>
+
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/01_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>0</RECORD>
+
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/02_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/02_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/03_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/03_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/04_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/04_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/05_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/05_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         
 
@@ -84,106 +95,128 @@
         <VIDEO>
             <PATH>STORY1/07_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/07_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/08_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/08_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/09_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/09_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/10_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/10_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/11_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/11_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/12_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/12_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/13_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/13_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/14_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-            
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/14_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/15_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/15_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/16_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/16_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/17_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/17_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/18_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+            <RECORD>1</RECORD>
         </VIDEO>
    
        

@@ -47,7 +47,7 @@ public:
     void forward();
     void stop();
     void showVideo(bool _showVideo);
-    
+        
 
 private:
     /*
@@ -59,12 +59,21 @@ private:
     vector<ofVideoPlayer> initVideos;*/
 
     
-    Video *movieclip;
+    //Video *movieclip;
     
     Video idle;
     
-    vector<Video> videos;
-    vector<Video> initVideos;
+    
+    shared_ptr<Video> movieclip;
+
+    
+    //vector<Video> videos;
+    vector<shared_ptr<Video> > videos;
+
+    
+    //vector<Video> initVideos;
+    vector<shared_ptr<Video> > initVideos;
+
     
     
     int state;

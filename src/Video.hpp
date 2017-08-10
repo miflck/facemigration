@@ -16,6 +16,8 @@ class Video:  public ofVideoPlayer{
 
 public:
     
+    Video();
+    virtual ~Video();
     
     void setLoopstate(string _loopstate);
     string getLoopstate();
@@ -24,8 +26,8 @@ public:
     
     
 private:
-    string loopstate;
-    bool bHasAutoRecording;
+    string loopstate="";
+    bool bHasAutoRecording=false;
 
 
 };

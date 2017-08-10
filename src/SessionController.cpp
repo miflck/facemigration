@@ -256,12 +256,12 @@ void SessionController::handleInitScreens(){
             videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
         }
         if(startScreens[screenInd].record){
-            startRecording();
+           // startRecording();
         
         }else{
-            stopRecording();
+           // stopRecording();
         }
-        
+        stopRecording();
         
         
     }else{
@@ -314,7 +314,7 @@ void SessionController::setClipIsDone(bool _clipIsDone){
             break;
             
         case ACTIVE_SESSION_RECORD:
-            if(bIsClipDone)startRecording();
+           // if(bIsClipDone)startRecording();
             break;
             
         case ACTIVE_SESSION_END:
@@ -332,7 +332,8 @@ void SessionController::setClipIsDone(bool _clipIsDone){
 
 
 void SessionController::handleRecordSession(){
-    if(bIsRecording)stopRecording();
+    //if(bIsRecording)
+        stopRecording();
    // if(bIsClipDone)videoplayer.forward();
     videoplayer.forward();
 }
