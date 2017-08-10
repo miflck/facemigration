@@ -5,32 +5,25 @@
         <INIT_VIDEO>
             <PATH>STORY1/00_0.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+
         </INIT_VIDEO>
         
         <INIT_VIDEO>
             <PATH>STORY1/00_10.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+
         </INIT_VIDEO>
         
         <INIT_VIDEO>
             <PATH>STORY1/00_11.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+
         </INIT_VIDEO>
         
         <INIT_VIDEO>
             <PATH>00_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
         </INIT_VIDEO>
-        
-  
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         <VIDEO>
@@ -42,7 +35,7 @@
         <VIDEO>
             <PATH>STORY1/01_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
 
         </VIDEO>
         
@@ -54,7 +47,7 @@
         <VIDEO>
             <PATH>STORY1/02_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
@@ -65,7 +58,7 @@
         <VIDEO>
             <PATH>STORY1/03_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
@@ -76,7 +69,7 @@
         <VIDEO>
             <PATH>STORY1/04_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>
@@ -87,7 +80,7 @@
         <VIDEO>
             <PATH>STORY1/05_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
         </VIDEO>
         
 
@@ -106,12 +99,12 @@
         <VIDEO>
             <PATH>STORY1/08_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-            <RECORD>1</RECORD>
+            <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
             <PATH>STORY1/08_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
         </VIDEO>
         
         <VIDEO>

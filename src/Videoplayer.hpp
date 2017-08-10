@@ -61,7 +61,6 @@ private:
     
     //Video *movieclip;
     
-    Video idle;
     
     
     shared_ptr<Video> movieclip;

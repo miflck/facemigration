@@ -903,3 +903,90 @@
     <SESSION_TIME>2017-08-10-21-03-25-303</SESSION_TIME>
     <SESSION_NUMBER>104</SESSION_NUMBER>
 </RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810210801485</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-08-01-485</SESSION_TIME>
+    <SESSION_NUMBER>105</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_105_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/MyMovieFile_105_1.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810211104252</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-11-04-253</SESSION_TIME>
+    <SESSION_NUMBER>106</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/MyMovieFile_106_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/MyMovieFile_106_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/MyMovieFile_106_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/MyMovieFile_106_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/MyMovieFile_106_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/MyMovieFile_106_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/MyMovieFile_106_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/MyMovieFile_106_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/MyMovieFile_106_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/MyMovieFile_106_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/MyMovieFile_106_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/MyMovieFile_106_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/MyMovieFile_106_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/MyMovieFile_106_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/MyMovieFile_106_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/MyMovieFile_106_15.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170810211247231</SESSIONID>
+    <SESSION_TIME>2017-08-10-21-12-47-231</SESSION_TIME>
+    <SESSION_NUMBER>107</SESSION_NUMBER>
+</RECORDINGSESSION>
