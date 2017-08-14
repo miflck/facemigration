@@ -173,8 +173,7 @@ void Videoplayer::loadStory(int num){
             initVideos.push_back(mc);
             storylines.popTag();
         }
-        
-        cout<<".... init videos... "<<initVideos.size()<<endl;
+        cout<<"initvideos "<<initVideos.size()<<endl;
         
         int numVids = storylines.getNumTags("VIDEO");
         numberOfVideos=numVids;
@@ -187,10 +186,6 @@ void Videoplayer::loadStory(int num){
             
             int autorecord = storylines.getValue("RECORD", 0);
 
-            
-            
-            cout<<"-loading-"+myPath<<" "<<" "<<loopstate<<" Autorecord: "<<autorecord<<endl;
-            
             shared_ptr<Video> mc(new Video);
 
             //Video mc;
@@ -208,7 +203,7 @@ void Videoplayer::loadStory(int num){
                 //mc.setVolume(0);
             }
             mc->setAutoRecording(autorecord);
-        mc->setLoopstate(loopstate);
+            mc->setLoopstate(loopstate);
             videos.push_back(mc);
             storylines.popTag();
             

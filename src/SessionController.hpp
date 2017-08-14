@@ -83,6 +83,7 @@ public:
 // STORYHANDLING
     void next();
 
+    void buttonPushed();
     
     
 private:

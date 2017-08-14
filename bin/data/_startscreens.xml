@@ -1,0 +1,122 @@
+<STARTSCREENS>
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+        <HASVIDEO>0</HASVIDEO>
+        <VIDEO>0</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen2.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+        <HASVIDEO>1</HASVIDEO>
+        <VIDEO>0</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
+
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen3.png</PATH>
+        <PREVIEW>0</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>1</FULLSCREEN>
+        <HASVIDEO>1</HASVIDEO>
+        <VIDEO>0</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
+
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen4.png</PATH>
+        <PREVIEW>1</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>1</FULLSCREEN>
+        <HASVIDEO>0</HASVIDEO>
+        <VIDEO>0</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
+
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen5.png</PATH>
+        <PREVIEW>1</PREVIEW>
+        <PREVIEWIMAGE>0</PREVIEWIMAGE>
+        <FULLSCREEN>1</FULLSCREEN>
+        <HASVIDEO>0</HASVIDEO>
+        <VIDEO>0</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
+
+
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen6.png</PATH>
+        <PREVIEW>1</PREVIEW>
+        <PREVIEWIMAGE>1</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+        <HASVIDEO>1</HASVIDEO>
+        <VIDEO>0</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
+
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen7.png</PATH>
+        <PREVIEW>1</PREVIEW>
+        <PREVIEWIMAGE>1</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+        <HASVIDEO>1</HASVIDEO>
+        <VIDEO>1</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>0</SIKP>
+
+    </SCREEN>
+    
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen8.png</PATH>
+        <PREVIEW>1</PREVIEW>
+        <PREVIEWIMAGE>1</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+        <HASVIDEO>1</HASVIDEO>
+        <VIDEO>2</VIDEO>
+        <RECORD>0</RECORD>
+        <SKIP>0</SIKP>
+
+    </SCREEN>
+    
+    <SCREEN>
+        <HASIMAGE>1</HASIMAGE>
+        <PATH>startscreens/startscreen9.png</PATH>
+        <PREVIEW>1</PREVIEW>
+        <PREVIEWIMAGE>1</PREVIEWIMAGE>
+        <FULLSCREEN>0</FULLSCREEN>
+        <HASVIDEO>1</HASVIDEO>
+        <VIDEO>3</VIDEO>
+        <RECORD>1</RECORD>
+        <SKIP>1</SIKP>
+
+    </SCREEN>
+   
+</STARTSCREENS>
+
+

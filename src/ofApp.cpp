@@ -256,7 +256,7 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 void ofApp::onNewMessage(string & message)
 {
     cout << "onNewMessage, message: " << message << "\n";
-    if(ofToInt(message)==1)SC->next();
+    if(ofToInt(message)==1)SC->buttonPushed();
 
 }
 

@@ -30,8 +30,8 @@ SessionController::~SessionController(){
 
 void SessionController::initialize() {
     initialized=true;
- 
-
+    
+    
     
 }
 bool SessionController::isInitialized(){
@@ -41,14 +41,14 @@ bool SessionController::isInitialized(){
 void SessionController::setup(){
     videoplayer.setup();
     story=0;
-
+    
     
     XMLStartScreens = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
     XMLStartScreens->loadFile("startscreens.xml");
     XMLStartScreens->pushTag("STARTSCREENS");
     
     int num = XMLStartScreens->getNumTags("SCREEN");
-    cout<<"Startscreens"<<num<<endl;
+    cout<<"Startscreens "<<num<<endl;
     for(int i = 0; i < num; i++){
         XMLStartScreens->pushTag("SCREEN", i);
         bool hasImage=XMLStartScreens->getValue("HASIMAGE", 0);
@@ -60,8 +60,9 @@ void SessionController::setup(){
         int videoIndex=XMLStartScreens->getValue("VIDEO", -1);
         bool record=XMLStartScreens->getValue("RECORD", 0);
         bool skip=XMLStartScreens->getValue("SKIP", 1);
-
-
+        
+        
+        cout<<"PATH "<<myPath<<endl;
 
         startScreen s;
         s.bHasImage=hasImage;
@@ -76,17 +77,18 @@ void SessionController::setup(){
         XMLStartScreens->popTag();
         startScreens.push_back(s);
         startScreens.back().img.load(myPath);
+
     }
+    
     
     XMLStartScreens->popTag();
 
     
     
-    
     /*for(int i=0;i<startScreens.size();i++){
-        cout<<"------------------"<<startScreens[i].path<<" "<<startScreens[i].bHasFullImage<<endl;
-    }
-    */
+     cout<<"------------------"<<startScreens[i].path<<" "<<startScreens[i].bHasFullImage<<endl;
+     }
+     */
     
     
     
@@ -98,15 +100,15 @@ void SessionController::setup(){
     recordingSession=sessions->getNumTags("RECORDINGSESSION");
     cout<<"Session: "<<recordingSession<<endl;
     videorecorder.setup();
-
     
     
     
-
-  //  videoplayer.loadStory(story);
-
     
-
+    
+    //  videoplayer.loadStory(story);
+    
+    
+    
 }
 
 void SessionController::update(){
@@ -120,7 +122,7 @@ void SessionController::update(){
             
         case IDLE:
             videoplayer.update();
-
+            
             break;
             
         case ACTIVE_SESSION_START:
@@ -139,8 +141,8 @@ void SessionController::update(){
         default:
             break;
     }
-
-
+    
+    
 }
 
 void SessionController::draw(){
@@ -154,7 +156,7 @@ void SessionController::draw(){
             
         case IDLE:
             videoplayer.draw();
-
+            
             break;
             
         case ACTIVE_SESSION_START:
@@ -175,8 +177,8 @@ void SessionController::draw(){
         default:
             break;
     }
-
-
+    
+    
 }
 
 
@@ -193,34 +195,32 @@ void SessionController::drawInit(){
 
 void SessionController::next(){
     
-    cout<<"this state "<<state<<endl;
     switch (state) {
-            
         case STARTUP:
             makeNewSession();
             videoplayer.loadStory(story);
             setState(IDLE);
             break;
             
-            
         case IDLE:
             setState(ACTIVE_SESSION_START);
             resetWelcomeScreen();
             setInitToIdle();
-        
+            
             break;
             
         case ACTIVE_SESSION_START:
+
             handleInitScreens();
             break;
             
         case ACTIVE_SESSION_RECORD:
             handleRecordSession();
-           // videoplayer.forward();
+            // videoplayer.forward();
             break;
             
         case ACTIVE_SESSION_END:
-                setState(STARTUP);
+            setState(STARTUP);
             break;
             
         default:
@@ -230,21 +230,58 @@ void SessionController::next(){
     
 }
 
+
+void SessionController::buttonPushed(){
+    switch (state) {
+        case STARTUP:
+            makeNewSession();
+            videoplayer.loadStory(story);
+            setState(IDLE);
+            break;
+            
+        case IDLE:
+            setState(ACTIVE_SESSION_START);
+            resetWelcomeScreen();
+            setInitToIdle();
+            
+            break;
+            
+        case ACTIVE_SESSION_START:
+            if(!startScreens[screenInd].skip)return;
+            handleInitScreens();
+            break;
+            
+        case ACTIVE_SESSION_RECORD:
+            handleRecordSession();
+            break;
+            
+        case ACTIVE_SESSION_END:
+            setState(STARTUP);
+            break;
+            
+        default:
+            break;
+    }
+
+
+}
+
+
 void SessionController::setInitToIdle(){
     cout<<"Set init to Idle"<<endl;
-
+    
     videoplayer.setInitVideo(0);
     videoplayer.showVideo(true);
-
+    
 }
 
 void SessionController::handleInitScreens(){
     
-    //if(!startScreens[screenInd].skip)
     
     if(screenInd<startScreens.size()-1){
         screenInd++;
-        
+        cout<<"handle init screens "<<startScreens.size()-1<<" "<<screenInd<<" has video "<<startScreens[screenInd].bHasVideo<<endl;
+
         if(startScreens[screenInd].bHasVideo){
             cout<<"I have a video"<<endl;
             videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
@@ -290,22 +327,22 @@ void SessionController::resetWelcomeScreen(){
 void SessionController::clipIsDone(){
     bIsClipDone=true;
     cout<<"Is done "<<bIsClipDone<<endl;
-
+    
 }
 
 void SessionController::setClipIsDone(bool _clipIsDone){
     bIsClipDone=_clipIsDone;
-
+    
     cout<<"Is done "<<bIsClipDone<<endl;
-
+    
     switch (state) {
             
         case STARTUP:
-
+            
             break;
             
         case IDLE:
-      
+            
             
             break;
             
@@ -316,27 +353,27 @@ void SessionController::setClipIsDone(bool _clipIsDone){
             break;
             
         case ACTIVE_SESSION_RECORD:
-           // if(bIsClipDone)startRecording();
+            // if(bIsClipDone)startRecording();
             break;
             
         case ACTIVE_SESSION_END:
             setState(STARTUP);
             break;
-
+            
             
             
             
     }
-
-
+    
+    
 }
 
 
 
 void SessionController::handleRecordSession(){
     //if(bIsRecording)
-        stopRecording();
-   if(bIsClipDone)videoplayer.forward();
+    stopRecording();
+    if(bIsClipDone)videoplayer.forward();
     videoplayer.forward();
 }
 
@@ -346,10 +383,10 @@ void SessionController::makeNewSession(){
     sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
     sessions->loadFile("sessions.xml");
     recordingSession=unixT;
-
+    
     int recordingSession=sessions->getNumTags("RECORDINGSESSION");
     cout<<"Number of Sessions"<<recordingSession<<endl;
-
+    
     int session=sessions->addTag("RECORDINGSESSION");
     sessions->pushTag("RECORDINGSESSION", session);
     int tagNum = sessions->addTag("SESSIONID");

@@ -10,13 +10,11 @@
 
 
 Video::Video(){
-    cout<<"init Video"<<endl;
     bHasAutoRecording=false;
 }
 //--------------------------------------------------------------
 
 Video::~Video(){
-    cout<<"destruct Video"<<endl;
     
 }
 //--------------------------------------------------------------
