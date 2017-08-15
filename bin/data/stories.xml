@@ -21,7 +21,7 @@
         </INIT_VIDEO>
         
         <INIT_VIDEO>
-            <PATH>00_2.mov</PATH>
+            <PATH>STORY1/00_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
         </INIT_VIDEO>
         
@@ -29,7 +29,7 @@
         <VIDEO>
             <PATH>STORY1/01_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-            <RECORD>0</RECORD>
+            <RECORD>1</RECORD>
 
         </VIDEO>
         <VIDEO>

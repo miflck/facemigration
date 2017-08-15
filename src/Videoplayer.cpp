@@ -23,8 +23,6 @@ Videoplayer::~Videoplayer(){
 void Videoplayer::setup(){
     shared_ptr<Video> a(new Video);
     movieclip=a;
-
-    // state=-1;
     bIsVideoLoaded=false;
     setState(IDLE);
 }
@@ -74,13 +72,7 @@ void Videoplayer::update(){
 
 void Videoplayer::draw(){
     if(bShowVideo){
-        ofPushStyle();
-        ofSetColor(255, 0, 0);
-    
-        
-        ofDrawRectangle(0, 0, 1920, 1080);
-        ofPopStyle();
-        movieclip->draw(0,0);
+    movieclip->draw(0,0);
 
     }
 }

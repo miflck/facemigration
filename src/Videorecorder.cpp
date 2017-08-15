@@ -88,12 +88,6 @@ void Videorecorder::setup(){
 void Videorecorder::update(){
     //if(!bIsPaused)vidGrabber.update();
     vidGrabber.update();
-    
-    if(recordedVideoPlayback.isLoaded()){
-        recordedVideoPlayback.update();
-    }
-    
-    
 }
 //--------------------------------------------------------------
 
@@ -140,7 +134,6 @@ void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
     sessions->loadFile("sessions.xml");
     
     recordingSession=sessions->getNumTags("RECORDINGSESSION");
-    cout<<"-------------- recordingSession "<<recordingSession<<endl;
     if( sessions->pushTag("RECORDINGSESSION", recordingSession-1) ){
         int tagNum = sessions->addTag("CLIP");
         sessions->setValue("CLIP:Number",  tagNum,tagNum);
@@ -152,7 +145,7 @@ void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
     
     
     if(e.error.empty()){
-        cout<<"-------------- SAVED ----------------"<<endl;
+        cout<<"-------------- SAVED "<<myFileName<< "----------------"<<endl;
     }
     else {
         ofLogError("videoSavedEvent") << "Video save error: " << e.error;
@@ -167,7 +160,7 @@ void Videorecorder::startRecording(){
     sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
     sessions->loadFile("sessions.xml");
     recordingSession=sessions->getNumTags("RECORDINGSESSION")-1;
-    cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
+   // cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
     
     
     sessions->pushTag("RECORDINGSESSION", recordingSession);
@@ -175,11 +168,12 @@ void Videorecorder::startRecording(){
     sessions->popTag();
     sessions->saveFile("sessions.xml");
     
-    cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
     
-    myFileName="Recodings/MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
+    myFileName="Recodings/"+ofToString(recordingSession)+"/Session_"+ofToString(recordingSession)+"_Clip_"+ofToString(clipNumber)+".mov";
+    cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<" "<<myFileName<<endl;
+
     vidRecorder->startRecording(myFileName);
-    bIsPaused=true;
+   // bIsPaused=true;
     
  
 }

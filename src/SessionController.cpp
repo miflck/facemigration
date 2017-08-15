@@ -114,15 +114,11 @@ void SessionController::setup(){
 void SessionController::update(){
     
     switch (state) {
-            
-            
         case STARTUP:
-            
             break;
             
         case IDLE:
             videoplayer.update();
-            
             break;
             
         case ACTIVE_SESSION_START:
@@ -194,7 +190,6 @@ void SessionController::drawInit(){
 
 
 void SessionController::next(){
-    
     switch (state) {
         case STARTUP:
             makeNewSession();
@@ -206,17 +201,14 @@ void SessionController::next(){
             setState(ACTIVE_SESSION_START);
             resetWelcomeScreen();
             setInitToIdle();
-            
             break;
             
         case ACTIVE_SESSION_START:
-
             handleInitScreens();
             break;
             
         case ACTIVE_SESSION_RECORD:
             handleRecordSession();
-            // videoplayer.forward();
             break;
             
         case ACTIVE_SESSION_END:
@@ -243,7 +235,6 @@ void SessionController::buttonPushed(){
             setState(ACTIVE_SESSION_START);
             resetWelcomeScreen();
             setInitToIdle();
-            
             break;
             
         case ACTIVE_SESSION_START:
@@ -269,15 +260,16 @@ void SessionController::buttonPushed(){
 
 void SessionController::setInitToIdle(){
     cout<<"Set init to Idle"<<endl;
-    
-    videoplayer.setInitVideo(0);
-    videoplayer.showVideo(true);
-    
+    //videoplayer.setInitVideo(0);
+    videoplayer.showVideo(false);
 }
 
+
+
 void SessionController::handleInitScreens(){
-    
-    
+    cout<<"Handle init Screens"<<endl;
+    stopRecording();
+
     if(screenInd<startScreens.size()-1){
         screenInd++;
         cout<<"handle init screens "<<startScreens.size()-1<<" "<<screenInd<<" has video "<<startScreens[screenInd].bHasVideo<<endl;
@@ -286,7 +278,6 @@ void SessionController::handleInitScreens(){
             cout<<"I have a video"<<endl;
             videoplayer.setInitVideo(startScreens[screenInd].initVideoIndex);
             videoplayer.showVideo(true);
-            
         }else{
             videoplayer.stop();
             videoplayer.showVideo(false);
@@ -296,14 +287,12 @@ void SessionController::handleInitScreens(){
             videorecorder.setFullscreen(startScreens[screenInd].bHasFullImage);
             videorecorder.setPreview(startScreens[screenInd].bHasPreviewImage);
         }
+        
         if(startScreens[screenInd].record){
             startRecording();
-            
         }
-        stopRecording();
     }
-    
-    if(screenInd>=startScreens.size()-1){
+    else if(screenInd>=startScreens.size()-1){
         setState(ACTIVE_SESSION_RECORD);
         videoplayer.setVideo(0);
         videorecorder.setFullscreen(false);
@@ -330,22 +319,19 @@ void SessionController::clipIsDone(){
     
 }
 
+
+
+
+
 void SessionController::setClipIsDone(bool _clipIsDone){
+    
     bIsClipDone=_clipIsDone;
-    
     cout<<"Is done "<<bIsClipDone<<endl;
-    
     switch (state) {
-            
         case STARTUP:
-            
             break;
-            
         case IDLE:
-            
-            
             break;
-            
         case ACTIVE_SESSION_START:
             //stopRecording();
             //if(bIsClipDone)startRecording();
@@ -359,22 +345,15 @@ void SessionController::setClipIsDone(bool _clipIsDone){
         case ACTIVE_SESSION_END:
             setState(STARTUP);
             break;
-            
-            
-            
-            
     }
-    
-    
 }
 
 
 
 void SessionController::handleRecordSession(){
-    //if(bIsRecording)
     stopRecording();
     if(bIsClipDone)videoplayer.forward();
-    videoplayer.forward();
+    //videoplayer.forward();
 }
 
 

@@ -19,7 +19,7 @@
         <FULLSCREEN>0</FULLSCREEN>
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
-        <RECORD>0</RECORD>
+        <RECORD>1</RECORD>
         <SKIP>1</SKIP>
 
     </SCREEN>
