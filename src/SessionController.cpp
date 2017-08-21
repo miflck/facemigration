@@ -115,9 +115,17 @@ void SessionController::update(){
     
     switch (state) {
         case STARTUP:
+            makeNewSession();
+            videoplayer.loadStory(story);
+            setState(IDLE);
             break;
             
         case IDLE:
+            setState(ACTIVE_SESSION_START);
+            resetWelcomeScreen();
+            setInitToIdle();
+            
+            
             videoplayer.update();
             break;
             

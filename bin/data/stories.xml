@@ -9,19 +9,19 @@
         </INIT_VIDEO>
         
         <INIT_VIDEO>
-            <PATH>STORY1/00_10.mov</PATH>
-            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-
-        </INIT_VIDEO>
-        
-        <INIT_VIDEO>
-            <PATH>STORY1/00_11.mov</PATH>
+            <PATH>STORY1/00_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
 
         </INIT_VIDEO>
         
         <INIT_VIDEO>
             <PATH>STORY1/00_2.mov</PATH>
+            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+
+        </INIT_VIDEO>
+        
+        <INIT_VIDEO>
+            <PATH>STORY1/00_3.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
         </INIT_VIDEO>
         
@@ -86,12 +86,12 @@
 
         
         <VIDEO>
-            <PATH>STORY1/07_1.mov</PATH>
+            <PATH>STORY1/06_1.mov</PATH>
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
             <RECORD>0</RECORD>
         </VIDEO>
         <VIDEO>
-            <PATH>STORY1/07_2.mov</PATH>
+            <PATH>STORY1/06_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
             <RECORD>1</RECORD>
         </VIDEO>
@@ -118,16 +118,6 @@
             <RECORD>1</RECORD>
         </VIDEO>
         
-        <VIDEO>
-            <PATH>STORY1/10_1.mov</PATH>
-            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-            <RECORD>0</RECORD>
-        </VIDEO>
-        <VIDEO>
-            <PATH>STORY1/10_2.mov</PATH>
-            <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
-            <RECORD>1</RECORD>
-        </VIDEO>
         
         <VIDEO>
             <PATH>STORY1/11_1.mov</PATH>
@@ -206,11 +196,6 @@
             <RECORD>1</RECORD>
         </VIDEO>
         
-        <VIDEO>
-            <PATH>STORY1/18_1.mov</PATH>
-            <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
-            <RECORD>1</RECORD>
-        </VIDEO>
    
        
         

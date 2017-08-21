@@ -37,13 +37,13 @@ void Videoplayer::update(){
     
 
     
-    
+    bool isLoaded=true;
+
     
     switch (state) {
             
         case IDLE:
             
-            bool isLoaded=true;
             for(int i=0;i<videos.size();i++){
                 if(!videos[i]->isLoaded()){
                     isLoaded=false;
