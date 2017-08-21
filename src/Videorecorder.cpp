@@ -75,8 +75,9 @@ void Videorecorder::setup(){
     // you can enable it here.
     bLaunchInQuicktime = false;
     
-    videoGrabberRect.set(0,0,1920/3,1080/3);
-    previewWindow.set(0, 0, 1920/3,1080/3);
+    videoGrabberRect.set(0,0,1920/2,1080/2);
+    previewWindow.set(5, 5, 1920/3,1080/3);
+    bigpreview.set(0,0,1920/2,1080/2);
     fullwidth.set(0,0,1920,1080);
     
     
@@ -109,6 +110,10 @@ void Videorecorder::draw(){
             vidGrabber.draw(videoGrabberRect);
         }
         
+        if(bHasBigPreview){
+            videoGrabberRect.scaleTo(bigpreview);
+            vidGrabber.draw(videoGrabberRect);
+        }
         ofPopMatrix();
         ofPopStyle();
     }
@@ -236,6 +241,12 @@ void Videorecorder::setFullscreen(bool _fullscreen){
 
 void Videorecorder::setPreview(bool _preview){
     bHasPreview=_preview;
+}
+
+void Videorecorder::setBigPreview(bool _bigpreview){
+    cout<<"set big preview "<<_bigpreview<<endl;
+    bHasBigPreview=_bigpreview;
+
 }
 
 

@@ -43,6 +43,7 @@ public:
     
     int getNumberOfVideos();
     bool getIsVideoLoaded();
+    int getVideoIndex();
     
     void forward();
     void stop();

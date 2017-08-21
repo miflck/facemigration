@@ -59,8 +59,9 @@ void Videoplayer::update(){
                     movieclip->update();
                     if(movieclip->getIsMovieDone()){
                         ofSendMessage("CLIP is done");
-                        videoid++;
-                        setVideo(videoid);
+                        SC->next();
+                        //videoid++;
+                        //setVideo(videoid);
                         SC->setClipIsDone(true);
 
                     }
@@ -108,6 +109,7 @@ void Videoplayer::setState(int _state){
 
 void Videoplayer::setVideo(int _id){
     
+   
     if(_id>videos.size()-1){
         SC->setState(ACTIVE_SESSION_END);
         setState(IDLE);
@@ -232,13 +234,17 @@ int Videoplayer::getNumberOfVideos(){
     return numberOfVideos;
 }
 
+int Videoplayer::getVideoIndex(){
+    return videoid;
+}
+
 
 bool Videoplayer::getIsVideoLoaded(){
     return bIsVideoLoaded;
 }
 
 void Videoplayer::forward(){
-    if(videoid<numberOfVideos)videoid++;
+videoid++;
     setVideo(videoid);
 }
 

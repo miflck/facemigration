@@ -49,6 +49,8 @@ public:
     
     void setFullscreen(bool _fullscreen);
     void setPreview(bool _preview);
+    void setBigPreview(bool _preview);
+
 
 
     
@@ -64,11 +66,12 @@ private:
     
     bool bIsFullscreen=false;
     bool bHasPreview=false;
+    bool bHasBigPreview=false;
 
     ofRectangle videoGrabberRect;
     ofRectangle previewWindow;
     ofRectangle fullwidth;
-
+    ofRectangle bigpreview;
 
 
 };

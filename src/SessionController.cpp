@@ -140,6 +140,8 @@ void SessionController::update(){
             break;
             
         case ACTIVE_SESSION_END:
+            setState(STARTUP);
+
             break;
             
         default:
@@ -314,42 +316,39 @@ void SessionController::handleInitScreens(){
 
 void SessionController::setState(int _state){
     state=_state;
+    videorecorder.setFullscreen(false);
+    videorecorder.setPreview(false);
 }
 
 
 
 void SessionController::resetWelcomeScreen(){
     screenInd=0;
-    
+    videorecorder.setFullscreen(false);
+    videorecorder.setBigPreview(false);
+    videorecorder.setPreview(false);
 }
 
 void SessionController::clipIsDone(){
     bIsClipDone=true;
     cout<<"Is done "<<bIsClipDone<<endl;
-    
 }
 
-
-
-
-
 void SessionController::setClipIsDone(bool _clipIsDone){
-    
     bIsClipDone=_clipIsDone;
     cout<<"Is done "<<bIsClipDone<<endl;
     switch (state) {
         case STARTUP:
             break;
+            
         case IDLE:
             break;
+            
         case ACTIVE_SESSION_START:
-            //stopRecording();
-            //if(bIsClipDone)startRecording();
             next();
             break;
             
         case ACTIVE_SESSION_RECORD:
-            // if(bIsClipDone)startRecording();
             break;
             
         case ACTIVE_SESSION_END:
@@ -363,7 +362,13 @@ void SessionController::setClipIsDone(bool _clipIsDone){
 void SessionController::handleRecordSession(){
     stopRecording();
    // if(bIsClipDone)videoplayer.forward();
+    if(videoplayer.getVideoIndex()>videoplayer.getNumberOfVideos()-3){
+      videorecorder.setBigPreview(true);
+    }
+
     videoplayer.forward();
+
+    
 }
 
 
