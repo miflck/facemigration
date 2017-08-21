@@ -212,6 +212,8 @@ void SessionController::next(){
             break;
             
         case ACTIVE_SESSION_START:
+          //  if(!startScreens[screenInd].skip)return;
+
             handleInitScreens();
             break;
             
@@ -360,8 +362,8 @@ void SessionController::setClipIsDone(bool _clipIsDone){
 
 void SessionController::handleRecordSession(){
     stopRecording();
-    if(bIsClipDone)videoplayer.forward();
-    //videoplayer.forward();
+   // if(bIsClipDone)videoplayer.forward();
+    videoplayer.forward();
 }
 
 

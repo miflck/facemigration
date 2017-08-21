@@ -149,7 +149,7 @@ void ofApp::keyPressed(int key){
 
     
     if(key=='s'){
-        SC->makeNewSession();
+       // SC->makeNewSession();
     }
     
     if(key=='r'){

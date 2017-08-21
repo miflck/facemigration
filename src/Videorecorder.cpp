@@ -117,10 +117,12 @@ void Videorecorder::draw(){
     ofPushStyle();
     ofFill();
     if(vidRecorder->isRecording()){
+    
         //make a nice flashy red record color
         int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
         ofSetColor(255, 255-flashRed, 255-flashRed);
         ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
+//        ofDrawRectangle(0, 0, previewWindow.getWidth(), previewWindow.getHeight());
 
     }
     ofPopStyle();
