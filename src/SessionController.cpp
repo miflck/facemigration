@@ -214,8 +214,6 @@ void SessionController::next(){
             break;
             
         case ACTIVE_SESSION_START:
-          //  if(!startScreens[screenInd].skip)return;
-
             handleInitScreens();
             break;
             
