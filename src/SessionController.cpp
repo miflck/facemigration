@@ -108,7 +108,9 @@ void SessionController::setup(){
     //  videoplayer.loadStory(story);
     setState(STARTUP);
     
-    
+    bTimerReached = true;
+    startTime = ofGetElapsedTimeMillis();  // get the start time
+    endTime = 5000; // in milliseconds
 }
 
 void SessionController::update(){
@@ -132,11 +134,15 @@ void SessionController::update(){
         case ACTIVE_SESSION_START:
             videoplayer.update();
             videorecorder.update();
+            if(videorecorder.contourFinder.nBlobs < 3)startBlobTimeOut();
+            blobTimer();
             break;
             
         case ACTIVE_SESSION_RECORD:
             videorecorder.update();
             videoplayer.update();
+            blobTimer();
+            if(videorecorder.contourFinder.nBlobs < 3)startBlobTimeOut();
             break;
             
         case ACTIVE_SESSION_END:
@@ -414,4 +420,30 @@ void SessionController::toggleRecording(){
 
 bool SessionController::getIsRecording(){
     return bIsRecording;
+}
+
+void SessionController::saveBackground(){
+    videorecorder.saveBackground();
+
+}
+
+void SessionController::startBlobTimeOut(){
+    if(bTimerReached){
+    bTimerReached = false;                     // reset the timer
+    startTime = ofGetElapsedTimeMillis();  // get the start time
+    endTime = 5000; // in milliseconds
+    }
+
+}
+void SessionController::blobTimer(){
+    
+    // update the timer this frame
+    float timer = ofGetElapsedTimeMillis() - startTime;
+    
+    if(timer >= endTime && !bTimerReached) {
+        bTimerReached = true;
+        ofMessage msg("Timer Reached");
+        ofSendMessage(msg);
+    }
+
 }

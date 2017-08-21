@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
+#include "ofxOpenCv.h"
 
 
 
@@ -30,6 +31,10 @@ public:
     
     
     ofVideoGrabber 			vidGrabber;
+    
+    ofVideoGrabber 			cvGrabber;
+
+    
     ofPtr<ofQTKitGrabber>	vidRecorder;
     
     ofVideoPlayer recordedVideoPlayback;
@@ -50,11 +55,28 @@ public:
     void setFullscreen(bool _fullscreen);
     void setPreview(bool _preview);
     void setBigPreview(bool _preview);
+    
+    
+    void saveBackground();
 
 
+    ofxCvColorImage			colorImg;
+    
+    ofxCvGrayscaleImage 	grayImage;
+    ofxCvGrayscaleImage 	grayBg;
+    ofxCvGrayscaleImage 	grayDiff;
+    
+    ofxCvContourFinder 	contourFinder;
+    
+    int 				threshold;
+    bool				bLearnBakground;
 
     
 private:
+    
+    
+    int grabberWidth=1920;
+    int grabberHeight=1080;
     
     ofPtr<ofxXmlSettings>	sessions;
     int recordingSession;

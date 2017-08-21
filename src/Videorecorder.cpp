@@ -43,7 +43,8 @@ void Videorecorder::setup(){
     // 3a. Optionally add audio to the recording stream.
     // vidRecorder->setAudioDeviceID(2);
      vidRecorder->setUseAudio(true);
-    
+
+
     // 4. Register for events so we'll know when videos finish saving.
     ofAddListener(vidRecorder->videoSavedEvent, this, &Videorecorder::videoSaved);
     
@@ -60,7 +61,8 @@ void Videorecorder::setup(){
     
     // 5. Initialize the grabber.
 //    vidGrabber.setup(1920, 1080);
-    vidGrabber.setup(1920, 1080);
+    vidGrabber.setup(grabberWidth, grabberHeight);
+    cvGrabber.setup(grabberWidth/3, grabberHeight/3);
 
     
     // If desired, you can disable the preview video.  This can
@@ -75,10 +77,29 @@ void Videorecorder::setup(){
     // you can enable it here.
     bLaunchInQuicktime = false;
     
-    videoGrabberRect.set(0,0,1920/2,1080/2);
-    previewWindow.set(5, 5, 1920/3,1080/3);
-    bigpreview.set(0,0,1920/2,1080/2);
-    fullwidth.set(0,0,1920,1080);
+    
+ 
+    
+    videoGrabberRect.set(0,0,grabberWidth/2,grabberHeight/2);
+    previewWindow.set(5, 5, grabberWidth/3,grabberHeight/3);
+    bigpreview.set(0,0,grabberWidth/2,grabberHeight/2);
+    fullwidth.set(0,0,grabberWidth,grabberHeight);
+    
+    
+    
+    colorImg.allocate(grabberWidth,grabberHeight);
+    grayImage.allocate(grabberWidth/3,grabberHeight/3);
+    grayBg.allocate(grabberWidth/3,grabberHeight/3);
+    grayDiff.allocate(grabberWidth/3,grabberHeight/3);
+    
+    bLearnBakground = false;
+    threshold = 80;
+    
+    
+    //load background;
+    ofImage fileImage;
+    fileImage.loadImage("background.jpg");
+    grayBg.setFromPixels(fileImage.getPixels());
     
     
     
@@ -88,7 +109,38 @@ void Videorecorder::setup(){
 
 void Videorecorder::update(){
     //if(!bIsPaused)vidGrabber.update();
+    
+    
+    bool bNewFrame = false;
+
+    
     vidGrabber.update();
+    cvGrabber.update();
+    bNewFrame = cvGrabber.isFrameNew();
+
+    if (bNewFrame){
+        colorImg.setFromPixels(cvGrabber.getPixels());
+        grayImage = colorImg;
+        grayImage.blur(19);
+
+        if (bLearnBakground == true){
+            grayBg = grayImage;		// the = sign copys the pixels from grayImage into grayBg (operator overloading)
+            bLearnBakground = false;
+        }
+        
+        // take the abs value of the difference between background and incoming and then threshold:
+
+        grayDiff.absDiff(grayBg, grayImage);
+        grayDiff.threshold(threshold);
+        grayDiff.dilate();
+        grayDiff.erode();
+        // find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
+        // also, find holes is set to true so we will get interior contours as well....
+        contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+    }
+
+    
+    
 }
 //--------------------------------------------------------------
 
@@ -117,6 +169,33 @@ void Videorecorder::draw(){
         ofPopMatrix();
         ofPopStyle();
     }
+    
+    ofPushStyle();
+    ofFill();
+    
+    ofSetColor(255,20);
+       grayDiff.draw(videoGrabberRect);
+    
+    
+    ofSetColor(255,0,0);
+    // or, instead we can draw each blob individually from the blobs vector,
+    // this is how to get access to them:
+    for (int i = 0; i < contourFinder.nBlobs; i++){
+         contourFinder.blobs[i].draw(0,0);
+        
+        /*
+        ofBeginShape();
+        for (int k = 0; k < contourFinder.blobs[i].nPts; k++){
+            ofVertex(contourFinder.blobs[i].pts[k].x,contourFinder.blobs[i].pts[k].y);
+        }
+        ofEndShape(true);
+        */
+    }
+    ofPopStyle();
+    
+    
+ 
+    
     
   //  if(bHasPreview){
     ofPushStyle();
@@ -249,5 +328,14 @@ void Videorecorder::setBigPreview(bool _bigpreview){
 
 }
 
+void Videorecorder::saveBackground(){
+    colorImg.setFromPixels(vidGrabber.getPixels());
+    colorImg.resize(grabberWidth/3,grabberHeight/3);
+    grayImage = colorImg;
+    grayImage.blur(19);
+    grayBg = grayImage;
+ofSaveImage(grayBg.getPixels(),"background.jpg");
+
+}
 
 
