@@ -15,7 +15,7 @@
 #include "Video.hpp"
 
 
-#define INIT 100
+#define INIT 000
 #define IDLE 200
 #define SESSION 300
 

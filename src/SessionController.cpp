@@ -106,7 +106,7 @@ void SessionController::setup(){
     
     
     //  videoplayer.loadStory(story);
-    
+    setState(STARTUP);
     
     
 }

@@ -30,8 +30,29 @@ void Videoplayer::setup(){
 
 void Videoplayer::update(){
     
+
+
+    
+    
+    
+
+    
+    
     
     switch (state) {
+            
+        case IDLE:
+            
+            bool isLoaded=true;
+            for(int i=0;i<videos.size();i++){
+                if(!videos[i]->isLoaded()){
+                    isLoaded=false;
+                }
+            }
+            break;
+            
+            
+            
         case SESSION:
             if(bShowVideo){
                 if(movieclip->isLoaded()){
@@ -60,6 +81,7 @@ void Videoplayer::update(){
             }
             
             break;
+            
         default:
             break;
     }
@@ -94,18 +116,14 @@ void Videoplayer::setVideo(int _id){
     
     videoid=_id;
     setState(SESSION);
-    
     cout<<"State "<<state<<" videoid: "<<videoid<<" videos: "<<videos.size()<<endl;
-    
     movieclip->setPaused(true);
     movieclip=videos[videoid];
     movieclip->setPaused(false);
     
     cout<<"Loopstate "<<movieclip->getLoopstate()<<endl;
     if(movieclip->getLoopstate()=="OF_LOOP_NONE"){
-       // SC->setClipIsDone(false);
     }else{
-       // SC->setClipIsDone(true);
     }
     SC->setClipIsDone(false);
     if(movieclip->getAutoRecording())SC->startRecording();
@@ -202,7 +220,7 @@ void Videoplayer::loadStory(int num){
         }
         storylines.popTag();
         storylines.popTag();
-        bIsVideoLoaded=true;
+      //  bIsVideoLoaded=true;
     }
     else{
         ofLogError("Story file did not load!");
