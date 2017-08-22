@@ -22,17 +22,10 @@ Videorecorder::~Videorecorder(){
 //--------------------------------------------------------------
 
 
-void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
-    
-    XMLclips=_XMLclips;
+void Videorecorder::setup(){
     
     
-    //  XMLclips->addTag("RECORDINGSESSION");
-    // XMLclips->saveFile("clips.xml");
-    
-    recordingSession=XMLclips->getNumTags("RECORDINGSESSION");
-    cout<<" XMLclipsSession: "<<recordingSession<<endl;
-    //  clipNumber=XMLclips->getNumTags("RECORDINGSESSION:CLIP");
+
     
     
     
@@ -50,23 +43,27 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
     // 3a. Optionally add audio to the recording stream.
     // vidRecorder->setAudioDeviceID(2);
      vidRecorder->setUseAudio(true);
-    
+
+
     // 4. Register for events so we'll know when videos finish saving.
     ofAddListener(vidRecorder->videoSavedEvent, this, &Videorecorder::videoSaved);
     
     // 4a.  If you would like to list available video codecs on your system,
     // uncomment the following code.
-    // vector<string> videoCodecs = vidRecorder->listVideoCodecs();
-    // for(size_t i = 0; i < videoCodecs.size(); i++){
-    //     ofLogVerbose("Available Video Codecs") << videoCodecs[i];
-    // }
+     vector<string> videoCodecs = vidRecorder->listVideoCodecs();
+     for(size_t i = 0; i < videoCodecs.size(); i++){
+         ofLogVerbose("Available Video Codecs") << videoCodecs[i];
+     }
     
     // 4b. You can set a custom / non-default codec in the following ways if desired.
-    // vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
-    // vidRecorder->setVideoCodec(videoCodecs[2]);
+    //vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
+    // vidRecorder->setVideoCodec(videoCodecs[0]);
     
     // 5. Initialize the grabber.
-    vidGrabber.setup(1920, 1080);
+//    vidGrabber.setup(1920, 1080);
+    vidGrabber.setup(grabberWidth, grabberHeight);
+    cvGrabber.setup(grabberWidth/3, grabberHeight/3);
+
     
     // If desired, you can disable the preview video.  This can
     // help help speed up recording and remove recording glitches.
@@ -80,9 +77,30 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
     // you can enable it here.
     bLaunchInQuicktime = false;
     
-    videoGrabberRect.set(0,0,vidGrabber.getWidth()/3,vidGrabber.getHeight()/3);
-    previewWindow.set(20, 20, vidGrabber.getWidth()/3,vidGrabber.getHeight()/3);
-    fullwidth.set(0,0,vidGrabber.getWidth(),vidGrabber.getHeight());
+    
+ 
+    
+    videoGrabberRect.set(0,0,grabberWidth/2,grabberHeight/2);
+    previewWindow.set(10,10, grabberWidth/3,grabberHeight/3);
+    bigpreview.set(0,0,grabberWidth/2,grabberHeight/2);
+    fullwidth.set(0,0,grabberWidth,grabberHeight);
+    
+    recordRect.set(5, 5, grabberWidth/3+10,grabberHeight/3+10);
+    
+    colorImg.allocate(grabberWidth,grabberHeight);
+    
+    grayImage.allocate(grabberWidth/3,grabberHeight/3);
+    grayBg.allocate(grabberWidth/3,grabberHeight/3);
+    grayDiff.allocate(grabberWidth/3,grabberHeight/3);
+    
+    bLearnBakground = false;
+    threshold = 80;
+    
+    
+    //load background;
+    ofImage fileImage;
+    fileImage.loadImage("background.jpg");
+    grayBg.setFromPixels(fileImage.getPixels());
     
     
     
@@ -92,11 +110,54 @@ void Videorecorder::setup(ofPtr<ofxXmlSettings> _XMLclips){
 
 void Videorecorder::update(){
     //if(!bIsPaused)vidGrabber.update();
-    vidGrabber.update();
     
-    if(recordedVideoPlayback.isLoaded()){
-        recordedVideoPlayback.update();
+    
+    bool bNewFrame = false;
+
+    
+    vidGrabber.update();
+    cvGrabber.update();
+    bNewFrame = cvGrabber.isFrameNew();
+
+    if (bNewFrame){
+        grayImage.resetROI();
+
+        colorImg.setFromPixels(cvGrabber.getPixels());
+        grayImage = colorImg;
+        
+        int roiY=grabberHeight/3/3*2;
+        int roiX=grabberWidth/3/3*2;
+
+        grayImage.setROI(roiX,0,grabberWidth/3-roiX,grabberHeight/3);
+        grayImage.blur(21);
+        grayImage.threshold(threshold);
+        grayImage.invert();
+        grayImage.dilate();
+        grayImage.erode();
+        
+        if (bLearnBakground == true){
+            grayBg = grayImage;		// the = sign copys the pixels from grayImage into grayBg (operator overloading)
+            bLearnBakground = false;
+        }
+        
+        // take the abs value of the difference between background and incoming and then threshold:
+
+       /* grayDiff.absDiff(grayBg, grayImage);
+        grayDiff.threshold(threshold);
+        grayDiff.dilate();
+        grayDiff.erode();
+        */
+
+        
+        // find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
+        // also, find holes is set to true so we will get interior contours as well....
+       // contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+        
+        contourFinder.findContours(grayImage, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+
+        
     }
+
     
     
 }
@@ -106,13 +167,17 @@ void Videorecorder::draw(){
     
     
     
-    // draw the background boxes
-    /*ofPushStyle();
-    ofSetColor(0);
-    ofFill();
-    ofDrawRectangle(previewWindow);
-    ofPopStyle();
-    */
+    if(vidRecorder->isRecording()){
+        ofPushStyle();
+        //make a nice flashy red record color
+        int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
+        ofSetColor(255, 255-flashRed, 255-flashRed);
+        ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
+        ofDrawRectangle(recordRect);
+        ofPopStyle();
+        
+    }
+
     
     
     // draw the preview if available
@@ -130,88 +195,63 @@ void Videorecorder::draw(){
             vidGrabber.draw(videoGrabberRect);
         }
         
-        
+        if(bHasBigPreview){
+            videoGrabberRect.scaleTo(bigpreview);
+            vidGrabber.draw(videoGrabberRect);
+        }
         ofPopMatrix();
         ofPopStyle();
-        
-        
     }
     
-    if(bHasPreview){
+    
+    if(debug){
+    grayImage.draw(0,0);
     ofPushStyle();
-    ofNoFill();
-    ofSetLineWidth(3);
+    ofFill();
+    ofSetColor(255,100);
+    ofPushMatrix();
+    ofTranslate(grabberWidth/3/3*2,0);
+    ofSetColor(255,0,0);
+       for (int i = 0; i < contourFinder.nBlobs; i++){
+         contourFinder.blobs[i].draw(0,0);
+    }
+    ofPopMatrix();
+    ofPopStyle();
+    }
+    
+    
+    /*
+    ofPushStyle();
+    ofFill();
     if(vidRecorder->isRecording()){
         //make a nice flashy red record color
         int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
         ofSetColor(255, 255-flashRed, 255-flashRed);
-    }
-    else{
-        ofSetColor(255,80);
-    }
-    ofDrawRectangle(previewWindow);
-    ofPopStyle();
-    }
-    
-    //draw instructions
-    ofPushStyle();
-    ofSetColor(255);
-    ofDrawBitmapString("' ' space bar to toggle recording", 680, 540);
-    ofDrawBitmapString("'v' switches video device", 680, 560);
-    ofDrawBitmapString("'a' switches audio device", 680, 580);
-    
-    //draw video device selection
-    ofDrawBitmapString("VIDEO DEVICE", 20, 540);
-    for(int i = 0; i < videoDevices.size(); i++){
-        if(i == vidRecorder->getVideoDeviceID()){
-            ofSetColor(255, 100, 100);
-        }
-        else{
-            ofSetColor(255);
-        }
-        ofDrawBitmapString(videoDevices[i], 20, 560+i*20);
-    }
-    
-    //draw audio device;
-    int startY = 580+20*videoDevices.size();
-    ofDrawBitmapString("AUDIO DEVICE", 20, startY);
-    startY += 20;
-    for(int i = 0; i < audioDevices.size(); i++){
-        if(i == vidRecorder->getAudioDeviceID()){
-            ofSetColor(255, 100, 100);
-        }
-        else{
-            ofSetColor(255);
-        }
-        ofDrawBitmapString(audioDevices[i], 20, startY+i*20);
+        ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
     }
     ofPopStyle();
+ */
     
 }
 
 //--------------------------------------------------------------
 void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
-    // the ofQTKitGrabber sends a message with the file name and any errors when the video is done recording
+    sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+    sessions->loadFile("sessions.xml");
     
-    //  XMLclips.addTag("");
-    
-    
-    // lastSessionNumber	= XMLclips->addTag("SESSION");
-    recordingSession=XMLclips->getNumTags("RECORDINGSESSION")-1;
-    cout<<"--------------recordingSession "<<recordingSession<<endl;
-    if( XMLclips->pushTag("RECORDINGSESSION", recordingSession) ){
-        int tagNum = XMLclips->addTag("CLIP");
-        XMLclips->setValue("CLIP:Number",  tagNum,tagNum);
-        XMLclips->setValue("CLIP:Filename",  myFileName,tagNum);
-        
-        XMLclips->popTag();
-        XMLclips->saveFile("clips.xml");
+    recordingSession=sessions->getNumTags("RECORDINGSESSION");
+    if( sessions->pushTag("RECORDINGSESSION", recordingSession-1) ){
+        int tagNum = sessions->addTag("CLIP");
+        sessions->setValue("CLIP:Number",  tagNum,tagNum);
+        sessions->setValue("CLIP:Filename",  myFileName,tagNum);
+        sessions->popTag();
+        sessions->saveFile("sessions.xml");
         
     }
     
     
     if(e.error.empty()){
-        cout<<"-------------- SAVED ----------------"<<endl;
+        cout<<"-------------- SAVED "<<myFileName<< "----------------"<<endl;
     }
     else {
         ofLogError("videoSavedEvent") << "Video save error: " << e.error;
@@ -221,9 +261,34 @@ void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
 //--------------------------------------------------------------
 
 void Videorecorder::startRecording(){
+    
+    
+    sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+    sessions->loadFile("sessions.xml");
+    recordingSession=sessions->getNumTags("RECORDINGSESSION")-1;
+   // cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
+    
+    
+    sessions->pushTag("RECORDINGSESSION", recordingSession);
+    clipNumber=sessions->getNumTags("CLIP");
+    sessions->popTag();
+    sessions->saveFile("sessions.xml");
+    
+    
+    myFileName="Recodings/"+ofToString(recordingSession)+"/Session_"+ofToString(recordingSession)+"_Clip_"+ofToString(clipNumber)+".mov";
+    cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<" "<<myFileName<<endl;
+
+    vidRecorder->startRecording(myFileName);
+   // bIsPaused=true;
+    
+ 
 }
 //--------------------------------------------------------------
 void Videorecorder::stopRecording(){
+    if(vidRecorder->isRecording()){
+        vidRecorder->stopRecording();
+    }
+
 }
 //--------------------------------------------------------------
 void Videorecorder::toggleRecording(){
@@ -239,14 +304,20 @@ void Videorecorder::toggleRecording(){
         if(recordedVideoPlayback.isLoaded()){
             recordedVideoPlayback.close();
         }
-        recordingSession=XMLclips->getNumTags("RECORDINGSESSION")-1;
-        XMLclips->pushTag("RECORDINGSESSION", recordingSession);
-        clipNumber=XMLclips->getNumTags("CLIP");
-        XMLclips->popTag();
-        XMLclips->saveFile("clips.xml");
+        
+        sessions = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+        sessions->loadFile("sessions.xml");
+        recordingSession=sessions->getNumTags("RECORDINGSESSION")-1;
+        cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
+
+
+        sessions->pushTag("RECORDINGSESSION", recordingSession);
+        clipNumber=sessions->getNumTags("CLIP");
+        sessions->popTag();
+        sessions->saveFile("sessions.xml");
         
         cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<endl;
-        
+      
         myFileName="Recodings/MyMovieFile_"+ofToString(recordingSession)+"_"+ofToString(clipNumber)+".mov";
         vidRecorder->startRecording(myFileName);
         bIsPaused=true;
@@ -257,22 +328,7 @@ void Videorecorder::toggleRecording(){
 //--------------------------------------------------------------
 
 
-void Videorecorder::addRecordingSession(){
-    
-    
-    int session=XMLclips->addTag("RECORDINGSESSION");
-    XMLclips->pushTag("RECORDINGSESSION", session);
-    int tagNum = XMLclips->addTag("SESSIONID");
-    XMLclips->setValue("SESSIONID",  ofGetTimestampString("%Y%m%d%H%M%S%i") ,tagNum);
-    XMLclips->setValue("SESSION_TIME",  ofGetTimestampString() ,tagNum);
-    XMLclips->setValue("SESSION_NUMBER",session,tagNum);
-    
-    
-    XMLclips->popTag();
-    XMLclips->saveFile("clips.xml");
-    
-    
-}
+
 void Videorecorder::pauseRecording(bool p){
     bIsPaused=p;
 }
@@ -286,5 +342,20 @@ void Videorecorder::setPreview(bool _preview){
     bHasPreview=_preview;
 }
 
+void Videorecorder::setBigPreview(bool _bigpreview){
+    cout<<"set big preview "<<_bigpreview<<endl;
+    bHasBigPreview=_bigpreview;
+
+}
+
+void Videorecorder::saveBackground(){
+    colorImg.setFromPixels(vidGrabber.getPixels());
+    colorImg.resize(grabberWidth/3,grabberHeight/3);
+    grayImage = colorImg;
+    grayImage.blur(19);
+    grayBg = grayImage;
+ofSaveImage(grayBg.getPixels(),"background.jpg");
+
+}
 
 

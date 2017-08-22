@@ -8,7 +8,7 @@
         <HASVIDEO>0</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>1</SKIP>
+        <SKIP>1</SIKP>
     </SCREEN>
     
     <SCREEN>
@@ -19,8 +19,8 @@
         <FULLSCREEN>0</FULLSCREEN>
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
-        <RECORD>1</RECORD>
-        <SKIP>1</SKIP>
+        <RECORD>0</RECORD>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -33,7 +33,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>1</SKIP>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -46,7 +46,7 @@
         <HASVIDEO>0</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>1</SKIP>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -59,7 +59,7 @@
         <HASVIDEO>0</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>1</SKIP>
+        <SKIP>1</SIKP>
 
 
     </SCREEN>
@@ -73,7 +73,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>0</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>1</SKIP>
+        <SKIP>1</SIKP>
 
     </SCREEN>
     
@@ -86,7 +86,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>1</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>0</SKIP>
+        <SKIP>0</SIKP>
 
     </SCREEN>
     
@@ -100,7 +100,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>2</VIDEO>
         <RECORD>0</RECORD>
-        <SKIP>0</SKIP>
+        <SKIP>0</SIKP>
 
     </SCREEN>
     
@@ -113,7 +113,7 @@
         <HASVIDEO>1</HASVIDEO>
         <VIDEO>3</VIDEO>
         <RECORD>1</RECORD>
-        <SKIP>1</SKIP>
+        <SKIP>1</SIKP>
 
     </SCREEN>
    

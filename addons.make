@@ -1,2 +1,5 @@
 ofxGui
+ofxOpenCv
+ofxSimpleSerial
+ofxWatchdog
 ofxXmlSettings

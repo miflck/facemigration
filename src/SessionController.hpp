@@ -38,9 +38,12 @@ struct startScreen{
     bool bHasImage;
     string path;
     bool bHasPreviewImage;
+    bool bHasPreview;
     bool bHasFullImage;
     bool bHasVideo;
     int initVideoIndex;
+    bool record;
+    bool skip;
     ofImage img;
 };
 
@@ -63,17 +66,40 @@ public:
     void draw();
     void makeNewSession();
     
-    
+    void clipIsDone();
+    void setClipIsDone(bool _clipIsDone);
+    void handleRecordSession();
     
     Videoplayer videoplayer;
     void setState(int _state);
     
     
     Videorecorder videorecorder;
+    
+    
+    void startRecording();
+    void stopRecording();
+    void toggleRecording();
+    bool getIsRecording();
+    
 
 // STORYHANDLING
     void next();
 
+    void buttonPushed();
+    
+    
+    void saveBackground();
+    
+    void startBlobTimeOut();
+    void blobTimer();
+    int nBlobsThreshold=1;
+    
+    
+    bool debug=true;
+    
+    
+    void reset();
     
     
 private:
@@ -104,6 +130,19 @@ private:
     void resetWelcomeScreen();
     
     void handleInitScreens();
+    void setInitToIdle();
+    
+    bool bIsClipDone=false;
+    
+    bool bIsRecording=false;
+    
+    
+    
+    float startTime; // store when we start time timer
+    float endTime; // when do want to stop the timer
+    
+    bool  bTimerReached; // used as a trigger when we hit the timer
+    
     
 
 };

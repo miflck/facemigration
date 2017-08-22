@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
+#include "ofxOpenCv.h"
 
 
 
@@ -23,13 +24,17 @@ public:
     Videorecorder();
     virtual ~Videorecorder();
     
-    void setup(ofPtr<ofxXmlSettings> XMLclips);
+    void setup();
     void update();
     void draw();
     
     
     
     ofVideoGrabber 			vidGrabber;
+    
+    ofVideoGrabber 			cvGrabber;
+
+    
     ofPtr<ofQTKitGrabber>	vidRecorder;
     
     ofVideoPlayer recordedVideoPlayback;
@@ -45,30 +50,52 @@ public:
     void startRecording();
     void stopRecording();
     void toggleRecording();
-    void addRecordingSession();
     void pauseRecording(bool p);
     
     void setFullscreen(bool _fullscreen);
     void setPreview(bool _preview);
+    void setBigPreview(bool _preview);
+    
+    
+    void saveBackground();
 
 
+    ofxCvColorImage			colorImg;
+    
+    ofxCvGrayscaleImage 	grayImage;
+    ofxCvGrayscaleImage 	grayBg;
+    ofxCvGrayscaleImage 	grayDiff;
+    
+    ofxCvContourFinder 	contourFinder;
+    
+    int 				threshold;
+    bool				bLearnBakground;
+    bool debug=false;
     
 private:
     
-    ofPtr<ofxXmlSettings> XMLclips;
     
+    int grabberWidth=1920;
+    int grabberHeight=1080;
+    
+    ofPtr<ofxXmlSettings>	sessions;
     int recordingSession;
     int clipNumber;
+    
     int lastSessionNumber;
     string myFileName;
     bool bIsPaused;
     
     bool bIsFullscreen=false;
     bool bHasPreview=false;
+    bool bHasBigPreview=false;
 
     ofRectangle videoGrabberRect;
     ofRectangle previewWindow;
     ofRectangle fullwidth;
+    ofRectangle bigpreview;
+    
+    ofRectangle recordRect;
 
 
 

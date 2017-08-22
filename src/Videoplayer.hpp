@@ -12,9 +12,10 @@
 #include <stdio.h>
 #include "ofMain.h"
 #include "ofxXmlSettings.h"
+#include "Video.hpp"
 
 
-#define INIT 100
+#define INIT 000
 #define IDLE 200
 #define SESSION 300
 
@@ -42,18 +43,38 @@ public:
     
     int getNumberOfVideos();
     bool getIsVideoLoaded();
+    int getVideoIndex();
     
     void forward();
-    
+    void stop();
+    void showVideo(bool _showVideo);
+        
 
 private:
-    
+    /*
     ofVideoPlayer *movieclip;
+    
     ofVideoPlayer idle;
     
     vector<ofVideoPlayer> videos;
-    vector<ofVideoPlayer> initVideos;
+    vector<ofVideoPlayer> initVideos;*/
 
+    
+    //Video *movieclip;
+    
+    
+    
+    shared_ptr<Video> movieclip;
+
+    
+    //vector<Video> videos;
+    vector<shared_ptr<Video> > videos;
+
+    
+    //vector<Video> initVideos;
+    vector<shared_ptr<Video> > initVideos;
+
+    
     
     int state;
     int videoid;
@@ -62,6 +83,8 @@ private:
 
     int numberOfVideos;
     bool bIsVideoLoaded;
+    
+    bool bShowVideo=false;
 
     
     

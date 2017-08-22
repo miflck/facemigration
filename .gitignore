@@ -1,8 +1,5 @@
 .DS_Store
 /bin/data/movies
-/bin/data/MyMovieFile_0_19.mov
-/bin/data/MyMovieFile_0_18.mov
-/bin/data/MyMovieFile_0_17.mov
-/bin/data/MyMovieFile_0_16.mov
 /bin/data/Recodings
 /bin/facemigrationDebug.app
+*.xcuserstate

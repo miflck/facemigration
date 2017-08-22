@@ -15,7 +15,7 @@ void ofApp::setup(){
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
     
-    ofSetLogLevel(OF_LOG_VERBOSE);
+  //  ofSetLogLevel(OF_LOG_VERBOSE);
     ofBackground(255);
     
     /*
@@ -48,11 +48,34 @@ void ofApp::setup(){
     SC->setup();
     
     
+    
+    serial.listDevices();
+    vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
+    
+    // this should be set to whatever com port your serial device is connected to.
+    // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
+    // arduino users check in arduino app....
+    int baud = 9600;//115200;
+    serial.setup(0, baud); //open the first device
+    
+   // serial.setup("/dev/tty.usbserial-A70060V8", 9600);
+    serial.startContinuousRead();
+    ofAddListener(serial.NEW_MESSAGE,this,&ofApp::onNewMessage);
+    
+    message = "";
+    
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
- 
+    
+    if(requestRead)
+    {
+        serial.sendRequest();
+        requestRead = false;
+    }
+    
     SC->update();
 
    /* switch (state) {
@@ -118,15 +141,16 @@ void ofApp::keyPressed(int key){
     if(key == ' '){
    SC->videorecorder.toggleRecording();
     }
-    
+
     //no data gets saved unless you hit the s key
     if(key == 's'){
      //   recordedClips->saveFile("clips.xml");
+        SC->saveBackground();
     }
 
     
-    if(key=='S'){
-       // videorecorder.addRecordingSession();
+    if(key=='s'){
+       // SC->makeNewSession();
     }
     
     if(key=='r'){
@@ -139,8 +163,7 @@ void ofApp::keyPressed(int key){
     if(key=='1'){
         //videoplayer.setState(1);
     }
-    
-}
+   }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
@@ -220,7 +243,7 @@ void ofApp::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-  //  cout<<"********** msg ********* "<<msg.message<<endl;
+    cout<<"********** msg ********* "<<msg.message<<endl;
 
 }
 
@@ -228,3 +251,15 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
+
+
+
+void ofApp::onNewMessage(string & message)
+{
+    cout << "onNewMessage, message: " << message << "\n";
+    if(ofToInt(message)==1)SC->buttonPushed();
+    if(ofToInt(message)==-1)SC->buttonPushed();
+
+
+}
+
