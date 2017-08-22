@@ -86,6 +86,16 @@ public:
     void buttonPushed();
     
     
+    void saveBackground();
+    
+    void startBlobTimeOut();
+    void blobTimer();
+    int nBlobsThreshold=1;
+    
+    
+    bool debug=true;
+    
+    
 private:
     SessionController();
     static SessionController* instance;
@@ -120,6 +130,12 @@ private:
     
     bool bIsRecording=false;
     
+    
+    
+    float startTime; // store when we start time timer
+    float endTime; // when do want to stop the timer
+    
+    bool  bTimerReached; // used as a trigger when we hit the timer
     
     
 

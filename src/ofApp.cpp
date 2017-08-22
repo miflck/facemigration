@@ -15,7 +15,7 @@ void ofApp::setup(){
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
     
-    ofSetLogLevel(OF_LOG_VERBOSE);
+  //  ofSetLogLevel(OF_LOG_VERBOSE);
     ofBackground(255);
     
     /*
@@ -145,6 +145,7 @@ void ofApp::keyPressed(int key){
     //no data gets saved unless you hit the s key
     if(key == 's'){
      //   recordedClips->saveFile("clips.xml");
+        SC->saveBackground();
     }
 
     
@@ -242,7 +243,7 @@ void ofApp::windowResized(int w, int h){
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-    cout<<"********** msg ********* "<<&msg<<endl;
+    cout<<"********** msg ********* "<<msg.message<<endl;
 
 }
 
