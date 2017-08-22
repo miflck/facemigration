@@ -59,7 +59,7 @@ public:
     bool isInitialized();
     virtual ~SessionController();
     
-    void gotMessage(ofMessage msg);
+   // void gotMessage(ofMessage msg);
 
 
     void setup();
