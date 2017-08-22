@@ -70,7 +70,7 @@ public:
     
     int 				threshold;
     bool				bLearnBakground;
-    bool debug=true;
+    bool debug=false;
     
 private:
     
@@ -94,6 +94,9 @@ private:
     ofRectangle previewWindow;
     ofRectangle fullwidth;
     ofRectangle bigpreview;
+    
+    ofRectangle recordRect;
+
 
 
 };

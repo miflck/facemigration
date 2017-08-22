@@ -258,6 +258,8 @@ void ofApp::onNewMessage(string & message)
 {
     cout << "onNewMessage, message: " << message << "\n";
     if(ofToInt(message)==1)SC->buttonPushed();
+    if(ofToInt(message)==-1)SC->buttonPushed();
+
 
 }
 

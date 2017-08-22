@@ -81,11 +81,11 @@ void Videorecorder::setup(){
  
     
     videoGrabberRect.set(0,0,grabberWidth/2,grabberHeight/2);
-    previewWindow.set(5, 5, grabberWidth/3,grabberHeight/3);
+    previewWindow.set(10,10, grabberWidth/3,grabberHeight/3);
     bigpreview.set(0,0,grabberWidth/2,grabberHeight/2);
     fullwidth.set(0,0,grabberWidth,grabberHeight);
     
-    
+    recordRect.set(5, 5, grabberWidth/3+10,grabberHeight/3+10);
     
     colorImg.allocate(grabberWidth,grabberHeight);
     
@@ -165,6 +165,21 @@ void Videorecorder::update(){
 
 void Videorecorder::draw(){
     
+    
+    
+    if(vidRecorder->isRecording()){
+        ofPushStyle();
+        //make a nice flashy red record color
+        int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
+        ofSetColor(255, 255-flashRed, 255-flashRed);
+        ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
+        ofDrawRectangle(recordRect);
+        ofPopStyle();
+        
+    }
+
+    
+    
     // draw the preview if available
     if(vidRecorder->hasPreview()){
         ofPushStyle();
@@ -205,19 +220,17 @@ void Videorecorder::draw(){
     }
     
     
+    /*
     ofPushStyle();
     ofFill();
     if(vidRecorder->isRecording()){
-    
         //make a nice flashy red record color
         int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
         ofSetColor(255, 255-flashRed, 255-flashRed);
         ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
-//        ofDrawRectangle(0, 0, previewWindow.getWidth()+5, previewWindow.getHeight()+5);
-
     }
     ofPopStyle();
- 
+ */
     
 }
 

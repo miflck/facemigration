@@ -245,7 +245,7 @@ void SessionController::next(){
             break;
             
         case ACTIVE_SESSION_END:
-            setState(STARTUP);
+              reset();
             break;
             
         default:
@@ -279,7 +279,7 @@ void SessionController::buttonPushed(){
             break;
             
         case ACTIVE_SESSION_END:
-            setState(STARTUP);
+            reset();
             break;
             
         default:
@@ -464,6 +464,13 @@ void SessionController::blobTimer(){
         bTimerReached = true;
         ofMessage msg("Timer Reached");
         ofSendMessage(msg);
-        setState(STARTUP);
+        reset();
     }
+}
+
+
+void SessionController::reset(){
+    cout<<"RESET"<<endl;
+    setState(STARTUP);
+
 }

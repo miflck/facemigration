@@ -96,6 +96,9 @@ public:
     bool debug=true;
     
     
+    void reset();
+    
+    
 private:
     SessionController();
     static SessionController* instance;
