@@ -88,6 +88,7 @@ void Videorecorder::setup(){
     
     
     colorImg.allocate(grabberWidth,grabberHeight);
+    
     grayImage.allocate(grabberWidth/3,grabberHeight/3);
     grayBg.allocate(grabberWidth/3,grabberHeight/3);
     grayDiff.allocate(grabberWidth/3,grabberHeight/3);
@@ -119,10 +120,21 @@ void Videorecorder::update(){
     bNewFrame = cvGrabber.isFrameNew();
 
     if (bNewFrame){
+        grayImage.resetROI();
+
         colorImg.setFromPixels(cvGrabber.getPixels());
         grayImage = colorImg;
-        grayImage.blur(19);
+        
+        int roiY=grabberHeight/3/3*2;
+        int roiX=grabberWidth/3/3*2;
 
+        grayImage.setROI(roiX,0,grabberWidth/3-roiX,grabberHeight/3);
+        grayImage.blur(21);
+        grayImage.threshold(threshold);
+        grayImage.invert();
+        grayImage.dilate();
+        grayImage.erode();
+        
         if (bLearnBakground == true){
             grayBg = grayImage;		// the = sign copys the pixels from grayImage into grayBg (operator overloading)
             bLearnBakground = false;
@@ -130,13 +142,20 @@ void Videorecorder::update(){
         
         // take the abs value of the difference between background and incoming and then threshold:
 
-        grayDiff.absDiff(grayBg, grayImage);
+       /* grayDiff.absDiff(grayBg, grayImage);
         grayDiff.threshold(threshold);
         grayDiff.dilate();
         grayDiff.erode();
+        */
+
+        
         // find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
         // also, find holes is set to true so we will get interior contours as well....
-        contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+       // contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+        
+        contourFinder.findContours(grayImage, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+
+        
     }
 
     
@@ -145,7 +164,6 @@ void Videorecorder::update(){
 //--------------------------------------------------------------
 
 void Videorecorder::draw(){
-    
     
     // draw the preview if available
     if(vidRecorder->hasPreview()){
@@ -170,34 +188,23 @@ void Videorecorder::draw(){
         ofPopStyle();
     }
     
+    
+    if(debug){
+    grayImage.draw(0,0);
     ofPushStyle();
     ofFill();
-    
-    ofSetColor(255,20);
-       grayDiff.draw(videoGrabberRect);
-    
-    
+    ofSetColor(255,100);
+    ofPushMatrix();
+    ofTranslate(grabberWidth/3/3*2,0);
     ofSetColor(255,0,0);
-    // or, instead we can draw each blob individually from the blobs vector,
-    // this is how to get access to them:
-    for (int i = 0; i < contourFinder.nBlobs; i++){
+       for (int i = 0; i < contourFinder.nBlobs; i++){
          contourFinder.blobs[i].draw(0,0);
-        
-        /*
-        ofBeginShape();
-        for (int k = 0; k < contourFinder.blobs[i].nPts; k++){
-            ofVertex(contourFinder.blobs[i].pts[k].x,contourFinder.blobs[i].pts[k].y);
-        }
-        ofEndShape(true);
-        */
     }
+    ofPopMatrix();
     ofPopStyle();
+    }
     
     
- 
-    
-    
-  //  if(bHasPreview){
     ofPushStyle();
     ofFill();
     if(vidRecorder->isRecording()){
@@ -206,7 +213,7 @@ void Videorecorder::draw(){
         int flashRed = powf(1 - (sin(ofGetElapsedTimef()*10)*.5+.5),2)*255;
         ofSetColor(255, 255-flashRed, 255-flashRed);
         ofDrawCircle(previewWindow.getWidth()/2, previewWindow.getHeight()/2, 20);
-//        ofDrawRectangle(0, 0, previewWindow.getWidth(), previewWindow.getHeight());
+//        ofDrawRectangle(0, 0, previewWindow.getWidth()+5, previewWindow.getHeight()+5);
 
     }
     ofPopStyle();

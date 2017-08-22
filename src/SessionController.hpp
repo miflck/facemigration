@@ -90,6 +90,10 @@ public:
     
     void startBlobTimeOut();
     void blobTimer();
+    int nBlobsThreshold=1;
+    
+    
+    bool debug=true;
     
     
 private:

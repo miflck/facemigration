@@ -70,7 +70,7 @@ public:
     
     int 				threshold;
     bool				bLearnBakground;
-
+    bool debug=true;
     
 private:
     

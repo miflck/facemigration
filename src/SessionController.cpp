@@ -120,12 +120,13 @@ void SessionController::update(){
             makeNewSession();
             videoplayer.loadStory(story);
             setState(IDLE);
+            resetWelcomeScreen();
+            setInitToIdle();
             break;
             
         case IDLE:
-            setState(ACTIVE_SESSION_START);
-            resetWelcomeScreen();
-            setInitToIdle();
+            //setState(ACTIVE_SESSION_START);
+        
             
             
             videoplayer.update();
@@ -134,7 +135,7 @@ void SessionController::update(){
         case ACTIVE_SESSION_START:
             videoplayer.update();
             videorecorder.update();
-            if(videorecorder.contourFinder.nBlobs < 3)startBlobTimeOut();
+            //if(videorecorder.contourFinder.nBlobs < nBlobsThreshold)startBlobTimeOut();
             blobTimer();
             break;
             
@@ -142,7 +143,7 @@ void SessionController::update(){
             videorecorder.update();
             videoplayer.update();
             blobTimer();
-            if(videorecorder.contourFinder.nBlobs < 3)startBlobTimeOut();
+          //  if(videorecorder.contourFinder.nBlobs < nBlobsThreshold)startBlobTimeOut();
             break;
             
         case ACTIVE_SESSION_END:
@@ -168,7 +169,7 @@ void SessionController::draw(){
             
         case IDLE:
             videoplayer.draw();
-            
+             drawInit();
             break;
             
         case ACTIVE_SESSION_START:
@@ -188,6 +189,20 @@ void SessionController::draw(){
             
         default:
             break;
+    }
+    
+    
+    if(debug){
+        ofPushStyle();
+        // finally, a report:
+        ofSetColor(255,0,0);
+        stringstream reportStr;
+        reportStr
+        << "num blobs found " << videorecorder.contourFinder.nBlobs<< ", fps: " << ofGetFrameRate();
+        ofDrawBitmapString(reportStr.str(), 20, 600);
+        ofPopStyle();
+    
+    
     }
     
     
@@ -215,8 +230,10 @@ void SessionController::next(){
             
         case IDLE:
             setState(ACTIVE_SESSION_START);
-            resetWelcomeScreen();
-            setInitToIdle();
+            //resetWelcomeScreen();
+            //setInitToIdle();
+            handleInitScreens();
+
             break;
             
         case ACTIVE_SESSION_START:
@@ -249,8 +266,7 @@ void SessionController::buttonPushed(){
             
         case IDLE:
             setState(ACTIVE_SESSION_START);
-            resetWelcomeScreen();
-            setInitToIdle();
+            handleInitScreens();
             break;
             
         case ACTIVE_SESSION_START:
@@ -428,22 +444,26 @@ void SessionController::saveBackground(){
 }
 
 void SessionController::startBlobTimeOut(){
-    if(bTimerReached){
+  /*  if(bTimerReached){
     bTimerReached = false;                     // reset the timer
     startTime = ofGetElapsedTimeMillis();  // get the start time
     endTime = 5000; // in milliseconds
-    }
-
+    }*/
 }
 void SessionController::blobTimer(){
-    
     // update the timer this frame
-    float timer = ofGetElapsedTimeMillis() - startTime;
     
-    if(timer >= endTime && !bTimerReached) {
+    
+    if(videorecorder.contourFinder.nBlobs > nBlobsThreshold){
+    startTime = ofGetElapsedTimeMillis();
+        bTimerReached=false;
+    }
+    
+    float timer = ofGetElapsedTimeMillis() - startTime;
+    if(timer >= endTime && !bTimerReached ) {
         bTimerReached = true;
         ofMessage msg("Timer Reached");
         ofSendMessage(msg);
+        setState(STARTUP);
     }
-
 }
