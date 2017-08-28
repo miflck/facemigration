@@ -57,12 +57,12 @@ void Videorecorder::setup(){
     
     // 4b. You can set a custom / non-default codec in the following ways if desired.
     //vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
-    // vidRecorder->setVideoCodec(videoCodecs[0]);
+   //  vidRecorder->setVideoCodec(videoCodecs[0]);
     
     // 5. Initialize the grabber.
 //    vidGrabber.setup(1920, 1080);
     vidGrabber.setup(grabberWidth, grabberHeight);
-    cvGrabber.setup(grabberWidth/3, grabberHeight/3);
+ //   cvGrabber.setup(grabberWidth/3, grabberHeight/3);
 
     
     // If desired, you can disable the preview video.  This can
@@ -116,7 +116,7 @@ void Videorecorder::update(){
 
     
     vidGrabber.update();
-    cvGrabber.update();
+   /* cvGrabber.update();
     bNewFrame = cvGrabber.isFrameNew();
 
     if (bNewFrame){
@@ -153,10 +153,10 @@ void Videorecorder::update(){
         // also, find holes is set to true so we will get interior contours as well....
        // contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
         
-        contourFinder.findContours(grayImage, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+     //   contourFinder.findContours(grayImage, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
 
         
-    }
+    //}
 
     
     

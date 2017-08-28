@@ -32,7 +32,7 @@ public:
     
     ofVideoGrabber 			vidGrabber;
     
-    ofVideoGrabber 			cvGrabber;
+   // ofVideoGrabber 			cvGrabber;
 
     
     ofPtr<ofQTKitGrabber>	vidRecorder;
@@ -77,6 +77,9 @@ private:
     
     int grabberWidth=1920;
     int grabberHeight=1080;
+    
+  //   int grabberWidth=1280;
+  //   int grabberHeight=720;
     
     ofPtr<ofxXmlSettings>	sessions;
     int recordingSession;
