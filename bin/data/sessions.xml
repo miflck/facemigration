@@ -2124,3 +2124,20 @@
     <SESSION_TIME>2017-08-22-14-56-54-062</SESSION_TIME>
     <SESSION_NUMBER>137</SESSION_NUMBER>
 </RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170822163834607</SESSIONID>
+    <SESSION_TIME>2017-08-22-16-38-34-607</SESSION_TIME>
+    <SESSION_NUMBER>138</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/138/Session_138_Clip_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/138/Session_138_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/138/Session_138_Clip_2.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
