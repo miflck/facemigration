@@ -83,6 +83,7 @@ private:
     
     ofPtr<ofxXmlSettings>	sessions;
     int recordingSession;
+    
     int clipNumber;
     
     int lastSessionNumber;

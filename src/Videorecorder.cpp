@@ -24,6 +24,8 @@ Videorecorder::~Videorecorder(){
 
 void Videorecorder::setup(){
     
+     grabberWidth=1920;
+     grabberHeight=1080;
     
 
     
@@ -32,7 +34,8 @@ void Videorecorder::setup(){
     // 1. Create a new recorder object.  ofPtr will manage this
     // pointer for us, so no need to delete later.
     vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
-    
+    vidRecorder->setup(1920, 1080);
+
     // 2. Set our video grabber to use this source.
     vidGrabber.setGrabber(vidRecorder);
     
@@ -40,8 +43,12 @@ void Videorecorder::setup(){
     videoDevices = vidRecorder->listVideoDevices();
     audioDevices = vidRecorder->listAudioDevices();
     
+    for(size_t i = 0; i < audioDevices.size(); i++){
+   //     ofLogVerbose("Available Audio Devices") << audioDevices[i];
+    }
+    
     // 3a. Optionally add audio to the recording stream.
-    // vidRecorder->setAudioDeviceID(2);
+     vidRecorder->setAudioDeviceID(1);
      vidRecorder->setUseAudio(true);
 
 
@@ -57,17 +64,18 @@ void Videorecorder::setup(){
     
     // 4b. You can set a custom / non-default codec in the following ways if desired.
     //vidRecorder->setVideoCodec("QTCompressionOptionsJPEGVideo");
-   //  vidRecorder->setVideoCodec(videoCodecs[0]);
+    // vidRecorder->setVideoCodec(videoCodecs[0]);
     
     // 5. Initialize the grabber.
-//    vidGrabber.setup(1920, 1080);
+    
     vidGrabber.setup(grabberWidth, grabberHeight);
+   // vidGrabber.setup(grabberWidth, grabberHeight);
  //   cvGrabber.setup(grabberWidth/3, grabberHeight/3);
 
     
     // If desired, you can disable the preview video.  This can
     // help help speed up recording and remove recording glitches.
-    // vidRecorder->setupWithoutPreview();
+     //vidRecorder->setupWithoutPreview();
     
     // 6. Initialize recording on the grabber.  Call initRecording()
     // once after you've initialized the grabber.

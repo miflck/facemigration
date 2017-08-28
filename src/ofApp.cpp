@@ -15,8 +15,9 @@ void ofApp::setup(){
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
     
-   ofSetLogLevel(OF_LOG_VERBOSE);
+   // ofSetLogLevel(OF_LOG_VERBOSE);
     ofBackground(255);
+    ofSetVerticalSync(true);
     
     /*
     recordedClips = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
