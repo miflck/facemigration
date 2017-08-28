@@ -18,6 +18,8 @@ Videorecorder::Videorecorder(){
 //--------------------------------------------------------------
 
 Videorecorder::~Videorecorder(){
+       vidRecorder->close();
+    cout<<"CLOSE"<<endl;
 }
 //--------------------------------------------------------------
 
@@ -30,27 +32,34 @@ void Videorecorder::setup(){
 
     
     
-    
     // 1. Create a new recorder object.  ofPtr will manage this
     // pointer for us, so no need to delete later.
-    vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
-    vidRecorder->setup(1920, 1080);
+    
 
-    // 2. Set our video grabber to use this source.
-    vidGrabber.setGrabber(vidRecorder);
+    vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
     
     // 3. Make lists of our audio and video devices.
     videoDevices = vidRecorder->listVideoDevices();
     audioDevices = vidRecorder->listAudioDevices();
+    vidRecorder->setVideoDeviceID(0);
+ 
+
     
     for(size_t i = 0; i < audioDevices.size(); i++){
    //     ofLogVerbose("Available Audio Devices") << audioDevices[i];
     }
     
     // 3a. Optionally add audio to the recording stream.
-     vidRecorder->setAudioDeviceID(1);
-     vidRecorder->setUseAudio(true);
+    vidRecorder->setUseAudio(true);
+    vidRecorder->setAudioDeviceID(1);
+    
 
+    
+    
+    // 2. Set our video grabber to use this source.
+    vidGrabber.setGrabber(vidRecorder);
+
+    
 
     // 4. Register for events so we'll know when videos finish saving.
     ofAddListener(vidRecorder->videoSavedEvent, this, &Videorecorder::videoSaved);
@@ -68,7 +77,11 @@ void Videorecorder::setup(){
     
     // 5. Initialize the grabber.
     
-    vidGrabber.setup(grabberWidth, grabberHeight);
+    vidGrabber.setup(1920, 1080);
+    vidRecorder->setup(1920,1080);
+
+    cout<<"video width"<<vidRecorder->getWidth()<<endl;
+
    // vidGrabber.setup(grabberWidth, grabberHeight);
  //   cvGrabber.setup(grabberWidth/3, grabberHeight/3);
 

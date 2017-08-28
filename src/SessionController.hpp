@@ -94,7 +94,7 @@ public:
     int nBlobsThreshold=1;
     
     
-    bool debug=true;
+    bool debug=false;
     
     
     void reset();
