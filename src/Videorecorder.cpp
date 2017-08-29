@@ -110,9 +110,9 @@ void Videorecorder::setup(){
     
     colorImg.allocate(grabberWidth,grabberHeight);
     
-    grayImage.allocate(grabberWidth/3,grabberHeight/3);
-    grayBg.allocate(grabberWidth/3,grabberHeight/3);
-    grayDiff.allocate(grabberWidth/3,grabberHeight/3);
+    grayImage.allocate(grabberWidth,grabberHeight);
+    grayBg.allocate(grabberWidth,grabberHeight);
+    grayDiff.allocate(grabberWidth,grabberHeight);
     
     bLearnBakground = false;
     threshold = 80;
@@ -137,19 +137,19 @@ void Videorecorder::update(){
 
     
     vidGrabber.update();
-   /* cvGrabber.update();
-    bNewFrame = cvGrabber.isFrameNew();
+    //cvGrabber.update();
+    
+    bNewFrame = vidGrabber.isFrameNew();
 
     if (bNewFrame){
         grayImage.resetROI();
 
-        colorImg.setFromPixels(cvGrabber.getPixels());
+        colorImg.setFromPixels(vidGrabber.getPixels());
         grayImage = colorImg;
         
-        int roiY=grabberHeight/3/3*2;
-        int roiX=grabberWidth/3/3*2;
+        int roiX=grabberWidth/3;
 
-        grayImage.setROI(roiX,0,grabberWidth/3-roiX,grabberHeight/3);
+        grayImage.setROI(grabberWidth-roiX,0,roiX,grabberHeight);
         grayImage.blur(21);
         grayImage.threshold(threshold);
         grayImage.invert();
@@ -174,10 +174,10 @@ void Videorecorder::update(){
         // also, find holes is set to true so we will get interior contours as well....
        // contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
         
-     //   contourFinder.findContours(grayImage, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
+       contourFinder.findContours(grayImage, 20, (grabberWidth*grabberHeight)/3, 10, true);	// find holes
 
         
-    //}
+    }
 
     
     
@@ -226,12 +226,14 @@ void Videorecorder::draw(){
     
     
     if(debug){
-    grayImage.draw(0,0);
+    grayImage.draw(previewWindow.x,previewWindow.y,previewWindow.width,previewWindow.height);
     ofPushStyle();
     ofFill();
     ofSetColor(255,100);
     ofPushMatrix();
-    ofTranslate(grabberWidth/3/3*2,0);
+    ofScale(0.333,0.333);
+
+    ofTranslate(previewWindow.width*2,0);
     ofSetColor(255,0,0);
        for (int i = 0; i < contourFinder.nBlobs; i++){
          contourFinder.blobs[i].draw(0,0);

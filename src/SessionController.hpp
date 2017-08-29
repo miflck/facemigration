@@ -91,7 +91,7 @@ public:
     
     void startBlobTimeOut();
     void blobTimer();
-    int nBlobsThreshold=1;
+    int nBlobsThreshold=0;
     
     
     bool debug=false;
