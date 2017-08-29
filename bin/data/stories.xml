@@ -203,19 +203,31 @@
             <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
             <RECORD>0</RECORD>
         </VIDEO>
-        <VIDEO>
+       
+       <VIDEO>
             <PATH>STORY1/17_2.mov</PATH>
             <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
             <RECORD>1</RECORD>
         </VIDEO>
-        
    
-       
-        
-        
-        
-        
-        
+   <VIDEO>
+       <PATH>STORY1/18_1.mov</PATH>
+       <LOOPSTATE>OF_LOOP_NONE</LOOPSTATE>
+       <RECORD>0</RECORD>
+   </VIDEO>
+   
+   <VIDEO>
+       <PATH>STORY1/18_2.mov</PATH>
+       <LOOPSTATE>OF_LOOP_NORMAL</LOOPSTATE>
+       <RECORD>1</RECORD>
+   </VIDEO>
+   
+   
+   
+   
+   
+   
+   
     </STORY>
     
     
