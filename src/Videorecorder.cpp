@@ -78,7 +78,7 @@ void Videorecorder::setup(){
     // 5. Initialize the grabber.
     
     vidGrabber.setup(1920, 1080);
-    vidRecorder->setup(1920,1080);
+   // vidRecorder->setup(1920,1080);
 
     cout<<"video width"<<vidRecorder->getWidth()<<endl;
 

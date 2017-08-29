@@ -471,6 +471,7 @@ void SessionController::blobTimer(){
 
 void SessionController::reset(){
     cout<<"RESET"<<endl;
+    videorecorder.setup();
     setState(STARTUP);
 
 }

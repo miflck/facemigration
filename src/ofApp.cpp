@@ -19,6 +19,8 @@ void ofApp::setup(){
     ofBackground(255);
     ofSetVerticalSync(true);
     
+    CGDisplayHideCursor(NULL);
+    
     /*
     recordedClips = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
 
