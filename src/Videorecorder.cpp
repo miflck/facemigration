@@ -145,7 +145,7 @@ void Videorecorder::update(){
         colorImg.setFromPixels(vidGrabber.getPixels());
         grayImage = colorImg;
         
-        int roiX=grabberWidth/3;
+        int roiX=grabberWidth/4;
 
         grayImage.setROI(grabberWidth-roiX,0,roiX,grabberHeight);
         grayImage.blur(21);
@@ -172,7 +172,7 @@ void Videorecorder::update(){
         // also, find holes is set to true so we will get interior contours as well....
        // contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
         
-       contourFinder.findContours(grayImage, 20, (grabberWidth*grabberHeight)/3, 10, true);	// find holes
+       contourFinder.findContours(grayImage, 20, (grabberWidth*grabberHeight)/4, 10, true);	// find holes
 
         
     }
