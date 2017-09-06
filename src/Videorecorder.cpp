@@ -104,7 +104,7 @@ void Videorecorder::setup(){
     bigpreview.set(0,0,grabberWidth/2,grabberHeight/2);
     fullwidth.set(0,0,grabberWidth,grabberHeight);
     
-    recordRect.set(5, 5, grabberWidth/3+10,grabberHeight/3+10);
+    recordRect.set(5, 5, grabberWidth/4+10,grabberHeight/4+10);
     
     colorImg.allocate(grabberWidth,grabberHeight);
     
