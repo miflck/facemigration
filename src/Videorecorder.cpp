@@ -100,7 +100,7 @@ void Videorecorder::setup(){
  
     
     videoGrabberRect.set(0,0,grabberWidth/2,grabberHeight/2);
-    previewWindow.set(10,10, grabberWidth/3,grabberHeight/3);
+    previewWindow.set(10,10, grabberWidth/4,grabberHeight/4);
     bigpreview.set(0,0,grabberWidth/2,grabberHeight/2);
     fullwidth.set(0,0,grabberWidth,grabberHeight);
     
