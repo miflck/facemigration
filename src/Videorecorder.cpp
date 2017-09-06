@@ -41,17 +41,15 @@ void Videorecorder::setup(){
     // 3. Make lists of our audio and video devices.
     videoDevices = vidRecorder->listVideoDevices();
     audioDevices = vidRecorder->listAudioDevices();
+
     vidRecorder->setVideoDeviceID(0);
- 
 
     
-    for(size_t i = 0; i < audioDevices.size(); i++){
-   //     ofLogVerbose("Available Audio Devices") << audioDevices[i];
-    }
-    
+   
+
     // 3a. Optionally add audio to the recording stream.
     vidRecorder->setUseAudio(true);
-    vidRecorder->setAudioDeviceID(1);
+   vidRecorder->setAudioDeviceID(1);
     
 
     
@@ -122,7 +120,7 @@ void Videorecorder::setup(){
     ofImage fileImage;
     fileImage.loadImage("background.jpg");
     grayBg.setFromPixels(fileImage.getPixels());
-    
+    //ofSleepMillis(1000);
     
     
 }
