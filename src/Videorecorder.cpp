@@ -147,7 +147,7 @@ void Videorecorder::update(){
         
         int roiX=grabberWidth/4;
 
-        grayImage.setROI(grabberWidth-roiX,0,roiX,grabberHeight);
+        grayImage.setROI(grabberWidth-200-roiX,0,roiX,grabberHeight-400);
         grayImage.blur(21);
         grayImage.threshold(threshold);
         grayImage.invert();

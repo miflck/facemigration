@@ -380,14 +380,16 @@ void SessionController::setClipIsDone(bool _clipIsDone){
 
 
 void SessionController::handleRecordSession(){
+    if(bIsClipDone){
+
     stopRecording();
-   // if(bIsClipDone)videoplayer.forward();
     if(videoplayer.getVideoIndex()>videoplayer.getNumberOfVideos()-6){
       videorecorder.setBigPreview(true);
         cout<<"set Big Preview"<<endl;
     }
 
-    videoplayer.forward();
+        videoplayer.forward();
+    }
 
     
 }
