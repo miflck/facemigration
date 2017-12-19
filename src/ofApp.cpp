@@ -49,7 +49,8 @@ void ofApp::setup(){
     
     SC->initialize();
     SC->setup();
-    
+    ofSleepMillis(1000);
+    cout<<"sleep"<<endl;
     
     
     serial.listDevices();

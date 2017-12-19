@@ -41,21 +41,15 @@ void Videorecorder::setup(){
     // 3. Make lists of our audio and video devices.
     videoDevices = vidRecorder->listVideoDevices();
     audioDevices = vidRecorder->listAudioDevices();
+
     vidRecorder->setVideoDeviceID(0);
- 
-    
-    for(size_t i = 0; i < videoDevices.size(); i++){
-            ofLogVerbose("Available Video Devices") << videoDevices[i];
-    }
 
     
-    for(size_t i = 0; i < audioDevices.size(); i++){
-   //     ofLogVerbose("Available Audio Devices") << audioDevices[i];
-    }
-    
+   
+
     // 3a. Optionally add audio to the recording stream.
     vidRecorder->setUseAudio(true);
-    vidRecorder->setAudioDeviceID(1);
+   vidRecorder->setAudioDeviceID(1);
     
 
     
@@ -106,11 +100,11 @@ void Videorecorder::setup(){
  
     
     videoGrabberRect.set(0,0,grabberWidth/2,grabberHeight/2);
-    previewWindow.set(10,10, grabberWidth/3,grabberHeight/3);
+    previewWindow.set(10,10, grabberWidth/4,grabberHeight/4);
     bigpreview.set(0,0,grabberWidth/2,grabberHeight/2);
     fullwidth.set(0,0,grabberWidth,grabberHeight);
     
-    recordRect.set(5, 5, grabberWidth/3+10,grabberHeight/3+10);
+    recordRect.set(5, 5, grabberWidth/4+10,grabberHeight/4+10);
     
     colorImg.allocate(grabberWidth,grabberHeight);
     
@@ -126,7 +120,7 @@ void Videorecorder::setup(){
     ofImage fileImage;
     fileImage.loadImage("background.jpg");
     grayBg.setFromPixels(fileImage.getPixels());
-    
+    //ofSleepMillis(1000);
     
     
 }
@@ -151,9 +145,9 @@ void Videorecorder::update(){
         colorImg.setFromPixels(vidGrabber.getPixels());
         grayImage = colorImg;
         
-        int roiX=grabberWidth/3;
+        int roiX=grabberWidth/4;
 
-        grayImage.setROI(grabberWidth-roiX,0,roiX,grabberHeight);
+        grayImage.setROI(grabberWidth-200-roiX,0,roiX,grabberHeight-400);
         grayImage.blur(21);
         grayImage.threshold(threshold);
         grayImage.invert();
@@ -178,7 +172,7 @@ void Videorecorder::update(){
         // also, find holes is set to true so we will get interior contours as well....
        // contourFinder.findContours(grayDiff, 20, (grabberWidth/2*grabberHeight/2)/3, 10, true);	// find holes
         
-       contourFinder.findContours(grayImage, 20, (grabberWidth*grabberHeight)/3, 10, true);	// find holes
+       contourFinder.findContours(grayImage, 20, (grabberWidth*grabberHeight)/4, 10, true);	// find holes
 
         
     }
