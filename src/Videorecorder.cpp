@@ -43,6 +43,10 @@ void Videorecorder::setup(){
     audioDevices = vidRecorder->listAudioDevices();
     vidRecorder->setVideoDeviceID(0);
  
+    
+    for(size_t i = 0; i < videoDevices.size(); i++){
+            ofLogVerbose("Available Video Devices") << videoDevices[i];
+    }
 
     
     for(size_t i = 0; i < audioDevices.size(); i++){

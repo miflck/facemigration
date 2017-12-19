@@ -1,3 +1,5 @@
+int incomingByte = 0;   // for incoming serial data
+
 
 // constants won't change. They're used here to set pin numbers:
 const int buttonPin = 2;     // the number of the pushbutton pin
@@ -15,6 +17,10 @@ long millis_held;    // How long the button was held (milliseconds)
 const int outpin = 4;     // the number of the pushbutton pin
 
 
+
+int inval = 0;
+
+
 void setup() {
   Serial.begin(9600);
   // initialize the LED pin as an output:
@@ -24,18 +30,40 @@ void setup() {
 
   pinMode(outpin, OUTPUT);
   digitalWrite(outpin, LOW);
-//  delay(1000);
+  //  delay(1000);
   digitalWrite(outpin, HIGH);
   //delay(5000);
   //Serial.println("-1");
-  
-  
-    Serial.println(F("----------SETUP----------"));
 
-  
+
+  Serial.println(F("----------SETUP----------"));
+
+
 }
 
 void loop() {
+
+
+  // Listen for Input
+  while ( (Serial.available() > 0) )
+  {
+    inval = Serial.parseInt();
+    if (Serial.read() == '\n') {
+      Serial.println("");
+      Serial.print(inval);
+      if (inval == 1) {
+        Serial.print("on");
+          digitalWrite(outpin, HIGH);
+
+      } else {
+        Serial.print("off");
+          digitalWrite(outpin, LOW);
+
+      }
+    }
+  }
+
+
   // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
   if (buttonState != lastButtonState) {
@@ -56,7 +84,7 @@ void loop() {
   if (buttonState == HIGH) {
     millis_held = (millis() - firstTime);
     if (millis_held > 5000) {
-     Serial.println("-1");
+      Serial.println("-1");
       firstTime = millis();
     }
   }
