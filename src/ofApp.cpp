@@ -67,6 +67,7 @@ void ofApp::setup(){
     ofAddListener(serial.NEW_MESSAGE,this,&ofApp::onNewMessage);
     
     message = "";
+    system("osascript -e 'set Volume 10'");
     
     
 }
@@ -143,7 +144,7 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == ' '){
-   SC->videorecorder.toggleRecording();
+  // SC->videorecorder.toggleRecording();
     }
 
     //no data gets saved unless you hit the s key
