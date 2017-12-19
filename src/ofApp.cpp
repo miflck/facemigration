@@ -1,7 +1,12 @@
 #include "ofApp.h"
 #include "SessionController.hpp"
 
-
+#include <stdio.h>
+#include <CoreFoundation/CoreFoundation.h>
+#include <IOKit/IOKitLib.h>
+#include <IOKit/IOCFPlugIn.h>
+#include <IOKit/usb/IOUSBLib.h>
+#include <IOKit/usb/USBSpec.h>
 
 
 
@@ -11,47 +16,21 @@ void ofApp::setup(){
     
     ofEnableAlphaBlending();
     ofEnableSmoothing();
-    
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
-    
-    ofSetLogLevel(OF_LOG_VERBOSE);
+    //ofSetLogLevel(OF_LOG_VERBOSE);
     ofBackground(255);
     ofSetVerticalSync(true);
+    CGDisplayHideCursor(NULL);
     
-  //  CGDisplayHideCursor(NULL);
+    reenumerateWebcam();
     
-    /*
-    recordedClips = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
+    ofSleepMillis(1000);
 
-    recordedClips->loadFile("clips.xml");
-    recordingSession=recordedClips->getNumTags("RECORDINGSESSION");
-    cout<<"Session: "<<recordingSession<<endl;
-    
-    
-    videorecorder.setup(recordedClips);
-    videoplayer.setup();
-
-    story=0;
-    
-    ofImage img;
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen.jpg");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen2.png");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen3.jpg");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen4.jpg");
-    startScreens.push_back(ofImage(img));
-    startScreens.back().load("startscreens/startscreen5.jpg");
-    */
-    
     SC->initialize();
     SC->setup();
     ofSleepMillis(1000);
     cout<<"sleep"<<endl;
-    
     
     serial.listDevices();
     vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
@@ -67,8 +46,9 @@ void ofApp::setup(){
     ofAddListener(serial.NEW_MESSAGE,this,&ofApp::onNewMessage);
     
     message = "";
+    system("osascript -e 'set Volume 10'");
     
-    
+ 
 }
 
 //--------------------------------------------------------------
@@ -81,71 +61,108 @@ void ofApp::update(){
     }
     
     SC->update();
-
-   /* switch (state) {
-        case IDLE:
-            
-            break;
-        
-        case ACTIVE_SESSION_START:
-            videorecorder.update();
-
-            break;
-            
-        case ACTIVE_SESSION_RECORD:
-            videorecorder.update();
-            videoplayer.update();
-            break;
-            
-        case ACTIVE_SESSION_END:
-            break;
-            
-        default:
-            break;
-    }*/
-    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    
     SC->draw();
-
-  /*  switch (state) {
-        case IDLE:
-            
-            break;
-            
-        case ACTIVE_SESSION_START:
-            videorecorder.draw();
-
-            drawInit();
-
-            break;
-            
-        case ACTIVE_SESSION_RECORD:
-            videoplayer.draw();
-            videorecorder.draw();
-
-            break;
-            
-        case ACTIVE_SESSION_END:
-            break;
-            
-        default:
-            break;
-    }*/
-
 }
 
+//--------------------------------------------------------------
+
+
+void ofApp::reenumerateWebcam(){
+    
+    cout<<"REENUMERATE! "<<endl;
+    mach_port_t             masterPort;
+    CFMutableDictionaryRef  matchingDict;
+    kern_return_t           kr;
+    SInt32                  usbVendor =0x046d;
+    SInt32                  usbProduct = 0x0825;
+    
+    io_service_t                usbDevice;
+    IOCFPlugInInterface         **plugInInterface = NULL;
+    IOUSBDeviceInterface187     **deviceInterface;
+    HRESULT                     result;
+    SInt32                      score;
+    
+    // to get vendorid and productid in termina: system_profiler SPUSBDataType
+    
+    //Create a master port for communication with the I/O Kit
+    kr = IOMasterPort(MACH_PORT_NULL, &masterPort);
+    if (kr || !masterPort)
+    {
+        return -1;
+    }
+    //Set up matching dictionary for class IOUSBDevice and its subclasses
+    matchingDict = IOServiceMatching(kIOUSBDeviceClassName);
+    if (!matchingDict)
+    {
+        mach_port_deallocate(mach_task_self(), masterPort);
+        return -1;
+    }
+    // Only get the Device you are looking for:
+    //Add the vendor and product IDs to the matching dictionary.
+    CFDictionarySetValue(matchingDict, CFSTR(kUSBVendorName),
+                         CFNumberCreate(kCFAllocatorDefault,
+                                        kCFNumberSInt32Type, &usbVendor));
+    CFDictionarySetValue(matchingDict, CFSTR(kUSBProductName),
+                         CFNumberCreate(kCFAllocatorDefault,
+                                        kCFNumberSInt32Type, &usbProduct));
+    
+    io_iterator_t iterator;
+    /*Get an iterator.*/
+    kr = IOServiceGetMatchingServices(kIOMasterPortDefault, matchingDict, &iterator);
+    if (kr != KERN_SUCCESS)
+    {
+        return -1;// fail
+    }
+    
+    
+    while (usbDevice = IOIteratorNext(iterator))
+    {
+        io_name_t deviceName;
+        IORegistryEntryGetName( usbDevice, deviceName );
+        printf("\ndeviceName:%s",deviceName);
+        
+        //Create an intermediate plug-in
+        kr = IOCreatePlugInInterfaceForService(usbDevice,
+                                               kIOUSBDeviceUserClientTypeID, kIOCFPlugInInterfaceID,
+                                               &plugInInterface, &score);
+        //DonÕt need the device object after intermediate plug-in is created
+        kr = IOObjectRelease(usbDevice);
+        
+        if ((kIOReturnSuccess != kr) || !plugInInterface)
+        {
+            printf("Unable to create a plug-in (%08x)\n", kr);
+            continue;
+        }
+        //Now create the device interface
+        result = (*plugInInterface)->QueryInterface(plugInInterface, CFUUIDGetUUIDBytes(kIOUSBDeviceInterfaceID187), (LPVOID *)&deviceInterface);
+        // Now done with the plugin interface.
+        (*plugInInterface)->Release(plugInInterface);
+        
+        
+        kr = (*deviceInterface)->USBDeviceOpen(deviceInterface);
+        if(kr == kIOReturnSuccess)
+        {
+            kr = (*deviceInterface)->USBDeviceReEnumerate(deviceInterface, 0);
+        }
+        
+        (*deviceInterface)->USBDeviceClose(deviceInterface);
+        (*deviceInterface)->Release(deviceInterface);
+    }
+    IOObjectRelease(iterator);
+
+
+
+}
 
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == ' '){
- //  SC->videorecorder.toggleRecording();
-        SC->buttonPushed();
-
+  // SC->videorecorder.toggleRecording();
     }
 
     //no data gets saved unless you hit the s key
@@ -168,10 +185,6 @@ void ofApp::keyPressed(int key){
     }
     if(key=='1'){
         //videoplayer.setState(1);
-      // IOUSBDevice::ReEnumerateDevice();
-       // IOReturn (*USBDeviceReEnumerate)(void *self, UInt32 options);
-        SC->reset();
-
     }
    }
 

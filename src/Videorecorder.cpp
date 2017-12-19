@@ -42,7 +42,14 @@ void Videorecorder::setup(){
     videoDevices = vidRecorder->listVideoDevices();
     audioDevices = vidRecorder->listAudioDevices();
 
+    
+    for(size_t i = 0; i < videoDevices.size(); i++){
+        ofLogVerbose("Available Video Codecs") << videoDevices[i];
+    }
+    
     vidRecorder->setVideoDeviceID(0);
+    //vidRecorder->setVideoDeviceID(1);
+
 
     
    

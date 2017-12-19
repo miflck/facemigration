@@ -62,7 +62,7 @@ void SessionController::setup(){
         bool skip=XMLStartScreens->getValue("SKIP", 1);
         
         
-        cout<<"PATH "<<myPath<<endl;
+        //cout<<"PATH "<<myPath<<endl;
 
         startScreen s;
         s.bHasImage=hasImage;
