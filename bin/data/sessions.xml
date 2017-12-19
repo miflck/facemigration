@@ -1,15 +1,27 @@
 <RECORDINGSESSION>
-    <SESSIONID>20170821103515642</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-35-15-642</SESSION_TIME>
+    <SESSIONID>20170829150541912</SESSIONID>
+    <SESSION_TIME>2017-08-29-15-05-41-912</SESSION_TIME>
     <SESSION_NUMBER>0</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/0/Session_0_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/0/Session_0_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/0/Session_0_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/0/Session_0_Clip_2.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821103703672</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-37-03-672</SESSION_TIME>
+    <SESSIONID>20170829150559590</SESSIONID>
+    <SESSION_TIME>2017-08-29-15-05-59-590</SESSION_TIME>
     <SESSION_NUMBER>1</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
@@ -21,70 +33,174 @@
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821103821203</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-38-21-203</SESSION_TIME>
+    <SESSIONID>20170829152923669</SESSIONID>
+    <SESSION_TIME>2017-08-29-15-29-23-669</SESSION_TIME>
     <SESSION_NUMBER>2</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821103952518</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-39-52-518</SESSION_TIME>
-    <SESSION_NUMBER>3</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/3/Session_3_Clip_0.mov</Filename>
+        <Filename>Recodings/2/Session_2_Clip_0.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>1</Number>
-        <Filename>Recodings/3/Session_3_Clip_1.mov</Filename>
+        <Filename>Recodings/2/Session_2_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/2/Session_2_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/2/Session_2_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/2/Session_2_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/2/Session_2_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/2/Session_2_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/2/Session_2_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/2/Session_2_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/2/Session_2_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/2/Session_2_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/2/Session_2_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/2/Session_2_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/2/Session_2_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/2/Session_2_Clip_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/2/Session_2_Clip_15.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821104033479</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-40-33-479</SESSION_TIME>
-    <SESSION_NUMBER>4</SESSION_NUMBER>
+    <SESSIONID>20170829155200853</SESSIONID>
+    <SESSION_TIME>2017-08-29-15-52-00-853</SESSION_TIME>
+    <SESSION_NUMBER>3</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/4/Session_4_Clip_0.mov</Filename>
+        <Filename>Recodings/2/Session_2_Clip_16.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821104150840</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-41-50-840</SESSION_TIME>
+    <SESSIONID>20170829160501141</SESSIONID>
+    <SESSION_TIME>2017-08-29-16-05-01-141</SESSION_TIME>
+    <SESSION_NUMBER>4</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170829160543394</SESSIONID>
+    <SESSION_TIME>2017-08-29-16-05-43-394</SESSION_TIME>
     <SESSION_NUMBER>5</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/5/Session_5_Clip_0.mov</Filename>
     </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821104323598</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-43-23-598</SESSION_TIME>
-    <SESSION_NUMBER>6</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/6/Session_6_Clip_0.mov</Filename>
-    </CLIP>
     <CLIP>
         <Number>1</Number>
-        <Filename>Recodings/6/Session_6_Clip_1.mov</Filename>
+        <Filename>Recodings/5/Session_5_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/5/Session_5_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/5/Session_5_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/5/Session_5_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/5/Session_5_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/5/Session_5_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/5/Session_5_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/5/Session_5_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/5/Session_5_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/5/Session_5_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/5/Session_5_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/5/Session_5_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/5/Session_5_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/5/Session_5_Clip_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/5/Session_5_Clip_15.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821104401513</SESSIONID>
-    <SESSION_TIME>2017-08-21-10-44-01-513</SESSION_TIME>
+    <SESSIONID>20170829162945740</SESSIONID>
+    <SESSION_TIME>2017-08-29-16-29-45-740</SESSION_TIME>
+    <SESSION_NUMBER>6</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170829164008442</SESSIONID>
+    <SESSION_TIME>2017-08-29-16-40-08-442</SESSION_TIME>
     <SESSION_NUMBER>7</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/7/Session_7_Clip_0.mov</Filename>
     </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/7/Session_7_Clip_1.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821114526749</SESSIONID>
-    <SESSION_TIME>2017-08-21-11-45-26-749</SESSION_TIME>
+    <SESSIONID>20170829170435042</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-04-35-042</SESSION_TIME>
     <SESSION_NUMBER>8</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
@@ -92,1497 +208,1017 @@
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821132311503</SESSIONID>
-    <SESSION_TIME>2017-08-21-13-23-11-503</SESSION_TIME>
+    <SESSIONID>20170829170519808</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-05-19-808</SESSION_TIME>
     <SESSION_NUMBER>9</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/9/Session_9_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/MyMovieFile_9_1.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821132402334</SESSIONID>
-    <SESSION_TIME>2017-08-21-13-24-02-334</SESSION_TIME>
+    <SESSIONID>20170829170830048</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-08-30-048</SESSION_TIME>
     <SESSION_NUMBER>10</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/10/Session_10_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821132449496</SESSIONID>
-    <SESSION_TIME>2017-08-21-13-24-49-496</SESSION_TIME>
+    <SESSIONID>20170829171022061</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-10-22-061</SESSION_TIME>
     <SESSION_NUMBER>11</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/11/Session_11_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/11/Session_11_Clip_1.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821132536419</SESSIONID>
-    <SESSION_TIME>2017-08-21-13-25-36-419</SESSION_TIME>
+    <SESSIONID>20170829171130417</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-11-30-417</SESSION_TIME>
     <SESSION_NUMBER>12</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/12/Session_12_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/12/Session_12_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/12/Session_12_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/12/Session_12_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/12/Session_12_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/12/Session_12_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/12/Session_12_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/12/Session_12_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/12/Session_12_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/12/Session_12_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/12/Session_12_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/12/Session_12_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/12/Session_12_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/12/Session_12_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/12/Session_12_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/12/Session_12_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/12/Session_12_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821132649381</SESSIONID>
-    <SESSION_TIME>2017-08-21-13-26-49-381</SESSION_TIME>
+    <SESSIONID>20170829171201843</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-12-01-843</SESSION_TIME>
     <SESSION_NUMBER>13</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/13/Session_13_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/13/Session_13_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/13/Session_13_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/13/Session_13_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/13/Session_13_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/13/Session_13_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/13/Session_13_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/13/Session_13_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/13/Session_13_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/13/Session_13_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/13/Session_13_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/13/Session_13_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/13/Session_13_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/13/Session_13_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/13/Session_13_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/13/Session_13_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/13/Session_13_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821132800443</SESSIONID>
-    <SESSION_TIME>2017-08-21-13-28-00-443</SESSION_TIME>
+    <SESSIONID>20170829171213214</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-12-13-214</SESSION_TIME>
     <SESSION_NUMBER>14</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821145105872</SESSIONID>
-    <SESSION_TIME>2017-08-21-14-51-05-872</SESSION_TIME>
-    <SESSION_NUMBER>15</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/15/Session_15_Clip_0.mov</Filename>
+        <Filename>Recodings/14/Session_14_Clip_0.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170829171827079</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-18-27-079</SESSION_TIME>
+    <SESSION_NUMBER>15</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170829171900051</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-19-00-051</SESSION_TIME>
+    <SESSION_NUMBER>16</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/16/Session_16_Clip_0.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>1</Number>
-        <Filename>Recodings/15/Session_15_Clip_1.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_1.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>2</Number>
-        <Filename>Recodings/15/Session_15_Clip_2.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_2.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>3</Number>
-        <Filename>Recodings/15/Session_15_Clip_3.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_3.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>4</Number>
-        <Filename>Recodings/15/Session_15_Clip_4.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_4.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>5</Number>
-        <Filename>Recodings/15/Session_15_Clip_5.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_5.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>6</Number>
-        <Filename>Recodings/15/Session_15_Clip_6.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_6.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>7</Number>
-        <Filename>Recodings/15/Session_15_Clip_7.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_7.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>8</Number>
-        <Filename>Recodings/15/Session_15_Clip_8.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_8.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>9</Number>
-        <Filename>Recodings/15/Session_15_Clip_9.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_9.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>10</Number>
-        <Filename>Recodings/15/Session_15_Clip_10.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_10.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>11</Number>
-        <Filename>Recodings/15/Session_15_Clip_11.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_11.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>12</Number>
-        <Filename>Recodings/15/Session_15_Clip_12.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_12.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>13</Number>
-        <Filename>Recodings/15/Session_15_Clip_13.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_13.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>14</Number>
-        <Filename>Recodings/15/Session_15_Clip_14.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_14.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>15</Number>
-        <Filename>Recodings/15/Session_15_Clip_15.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_15.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>16</Number>
-        <Filename>Recodings/15/Session_15_Clip_16.mov</Filename>
+        <Filename>Recodings/16/Session_16_Clip_16.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>17</Number>
+        <Filename>Recodings/16/Session_16_Clip_17.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821145747578</SESSIONID>
-    <SESSION_TIME>2017-08-21-14-57-47-578</SESSION_TIME>
-    <SESSION_NUMBER>16</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821151915406</SESSIONID>
-    <SESSION_TIME>2017-08-21-15-19-15-406</SESSION_TIME>
+    <SESSIONID>20170829174817453</SESSIONID>
+    <SESSION_TIME>2017-08-29-17-48-17-453</SESSION_TIME>
     <SESSION_NUMBER>17</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/17/Session_17_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/17/Session_17_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/17/Session_17_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/17/Session_17_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/17/Session_17_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/17/Session_17_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/17/Session_17_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/17/Session_17_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/17/Session_17_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/17/Session_17_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/17/Session_17_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/17/Session_17_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/17/Session_17_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/17/Session_17_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/17/Session_17_Clip_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/17/Session_17_Clip_15.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>16</Number>
+        <Filename>Recodings/17/Session_17_Clip_16.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>17</Number>
+        <Filename>Recodings/17/Session_17_Clip_17.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821152859396</SESSIONID>
-    <SESSION_TIME>2017-08-21-15-28-59-396</SESSION_TIME>
+    <SESSIONID>20170829180712962</SESSIONID>
+    <SESSION_TIME>2017-08-29-18-07-12-962</SESSION_TIME>
     <SESSION_NUMBER>18</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/18/Session_18_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/18/Session_18_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/18/Session_18_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/18/Session_18_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/18/Session_18_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/18/Session_18_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/18/Session_18_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/18/Session_18_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/18/Session_18_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/18/Session_18_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/18/Session_18_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/18/Session_18_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/18/Session_18_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/18/Session_18_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/18/Session_18_Clip_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/18/Session_18_Clip_15.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>16</Number>
+        <Filename>Recodings/18/Session_18_Clip_16.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821152916392</SESSIONID>
-    <SESSION_TIME>2017-08-21-15-29-16-392</SESSION_TIME>
+    <SESSIONID>20170830104732918</SESSIONID>
+    <SESSION_TIME>2017-08-30-10-47-32-918</SESSION_TIME>
     <SESSION_NUMBER>19</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/19/Session_19_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/19/Session_19_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/19/Session_19_Clip_2.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821155346951</SESSIONID>
-    <SESSION_TIME>2017-08-21-15-53-46-951</SESSION_TIME>
+    <SESSIONID>20170830104806421</SESSIONID>
+    <SESSION_TIME>2017-08-30-10-48-06-421</SESSION_TIME>
     <SESSION_NUMBER>20</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/20/Session_20_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/20/Session_20_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/20/Session_20_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/20/Session_20_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/20/Session_20_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/20/Session_20_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/20/Session_20_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/20/Session_20_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/20/Session_20_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/20/Session_20_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/20/Session_20_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/20/Session_20_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/20/Session_20_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/20/Session_20_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/20/Session_20_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/20/Session_20_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/20/Session_20_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821155428901</SESSIONID>
-    <SESSION_TIME>2017-08-21-15-54-28-901</SESSION_TIME>
+    <SESSIONID>20170831121747924</SESSIONID>
+    <SESSION_TIME>2017-08-31-12-17-47-924</SESSION_TIME>
     <SESSION_NUMBER>21</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/21/Session_21_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/21/Session_21_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/21/Session_21_Clip_2.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821160031159</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-00-31-159</SESSION_TIME>
+    <SESSIONID>20170831122047657</SESSIONID>
+    <SESSION_TIME>2017-08-31-12-20-47-658</SESSION_TIME>
     <SESSION_NUMBER>22</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/22/Session_22_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/22/Session_22_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/22/Session_22_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/22/Session_22_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/22/Session_22_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/22/Session_22_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/22/Session_22_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/22/Session_22_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/22/Session_22_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/22/Session_22_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/22/Session_22_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/22/Session_22_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/22/Session_22_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/22/Session_22_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/22/Session_22_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/22/Session_22_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/22/Session_22_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821160143180</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-01-43-180</SESSION_TIME>
+    <SESSIONID>20170831122122448</SESSIONID>
+    <SESSION_TIME>2017-08-31-12-21-22-448</SESSION_TIME>
     <SESSION_NUMBER>23</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/23/Session_23_Clip_0.mov</Filename>
     </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821160312968</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-03-12-968</SESSION_TIME>
-    <SESSION_NUMBER>24</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/24/Session_24_Clip_0.mov</Filename>
-    </CLIP>
     <CLIP>
         <Number>1</Number>
-        <Filename>Recodings/24/Session_24_Clip_1.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_1.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>2</Number>
-        <Filename>Recodings/24/Session_24_Clip_2.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_2.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>3</Number>
-        <Filename>Recodings/24/Session_24_Clip_3.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_3.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>4</Number>
-        <Filename>Recodings/24/Session_24_Clip_4.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_4.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>5</Number>
-        <Filename>Recodings/24/Session_24_Clip_5.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_5.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>6</Number>
-        <Filename>Recodings/24/Session_24_Clip_6.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_6.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>7</Number>
-        <Filename>Recodings/24/Session_24_Clip_7.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_7.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>8</Number>
-        <Filename>Recodings/24/Session_24_Clip_8.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_8.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>9</Number>
-        <Filename>Recodings/24/Session_24_Clip_9.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_9.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>10</Number>
-        <Filename>Recodings/24/Session_24_Clip_10.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_10.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>11</Number>
-        <Filename>Recodings/24/Session_24_Clip_11.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_11.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>12</Number>
-        <Filename>Recodings/24/Session_24_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/24/Session_24_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/24/Session_24_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/24/Session_24_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/24/Session_24_Clip_16.mov</Filename>
+        <Filename>Recodings/23/Session_23_Clip_12.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821160455836</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-04-55-836</SESSION_TIME>
+    <SESSIONID>20170831122753746</SESSIONID>
+    <SESSION_TIME>2017-08-31-12-27-53-746</SESSION_TIME>
+    <SESSION_NUMBER>24</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170831122811289</SESSIONID>
+    <SESSION_TIME>2017-08-31-12-28-11-289</SESSION_TIME>
     <SESSION_NUMBER>25</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821160732872</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-07-32-873</SESSION_TIME>
+    <SESSIONID>20170831122856254</SESSIONID>
+    <SESSION_TIME>2017-08-31-12-28-56-254</SESSION_TIME>
     <SESSION_NUMBER>26</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/MyMovieFile_26_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821160809092</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-08-09-092</SESSION_TIME>
-    <SESSION_NUMBER>27</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/27/Session_27_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821160925418</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-09-25-418</SESSION_TIME>
-    <SESSION_NUMBER>28</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/28/Session_28_Clip_0.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_0.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>1</Number>
-        <Filename>Recodings/28/Session_28_Clip_1.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_1.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>2</Number>
-        <Filename>Recodings/28/Session_28_Clip_2.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_2.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>3</Number>
-        <Filename>Recodings/28/Session_28_Clip_3.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_3.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>4</Number>
-        <Filename>Recodings/28/Session_28_Clip_4.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_4.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>5</Number>
-        <Filename>Recodings/28/Session_28_Clip_5.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_5.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>6</Number>
-        <Filename>Recodings/28/Session_28_Clip_6.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_6.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>7</Number>
-        <Filename>Recodings/28/Session_28_Clip_7.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_7.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>8</Number>
-        <Filename>Recodings/28/Session_28_Clip_8.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_8.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>9</Number>
-        <Filename>Recodings/28/Session_28_Clip_9.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_9.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>10</Number>
-        <Filename>Recodings/28/Session_28_Clip_10.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_10.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>11</Number>
-        <Filename>Recodings/28/Session_28_Clip_11.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_11.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>12</Number>
-        <Filename>Recodings/28/Session_28_Clip_12.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_12.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>13</Number>
-        <Filename>Recodings/28/Session_28_Clip_13.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_13.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>14</Number>
-        <Filename>Recodings/28/Session_28_Clip_14.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_14.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>15</Number>
-        <Filename>Recodings/28/Session_28_Clip_15.mov</Filename>
+        <Filename>Recodings/26/Session_26_Clip_15.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>16</Number>
+        <Filename>Recodings/26/Session_26_Clip_16.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821161200353</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-12-00-353</SESSION_TIME>
+    <SESSIONID>20170831153610179</SESSIONID>
+    <SESSION_TIME>2017-08-31-15-36-10-179</SESSION_TIME>
+    <SESSION_NUMBER>27</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170906104635442</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-46-35-442</SESSION_TIME>
+    <SESSION_NUMBER>28</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170906104650047</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-46-50-047</SESSION_TIME>
     <SESSION_NUMBER>29</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/28/Session_28_Clip_16.mov</Filename>
+        <Filename>Recodings/MyMovieFile_29_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/MyMovieFile_29_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/MyMovieFile_29_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/MyMovieFile_29_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/MyMovieFile_29_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/MyMovieFile_29_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/MyMovieFile_29_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/MyMovieFile_29_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/MyMovieFile_29_8.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821161416610</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-14-16-610</SESSION_TIME>
+    <SESSIONID>20170906104813893</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-48-13-893</SESSION_TIME>
     <SESSION_NUMBER>30</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/30/Session_30_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/30/Session_30_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/30/Session_30_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/30/Session_30_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/30/Session_30_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/30/Session_30_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/30/Session_30_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/30/Session_30_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/30/Session_30_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/30/Session_30_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/30/Session_30_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/30/Session_30_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/30/Session_30_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/30/Session_30_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/30/Session_30_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/30/Session_30_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/30/Session_30_Clip_16.mov</Filename>
+        <Filename>Recodings/MyMovieFile_30_0.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821161450622</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-14-50-622</SESSION_TIME>
+    <SESSIONID>20170906104946546</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-49-46-546</SESSION_TIME>
     <SESSION_NUMBER>31</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821161537459</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-15-37-459</SESSION_TIME>
+    <SESSIONID>20170906105052876</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-50-52-876</SESSION_TIME>
     <SESSION_NUMBER>32</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/32/Session_32_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/32/Session_32_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/32/Session_32_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/32/Session_32_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/32/Session_32_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/32/Session_32_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/32/Session_32_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/32/Session_32_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/32/Session_32_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/32/Session_32_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/32/Session_32_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/32/Session_32_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/32/Session_32_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/32/Session_32_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/32/Session_32_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/32/Session_32_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/32/Session_32_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821161845580</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-18-45-580</SESSION_TIME>
+    <SESSIONID>20170906105129628</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-51-29-628</SESSION_TIME>
     <SESSION_NUMBER>33</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821162144999</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-21-44-999</SESSION_TIME>
+    <SESSIONID>20170906105141721</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-51-41-721</SESSION_TIME>
     <SESSION_NUMBER>34</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/34/Session_34_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/34/Session_34_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/34/Session_34_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/34/Session_34_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/34/Session_34_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/34/Session_34_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/34/Session_34_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/34/Session_34_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/34/Session_34_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/34/Session_34_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/34/Session_34_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/34/Session_34_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/34/Session_34_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/34/Session_34_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/34/Session_34_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/34/Session_34_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/34/Session_34_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821162226734</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-22-26-734</SESSION_TIME>
+    <SESSIONID>20170906105307497</SESSIONID>
+    <SESSION_TIME>2017-09-06-10-53-07-497</SESSION_TIME>
     <SESSION_NUMBER>35</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821164607059</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-46-07-059</SESSION_TIME>
+    <SESSIONID>20170906110445652</SESSIONID>
+    <SESSION_TIME>2017-09-06-11-04-45-652</SESSION_TIME>
     <SESSION_NUMBER>36</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/36/Session_36_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/36/Session_36_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/36/Session_36_Clip_2.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821165530142</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-55-30-142</SESSION_TIME>
+    <SESSIONID>20170906111855209</SESSIONID>
+    <SESSION_TIME>2017-09-06-11-18-55-209</SESSION_TIME>
     <SESSION_NUMBER>37</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/37/Session_37_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/37/Session_37_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/37/Session_37_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/37/Session_37_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/37/Session_37_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/37/Session_37_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/37/Session_37_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/37/Session_37_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/37/Session_37_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/37/Session_37_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/37/Session_37_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/37/Session_37_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/37/Session_37_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/37/Session_37_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/37/Session_37_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/37/Session_37_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/37/Session_37_Clip_16.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821165539028</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-55-39-028</SESSION_TIME>
+    <SESSIONID>20170906112027869</SESSIONID>
+    <SESSION_TIME>2017-09-06-11-20-27-869</SESSION_TIME>
     <SESSION_NUMBER>38</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/38/Session_38_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/38/Session_38_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/38/Session_38_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/38/Session_38_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/38/Session_38_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/38/Session_38_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/38/Session_38_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/38/Session_38_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/38/Session_38_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/38/Session_38_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/38/Session_38_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/38/Session_38_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/38/Session_38_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/38/Session_38_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/38/Session_38_Clip_14.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821165553657</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-55-53-657</SESSION_TIME>
+    <SESSIONID>20170906112219733</SESSIONID>
+    <SESSION_TIME>2017-09-06-11-22-19-733</SESSION_TIME>
     <SESSION_NUMBER>39</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/38/Session_38_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/39/Session_39_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/39/Session_39_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/39/Session_39_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/39/Session_39_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/39/Session_39_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/39/Session_39_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/39/Session_39_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/39/Session_39_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/39/Session_39_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/39/Session_39_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/39/Session_39_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/39/Session_39_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/39/Session_39_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/39/Session_39_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/39/Session_39_Clip_15.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821165600347</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-56-00-347</SESSION_TIME>
+    <SESSIONID>20170906115839565</SESSIONID>
+    <SESSION_TIME>2017-09-06-11-58-39-565</SESSION_TIME>
     <SESSION_NUMBER>40</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/39/Session_39_Clip_16.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/40/Session_40_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/40/Session_40_Clip_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/40/Session_40_Clip_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/40/Session_40_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/40/Session_40_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/40/Session_40_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/40/Session_40_Clip_7.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/40/Session_40_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/40/Session_40_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/40/Session_40_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/40/Session_40_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/40/Session_40_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/40/Session_40_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/40/Session_40_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/40/Session_40_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/40/Session_40_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>17</Number>
-        <Filename>Recodings/40/Session_40_Clip_17.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>18</Number>
-        <Filename>Recodings/40/Session_40_Clip_18.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>19</Number>
-        <Filename>Recodings/40/Session_40_Clip_18.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>20</Number>
-        <Filename>Recodings/MyMovieFile_40_20.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>21</Number>
-        <Filename>Recodings/40/Session_40_Clip_21.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821165608404</SESSIONID>
-    <SESSION_TIME>2017-08-21-16-56-08-404</SESSION_TIME>
+    <SESSIONID>20170906120203474</SESSIONID>
+    <SESSION_TIME>2017-09-06-12-02-03-474</SESSION_TIME>
     <SESSION_NUMBER>41</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/MyMovieFile_40_22.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/41/Session_41_Clip_1.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>2</Number>
-        <Filename>Recodings/MyMovieFile_41_2.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>3</Number>
-        <Filename>Recodings/MyMovieFile_41_3.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>4</Number>
-        <Filename>Recodings/41/Session_41_Clip_4.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>5</Number>
-        <Filename>Recodings/41/Session_41_Clip_5.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>6</Number>
-        <Filename>Recodings/41/Session_41_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>7</Number>
-        <Filename>Recodings/41/Session_41_Clip_6.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>8</Number>
-        <Filename>Recodings/41/Session_41_Clip_8.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>9</Number>
-        <Filename>Recodings/41/Session_41_Clip_9.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>10</Number>
-        <Filename>Recodings/41/Session_41_Clip_10.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>11</Number>
-        <Filename>Recodings/41/Session_41_Clip_11.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>12</Number>
-        <Filename>Recodings/41/Session_41_Clip_12.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>13</Number>
-        <Filename>Recodings/41/Session_41_Clip_13.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>14</Number>
-        <Filename>Recodings/41/Session_41_Clip_14.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>15</Number>
-        <Filename>Recodings/41/Session_41_Clip_15.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>16</Number>
-        <Filename>Recodings/41/Session_41_Clip_16.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>17</Number>
-        <Filename>Recodings/41/Session_41_Clip_17.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>18</Number>
-        <Filename>Recodings/41/Session_41_Clip_18.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>19</Number>
-        <Filename>Recodings/41/Session_41_Clip_19.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>20</Number>
-        <Filename>Recodings/41/Session_41_Clip_20.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821204533767</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-45-33-767</SESSION_TIME>
+    <SESSIONID>20170906120550743</SESSIONID>
+    <SESSION_TIME>2017-09-06-12-05-50-743</SESSION_TIME>
     <SESSION_NUMBER>42</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/42/Session_42_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821204722343</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-47-22-343</SESSION_TIME>
+    <SESSIONID>20170906121611863</SESSIONID>
+    <SESSION_TIME>2017-09-06-12-16-11-863</SESSION_TIME>
     <SESSION_NUMBER>43</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/43/Session_43_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821204752500</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-47-52-500</SESSION_TIME>
+    <SESSIONID>20170906121731383</SESSIONID>
+    <SESSION_TIME>2017-09-06-12-17-31-383</SESSION_TIME>
     <SESSION_NUMBER>44</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/44/Session_44_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821204853154</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-48-53-154</SESSION_TIME>
+    <SESSIONID>20170906121736234</SESSIONID>
+    <SESSION_TIME>2017-09-06-12-17-36-234</SESSION_TIME>
     <SESSION_NUMBER>45</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/45/Session_45_Clip_0.mov</Filename>
     </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821205048095</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-50-48-095</SESSION_TIME>
-    <SESSION_NUMBER>46</SESSION_NUMBER>
     <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/46/Session_46_Clip_0.mov</Filename>
+        <Number>1</Number>
+        <Filename>Recodings/45/Session_45_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/45/Session_45_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/45/Session_45_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/45/Session_45_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/45/Session_45_Clip_5.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205122537</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-51-22-537</SESSION_TIME>
-    <SESSION_NUMBER>47</SESSION_NUMBER>
+    <SESSIONID>20170906121808319</SESSIONID>
+    <SESSION_TIME>2017-09-06-12-18-08-319</SESSION_TIME>
+    <SESSION_NUMBER>46</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205202976</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-52-02-976</SESSION_TIME>
+    <SESSIONID>20170906141302662</SESSIONID>
+    <SESSION_TIME>2017-09-06-14-13-02-662</SESSION_TIME>
+    <SESSION_NUMBER>47</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/47/Session_47_Clip_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/MyMovieFile_47_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/MyMovieFile_47_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/MyMovieFile_47_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/MyMovieFile_47_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/MyMovieFile_47_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/MyMovieFile_47_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/MyMovieFile_47_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/MyMovieFile_47_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/MyMovieFile_47_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/MyMovieFile_47_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/MyMovieFile_47_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/MyMovieFile_47_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/MyMovieFile_47_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/MyMovieFile_47_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/MyMovieFile_47_15.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>16</Number>
+        <Filename>Recodings/MyMovieFile_47_16.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>17</Number>
+        <Filename>Recodings/MyMovieFile_47_17.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>18</Number>
+        <Filename>Recodings/MyMovieFile_47_18.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>19</Number>
+        <Filename>Recodings/MyMovieFile_47_19.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>20</Number>
+        <Filename>Recodings/MyMovieFile_47_20.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170906142851931</SESSIONID>
+    <SESSION_TIME>2017-09-06-14-28-51-931</SESSION_TIME>
     <SESSION_NUMBER>48</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205411457</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-54-11-457</SESSION_TIME>
+    <SESSIONID>20170906142912773</SESSIONID>
+    <SESSION_TIME>2017-09-06-14-29-12-773</SESSION_TIME>
     <SESSION_NUMBER>49</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205506211</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-55-06-211</SESSION_TIME>
+    <SESSIONID>20170906143423648</SESSIONID>
+    <SESSION_TIME>2017-09-06-14-34-23-648</SESSION_TIME>
     <SESSION_NUMBER>50</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/50/Session_50_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205529346</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-55-29-346</SESSION_TIME>
+    <SESSIONID>20170906145458435</SESSIONID>
+    <SESSION_TIME>2017-09-06-14-54-58-435</SESSION_TIME>
     <SESSION_NUMBER>51</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/51/Session_51_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205703099</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-57-03-099</SESSION_TIME>
+    <SESSIONID>20170906145504955</SESSIONID>
+    <SESSION_TIME>2017-09-06-14-55-04-955</SESSION_TIME>
     <SESSION_NUMBER>52</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/52/Session_52_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/52/Session_52_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/52/Session_52_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/52/Session_52_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/52/Session_52_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/52/Session_52_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/52/Session_52_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/52/Session_52_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/52/Session_52_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/52/Session_52_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/52/Session_52_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/52/Session_52_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/52/Session_52_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/52/Session_52_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/52/Session_52_Clip_14.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>15</Number>
+        <Filename>Recodings/52/Session_52_Clip_15.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205745508</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-57-45-508</SESSION_TIME>
+    <SESSIONID>20170906150257674</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-02-57-674</SESSION_TIME>
     <SESSION_NUMBER>53</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/53/Session_53_Clip_0.mov</Filename>
+        <Filename>Recodings/52/Session_52_Clip_16.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821205929830</SESSIONID>
-    <SESSION_TIME>2017-08-21-20-59-29-830</SESSION_TIME>
+    <SESSIONID>20170906152041876</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-20-41-876</SESSION_TIME>
     <SESSION_NUMBER>54</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/54/Session_54_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210009872</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-00-09-872</SESSION_TIME>
+    <SESSIONID>20170906152153067</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-21-53-067</SESSION_TIME>
     <SESSION_NUMBER>55</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/55/Session_55_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210049608</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-00-49-609</SESSION_TIME>
+    <SESSIONID>20170906152229726</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-22-29-726</SESSION_TIME>
     <SESSION_NUMBER>56</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/56/Session_56_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210147707</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-01-47-707</SESSION_TIME>
+    <SESSIONID>20170906152335400</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-23-35-401</SESSION_TIME>
     <SESSION_NUMBER>57</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/57/Session_57_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210212734</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-02-12-734</SESSION_TIME>
+    <SESSIONID>20170906152355099</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-23-55-099</SESSION_TIME>
     <SESSION_NUMBER>58</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/58/Session_58_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210347648</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-03-47-648</SESSION_TIME>
+    <SESSIONID>20170906152516665</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-25-16-665</SESSION_TIME>
     <SESSION_NUMBER>59</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/59/Session_59_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210436309</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-04-36-309</SESSION_TIME>
+    <SESSIONID>20170906152848336</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-28-48-336</SESSION_TIME>
     <SESSION_NUMBER>60</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/60/Session_60_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210454948</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-04-54-948</SESSION_TIME>
+    <SESSIONID>20170906153127719</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-31-27-719</SESSION_TIME>
     <SESSION_NUMBER>61</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/61/Session_61_Clip_0.mov</Filename>
     </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821210533191</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-05-33-191</SESSION_TIME>
-    <SESSION_NUMBER>62</SESSION_NUMBER>
     <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/62/Session_62_Clip_0.mov</Filename>
+        <Number>1</Number>
+        <Filename>Recodings/61/Session_61_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/61/Session_61_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/61/Session_61_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/61/Session_61_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/61/Session_61_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/61/Session_61_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/61/Session_61_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/61/Session_61_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/61/Session_61_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/61/Session_61_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/61/Session_61_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/61/Session_61_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/61/Session_61_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/61/Session_61_Clip_14.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210653618</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-06-53-618</SESSION_TIME>
+    <SESSIONID>20170906153653243</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-36-53-243</SESSION_TIME>
+    <SESSION_NUMBER>62</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170906153835414</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-38-35-414</SESSION_TIME>
     <SESSION_NUMBER>63</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/63/Session_63_Clip_0.mov</Filename>
     </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821210752923</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-07-52-923</SESSION_TIME>
-    <SESSION_NUMBER>64</SESSION_NUMBER>
     <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/64/Session_64_Clip_0.mov</Filename>
+        <Number>1</Number>
+        <Filename>Recodings/63/Session_63_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/63/Session_63_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/63/Session_63_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/63/Session_63_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/63/Session_63_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/63/Session_63_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/63/Session_63_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/63/Session_63_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/63/Session_63_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/63/Session_63_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/63/Session_63_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/63/Session_63_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/63/Session_63_Clip_13.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210834293</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-08-34-293</SESSION_TIME>
+    <SESSIONID>20170906154050424</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-40-50-424</SESSION_TIME>
+    <SESSION_NUMBER>64</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170906154054995</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-40-54-995</SESSION_TIME>
     <SESSION_NUMBER>65</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/65/Session_65_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/65/Session_65_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/65/Session_65_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/65/Session_65_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/65/Session_65_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/65/Session_65_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/65/Session_65_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/65/Session_65_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/65/Session_65_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/65/Session_65_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/65/Session_65_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/65/Session_65_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/65/Session_65_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/65/Session_65_Clip_13.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821210931257</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-09-31-257</SESSION_TIME>
+    <SESSIONID>20170906154543271</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-45-43-271</SESSION_TIME>
     <SESSION_NUMBER>66</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
@@ -1590,534 +1226,588 @@
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211024469</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-10-24-469</SESSION_TIME>
+    <SESSIONID>20170906154925980</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-49-25-980</SESSION_TIME>
     <SESSION_NUMBER>67</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/67/Session_67_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211226245</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-12-26-245</SESSION_TIME>
+    <SESSIONID>20170906155659399</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-56-59-399</SESSION_TIME>
     <SESSION_NUMBER>68</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/68/Session_68_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211257039</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-12-57-039</SESSION_TIME>
+    <SESSIONID>20170906155802069</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-58-02-069</SESSION_TIME>
     <SESSION_NUMBER>69</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/69/Session_69_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211339500</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-13-39-500</SESSION_TIME>
+    <SESSIONID>20170906155834018</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-58-34-018</SESSION_TIME>
     <SESSION_NUMBER>70</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/70/Session_70_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211426990</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-14-26-990</SESSION_TIME>
+    <SESSIONID>20170906155847147</SESSIONID>
+    <SESSION_TIME>2017-09-06-15-58-47-147</SESSION_TIME>
     <SESSION_NUMBER>71</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/71/Session_71_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/71/Session_71_Clip_1.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211505461</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-15-05-461</SESSION_TIME>
+    <SESSIONID>20170906160127365</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-01-27-365</SESSION_TIME>
     <SESSION_NUMBER>72</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/72/Session_72_Clip_0.mov</Filename>
     </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821211605637</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-16-05-637</SESSION_TIME>
-    <SESSION_NUMBER>73</SESSION_NUMBER>
     <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/73/Session_73_Clip_0.mov</Filename>
+        <Number>1</Number>
+        <Filename>Recodings/72/Session_72_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/72/Session_72_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/72/Session_72_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/72/Session_72_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/72/Session_72_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/72/Session_72_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/72/Session_72_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/72/Session_72_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/72/Session_72_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/72/Session_72_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/72/Session_72_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/72/Session_72_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/72/Session_72_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/72/Session_72_Clip_14.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821211646665</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-16-46-665</SESSION_TIME>
+    <SESSIONID>20170906160348696</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-03-48-696</SESSION_TIME>
+    <SESSION_NUMBER>73</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/72/Session_72_Clip_15.mov</Filename>
+    </CLIP>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170906160427677</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-04-27-677</SESSION_TIME>
     <SESSION_NUMBER>74</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/74/Session_74_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/74/Session_74_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/74/Session_74_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/74/Session_74_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/74/Session_74_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/74/Session_74_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/74/Session_74_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/74/Session_74_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/74/Session_74_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/74/Session_74_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/74/Session_74_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/74/Session_74_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/74/Session_74_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/74/Session_74_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/74/Session_74_Clip_14.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821212208454</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-22-08-454</SESSION_TIME>
+    <SESSIONID>20170906160504740</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-05-04-740</SESSION_TIME>
     <SESSION_NUMBER>75</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/75/Session_75_Clip_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/75/Session_75_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/75/Session_75_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/75/Session_75_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/75/Session_75_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/75/Session_75_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/75/Session_75_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/75/Session_75_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/75/Session_75_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/75/Session_75_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/75/Session_75_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/75/Session_75_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/75/Session_75_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/75/Session_75_Clip_13.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821212314097</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-23-14-097</SESSION_TIME>
+    <SESSIONID>20170906160709714</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-07-09-714</SESSION_TIME>
     <SESSION_NUMBER>76</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/76/Session_76_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821212619537</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-26-19-537</SESSION_TIME>
+    <SESSIONID>20170906160810163</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-08-10-163</SESSION_TIME>
     <SESSION_NUMBER>77</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/77/Session_77_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821212645598</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-26-45-598</SESSION_TIME>
+    <SESSIONID>20170906160916489</SESSIONID>
+    <SESSION_TIME>2017-09-06-16-09-16-489</SESSION_TIME>
     <SESSION_NUMBER>78</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/78/Session_78_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821213153652</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-31-53-652</SESSION_TIME>
+    <SESSIONID>20170907124002524</SESSIONID>
+    <SESSION_TIME>2017-09-07-12-40-02-524</SESSION_TIME>
     <SESSION_NUMBER>79</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821213206116</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-32-06-116</SESSION_TIME>
+    <SESSIONID>20170907151106298</SESSIONID>
+    <SESSION_TIME>2017-09-07-15-11-06-298</SESSION_TIME>
     <SESSION_NUMBER>80</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821213702190</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-37-02-190</SESSION_TIME>
+    <SESSIONID>20170907173948207</SESSIONID>
+    <SESSION_TIME>2017-09-07-17-39-48-207</SESSION_TIME>
     <SESSION_NUMBER>81</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821213824918</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-38-24-918</SESSION_TIME>
+    <SESSIONID>20170907174048795</SESSIONID>
+    <SESSION_TIME>2017-09-07-17-40-48-795</SESSION_TIME>
     <SESSION_NUMBER>82</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821213905358</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-39-05-358</SESSION_TIME>
+    <SESSIONID>20170907174140265</SESSIONID>
+    <SESSION_TIME>2017-09-07-17-41-40-265</SESSION_TIME>
     <SESSION_NUMBER>83</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/83/Session_83_Clip_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/83/Session_83_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/83/Session_83_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/83/Session_83_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/83/Session_83_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/83/Session_83_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/83/Session_83_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/83/Session_83_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/83/Session_83_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/83/Session_83_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/83/Session_83_Clip_10.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821214146728</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-41-46-728</SESSION_TIME>
+    <SESSIONID>20170907175152486</SESSIONID>
+    <SESSION_TIME>2017-09-07-17-51-52-486</SESSION_TIME>
     <SESSION_NUMBER>84</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821214541799</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-45-41-799</SESSION_TIME>
+    <SESSIONID>20170907182931960</SESSIONID>
+    <SESSION_TIME>2017-09-07-18-29-31-960</SESSION_TIME>
     <SESSION_NUMBER>85</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/85/Session_85_Clip_0.mov</Filename>
     </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/85/Session_85_Clip_1.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>2</Number>
+        <Filename>Recodings/85/Session_85_Clip_2.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>3</Number>
+        <Filename>Recodings/85/Session_85_Clip_3.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>4</Number>
+        <Filename>Recodings/85/Session_85_Clip_4.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>5</Number>
+        <Filename>Recodings/85/Session_85_Clip_5.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>6</Number>
+        <Filename>Recodings/85/Session_85_Clip_6.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>7</Number>
+        <Filename>Recodings/85/Session_85_Clip_7.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>8</Number>
+        <Filename>Recodings/85/Session_85_Clip_8.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>9</Number>
+        <Filename>Recodings/85/Session_85_Clip_9.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>10</Number>
+        <Filename>Recodings/85/Session_85_Clip_10.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>11</Number>
+        <Filename>Recodings/85/Session_85_Clip_11.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>12</Number>
+        <Filename>Recodings/85/Session_85_Clip_12.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>13</Number>
+        <Filename>Recodings/85/Session_85_Clip_13.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>14</Number>
+        <Filename>Recodings/85/Session_85_Clip_14.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821214642698</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-46-42-698</SESSION_TIME>
+    <SESSIONID>20170907184328397</SESSIONID>
+    <SESSION_TIME>2017-09-07-18-43-28-397</SESSION_TIME>
     <SESSION_NUMBER>86</SESSION_NUMBER>
+    <CLIP>
+        <Number>0</Number>
+        <Filename>Recodings/85/Session_85_Clip_15.mov</Filename>
+    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821214838653</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-48-38-654</SESSION_TIME>
+    <SESSIONID>20170908110211404</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-02-11-404</SESSION_TIME>
     <SESSION_NUMBER>87</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821214926905</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-49-26-905</SESSION_TIME>
+    <SESSIONID>20170908110258741</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-02-58-741</SESSION_TIME>
     <SESSION_NUMBER>88</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170821215012703</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-50-12-703</SESSION_TIME>
-    <SESSION_NUMBER>89</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/89/Session_89_Clip_0.mov</Filename>
+        <Filename>Recodings/88/Session_88_Clip_0.mov</Filename>
+    </CLIP>
+    <CLIP>
+        <Number>1</Number>
+        <Filename>Recodings/88/Session_88_Clip_1.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821215019359</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-50-19-360</SESSION_TIME>
+    <SESSIONID>20170908110410007</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-04-10-007</SESSION_TIME>
+    <SESSION_NUMBER>89</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908110420314</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-04-20-314</SESSION_TIME>
     <SESSION_NUMBER>90</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170821215026890</SESSIONID>
-    <SESSION_TIME>2017-08-21-21-50-26-890</SESSION_TIME>
+    <SESSIONID>20170908112339472</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-23-39-472</SESSION_TIME>
     <SESSION_NUMBER>91</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822101453001</SESSIONID>
-    <SESSION_TIME>2017-08-22-10-14-53-001</SESSION_TIME>
+    <SESSIONID>20170908112409777</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-24-09-777</SESSION_TIME>
     <SESSION_NUMBER>92</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/92/Session_92_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822101631140</SESSIONID>
-    <SESSION_TIME>2017-08-22-10-16-31-140</SESSION_TIME>
+    <SESSIONID>20170908112503790</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-25-03-790</SESSION_TIME>
     <SESSION_NUMBER>93</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822111217382</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-12-17-382</SESSION_TIME>
+    <SESSIONID>20170908112751607</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-27-51-608</SESSION_TIME>
     <SESSION_NUMBER>94</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
         <Filename>Recodings/94/Session_94_Clip_0.mov</Filename>
     </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/94/Session_94_Clip_1.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822111434155</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-14-34-155</SESSION_TIME>
+    <SESSIONID>20170908112818384</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-28-18-384</SESSION_TIME>
     <SESSION_NUMBER>95</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/95/Session_95_Clip_0.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822111540293</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-15-40-293</SESSION_TIME>
+    <SESSIONID>20170908112928597</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-29-28-597</SESSION_TIME>
     <SESSION_NUMBER>96</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822111631273</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-16-31-273</SESSION_TIME>
+    <SESSIONID>20170908112932984</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-29-32-984</SESSION_TIME>
     <SESSION_NUMBER>97</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/97/Session_97_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/97/Session_97_Clip_1.mov</Filename>
-    </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822111816205</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-18-16-205</SESSION_TIME>
+    <SESSIONID>20170908113000843</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-30-00-843</SESSION_TIME>
     <SESSION_NUMBER>98</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822111858635</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-18-58-635</SESSION_TIME>
-    <SESSION_NUMBER>99</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822111912949</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-19-12-949</SESSION_TIME>
-    <SESSION_NUMBER>100</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822111956858</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-19-56-858</SESSION_TIME>
-    <SESSION_NUMBER>101</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112103253</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-21-03-253</SESSION_TIME>
-    <SESSION_NUMBER>102</SESSION_NUMBER>
     <CLIP>
         <Number>0</Number>
-        <Filename>Recodings/102/Session_102_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112147419</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-21-47-419</SESSION_TIME>
-    <SESSION_NUMBER>103</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/103/Session_103_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112222369</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-22-22-369</SESSION_TIME>
-    <SESSION_NUMBER>104</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/104/Session_104_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112345720</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-23-45-720</SESSION_TIME>
-    <SESSION_NUMBER>105</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112350222</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-23-50-222</SESSION_TIME>
-    <SESSION_NUMBER>106</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112354382</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-23-54-382</SESSION_TIME>
-    <SESSION_NUMBER>107</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112424697</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-24-24-697</SESSION_TIME>
-    <SESSION_NUMBER>108</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112517473</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-25-17-473</SESSION_TIME>
-    <SESSION_NUMBER>109</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/109/Session_109_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112715656</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-27-15-656</SESSION_TIME>
-    <SESSION_NUMBER>110</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/110/Session_110_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112742991</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-27-42-991</SESSION_TIME>
-    <SESSION_NUMBER>111</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112855960</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-28-55-960</SESSION_TIME>
-    <SESSION_NUMBER>112</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822112910272</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-29-10-272</SESSION_TIME>
-    <SESSION_NUMBER>113</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113110773</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-31-10-773</SESSION_TIME>
-    <SESSION_NUMBER>114</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113135653</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-31-35-653</SESSION_TIME>
-    <SESSION_NUMBER>115</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/115/Session_115_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113321327</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-33-21-327</SESSION_TIME>
-    <SESSION_NUMBER>116</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113352374</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-33-52-374</SESSION_TIME>
-    <SESSION_NUMBER>117</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113445230</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-34-45-230</SESSION_TIME>
-    <SESSION_NUMBER>118</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/118/Session_118_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113504155</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-35-04-155</SESSION_TIME>
-    <SESSION_NUMBER>119</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/119/Session_119_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113545354</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-35-45-354</SESSION_TIME>
-    <SESSION_NUMBER>120</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/120/Session_120_Clip_0.mov</Filename>
+        <Filename>Recodings/98/Session_98_Clip_0.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>1</Number>
-        <Filename>Recodings/120/Session_120_Clip_1.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113639900</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-36-39-900</SESSION_TIME>
-    <SESSION_NUMBER>121</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113704996</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-37-04-996</SESSION_TIME>
-    <SESSION_NUMBER>122</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/122/Session_122_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/122/Session_122_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822113721014</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-37-21-014</SESSION_TIME>
-    <SESSION_NUMBER>123</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822114442558</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-44-42-558</SESSION_TIME>
-    <SESSION_NUMBER>124</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822114501355</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-45-01-355</SESSION_TIME>
-    <SESSION_NUMBER>125</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/125/Session_125_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822114548884</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-45-48-884</SESSION_TIME>
-    <SESSION_NUMBER>126</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/126/Session_126_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/126/Session_126_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822114613685</SESSIONID>
-    <SESSION_TIME>2017-08-22-11-46-13-685</SESSION_TIME>
-    <SESSION_NUMBER>127</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822141151045</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-11-51-045</SESSION_TIME>
-    <SESSION_NUMBER>128</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/128/Session_128_Clip_0.mov</Filename>
-    </CLIP>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822141217538</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-12-17-538</SESSION_TIME>
-    <SESSION_NUMBER>129</SESSION_NUMBER>
-</RECORDINGSESSION>
-<RECORDINGSESSION>
-    <SESSIONID>20170822141247373</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-12-47-373</SESSION_TIME>
-    <SESSION_NUMBER>130</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/130/Session_130_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/130/Session_130_Clip_1.mov</Filename>
+        <Filename>Recodings/98/Session_98_Clip_1.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>2</Number>
-        <Filename>Recodings/130/Session_130_Clip_2.mov</Filename>
+        <Filename>Recodings/98/Session_98_Clip_2.mov</Filename>
     </CLIP>
     <CLIP>
         <Number>3</Number>
-        <Filename>Recodings/130/Session_130_Clip_3.mov</Filename>
+        <Filename>Recodings/98/Session_98_Clip_3.mov</Filename>
     </CLIP>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822142118669</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-21-18-669</SESSION_TIME>
-    <SESSION_NUMBER>131</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/131/Session_131_Clip_0.mov</Filename>
-    </CLIP>
+    <SESSIONID>20170908113940825</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-39-40-825</SESSION_TIME>
+    <SESSION_NUMBER>99</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822142214687</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-22-14-687</SESSION_TIME>
-    <SESSION_NUMBER>132</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/132/Session_132_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/132/Session_132_Clip_1.mov</Filename>
-    </CLIP>
+    <SESSIONID>20170908114902555</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-49-02-555</SESSION_TIME>
+    <SESSION_NUMBER>100</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822142259060</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-22-59-060</SESSION_TIME>
-    <SESSION_NUMBER>133</SESSION_NUMBER>
+    <SESSIONID>20170908114942985</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-49-42-985</SESSION_TIME>
+    <SESSION_NUMBER>101</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822142351331</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-23-51-331</SESSION_TIME>
-    <SESSION_NUMBER>134</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/134/Session_134_Clip_0.mov</Filename>
-    </CLIP>
-    <CLIP>
-        <Number>1</Number>
-        <Filename>Recodings/134/Session_134_Clip_1.mov</Filename>
-    </CLIP>
+    <SESSIONID>20170908115020414</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-50-20-414</SESSION_TIME>
+    <SESSION_NUMBER>102</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822142459309</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-24-59-309</SESSION_TIME>
-    <SESSION_NUMBER>135</SESSION_NUMBER>
+    <SESSIONID>20170908115112090</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-51-12-090</SESSION_TIME>
+    <SESSION_NUMBER>103</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
-    <SESSIONID>20170822142514299</SESSIONID>
-    <SESSION_TIME>2017-08-22-14-25-14-299</SESSION_TIME>
-    <SESSION_NUMBER>136</SESSION_NUMBER>
-    <CLIP>
-        <Number>0</Number>
-        <Filename>Recodings/136/Session_136_Clip_0.mov</Filename>
-    </CLIP>
+    <SESSIONID>20170908115142023</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-51-42-023</SESSION_TIME>
+    <SESSION_NUMBER>104</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115239085</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-52-39-085</SESSION_TIME>
+    <SESSION_NUMBER>105</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115304642</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-53-04-642</SESSION_TIME>
+    <SESSION_NUMBER>106</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115324651</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-53-24-651</SESSION_TIME>
+    <SESSION_NUMBER>107</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115521276</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-55-21-276</SESSION_TIME>
+    <SESSION_NUMBER>108</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115603558</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-56-03-558</SESSION_TIME>
+    <SESSION_NUMBER>109</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115629329</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-56-29-329</SESSION_TIME>
+    <SESSION_NUMBER>110</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115758087</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-57-58-087</SESSION_TIME>
+    <SESSION_NUMBER>111</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115804680</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-58-04-680</SESSION_TIME>
+    <SESSION_NUMBER>112</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115845459</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-58-45-459</SESSION_TIME>
+    <SESSION_NUMBER>113</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115916662</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-59-16-662</SESSION_TIME>
+    <SESSION_NUMBER>114</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908115948328</SESSIONID>
+    <SESSION_TIME>2017-09-08-11-59-48-328</SESSION_TIME>
+    <SESSION_NUMBER>115</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908120010715</SESSIONID>
+    <SESSION_TIME>2017-09-08-12-00-10-715</SESSION_TIME>
+    <SESSION_NUMBER>116</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908120129983</SESSIONID>
+    <SESSION_TIME>2017-09-08-12-01-29-983</SESSION_TIME>
+    <SESSION_NUMBER>117</SESSION_NUMBER>
+</RECORDINGSESSION>
+<RECORDINGSESSION>
+    <SESSIONID>20170908120618971</SESSIONID>
+    <SESSION_TIME>2017-09-08-12-06-18-972</SESSION_TIME>
+    <SESSION_NUMBER>118</SESSION_NUMBER>
 </RECORDINGSESSION>
 <RECORDINGSESSION>
     <SESSIONID>20170822145654062</SESSIONID>

@@ -15,8 +15,11 @@ void ofApp::setup(){
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
     
-  //  ofSetLogLevel(OF_LOG_VERBOSE);
+    ofSetLogLevel(OF_LOG_VERBOSE);
     ofBackground(255);
+    ofSetVerticalSync(true);
+    
+  //  CGDisplayHideCursor(NULL);
     
     /*
     recordedClips = ofPtr<ofxXmlSettings>( new ofxXmlSettings() );
@@ -46,7 +49,8 @@ void ofApp::setup(){
     
     SC->initialize();
     SC->setup();
-    
+    ofSleepMillis(1000);
+    cout<<"sleep"<<endl;
     
     
     serial.listDevices();
@@ -139,7 +143,9 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == ' '){
-   SC->videorecorder.toggleRecording();
+ //  SC->videorecorder.toggleRecording();
+        SC->buttonPushed();
+
     }
 
     //no data gets saved unless you hit the s key
@@ -162,6 +168,10 @@ void ofApp::keyPressed(int key){
     }
     if(key=='1'){
         //videoplayer.setState(1);
+      // IOUSBDevice::ReEnumerateDevice();
+       // IOReturn (*USBDeviceReEnumerate)(void *self, UInt32 options);
+        SC->reset();
+
     }
    }
 
@@ -258,7 +268,7 @@ void ofApp::onNewMessage(string & message)
 {
     cout << "onNewMessage, message: " << message << "\n";
     if(ofToInt(message)==1)SC->buttonPushed();
-    if(ofToInt(message)==-1)SC->buttonPushed();
+    if(ofToInt(message)==-1)SC->reset();
 
 
 }

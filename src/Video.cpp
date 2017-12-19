@@ -23,6 +23,8 @@ Video::~Video(){
 
 void Video::setLoopstate(string _loopstate){
     loopstate=_loopstate;
+    cout<<" Set Loopstate to "<<loopstate<<endl;
+
 }
 
 string Video::getLoopstate(){
