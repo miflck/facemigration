@@ -85,19 +85,13 @@ public:
     void next();
 
     void buttonPushed();
-    
-    
     void saveBackground();
-    
     void startBlobTimeOut();
     void blobTimer();
     int nBlobsThreshold=0;
     
     
     bool debug=false;
-    
-    
-    
     void reset();
     
     
