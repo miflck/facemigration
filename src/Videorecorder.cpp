@@ -268,9 +268,9 @@ void Videorecorder::videoSaved(ofVideoSavedEventArgs& e){
     
     recordingSession=sessions->getNumTags("RECORDINGSESSION");
     if( sessions->pushTag("RECORDINGSESSION", recordingSession-1) ){
-        int tagNum = sessions->addTag("CLIP");
+      /* int tagNum = sessions->addTag("CLIP");
         sessions->setValue("CLIP:Number",  tagNum,tagNum);
-        sessions->setValue("CLIP:Filename",  myFileName,tagNum);
+        sessions->setValue("CLIP:Filename",  myFileName,tagNum);*/
         sessions->popTag();
         sessions->saveFile("sessions.xml");
         
@@ -297,12 +297,18 @@ void Videorecorder::startRecording(){
     
     
     sessions->pushTag("RECORDINGSESSION", recordingSession);
+    int tagNum = sessions->addTag("CLIP");
+   
+
     clipNumber=sessions->getNumTags("CLIP");
+    sessions->setValue("CLIP:Number",  tagNum,tagNum);
+    myFileName="Recodings/"+ofToString(recordingSession)+"/Session_"+ofToString(recordingSession)+"_Clip_"+ofToString(clipNumber)+".mov";
+
+    sessions->setValue("CLIP:Filename",  myFileName,tagNum);
     sessions->popTag();
     sessions->saveFile("sessions.xml");
     
     
-    myFileName="Recodings/"+ofToString(recordingSession)+"/Session_"+ofToString(recordingSession)+"_Clip_"+ofToString(clipNumber)+".mov";
     cout<<"Recordingsession "<<recordingSession<<" "<<clipNumber<<" "<<myFileName<<endl;
 
     vidRecorder->startRecording(myFileName);

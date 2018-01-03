@@ -16,6 +16,7 @@ const int outpin = 9;     // the number of the pushbutton pin
 
 
 void setup() {
+
   Serial.begin(9600);
   // initialize the LED pin as an output:
   pinMode(ledPin, OUTPUT);
@@ -23,26 +24,30 @@ void setup() {
   pinMode(buttonPin, INPUT);
 
   pinMode(outpin, OUTPUT);
-      Serial.println("-2");
-  delay(1000);
+  Serial.println("-2");
+  delay(2000);
 
   digitalWrite(outpin, LOW);
-  delay(5000);
+  delay(2000);
   digitalWrite(outpin, HIGH);
-    Serial.println("-2");
+    delay(3000);
+
+  Serial.println("-2");
+
+  delay(3000);
+  Serial.println("-1");
 
   delay(5000);
   Serial.println("-1");
-  
-  
-    Serial.println(F("----------SETUP----------"));
+  Serial.println(F("----------SETUP----------"));
 
-  
+
 }
 
 void loop() {
   // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
+
   if (buttonState != lastButtonState) {
     // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
     if (buttonState == HIGH) {
@@ -55,13 +60,13 @@ void loop() {
       digitalWrite(ledPin, LOW);
     }
     // Delay a little bit to avoid bouncing
-    delay(50);
+    delay(200);
   }
 
   if (buttonState == HIGH) {
     millis_held = (millis() - firstTime);
     if (millis_held > 5000) {
-     Serial.println("-1");
+      Serial.println("-1");
       firstTime = millis();
     }
   }

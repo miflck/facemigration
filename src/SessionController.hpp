@@ -94,6 +94,8 @@ public:
     
     bool debug=false;
     void reset();
+    void resetState();
+
     
     
 private:

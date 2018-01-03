@@ -101,8 +101,7 @@ void SessionController::setup(){
     cout<<"Session: "<<recordingSession<<endl;
     videorecorder.setup();
     
-    
-    
+ofSleepMillis(2000);
     
     
     //  videoplayer.loadStory(story);
@@ -467,7 +466,7 @@ void SessionController::blobTimer(){
         bTimerReached = true;
         ofMessage msg("Timer Reached");
         ofSendMessage(msg);
-        reset();
+        resetState();
     }
 }
 
@@ -477,6 +476,13 @@ void SessionController::reset(){
     videorecorder.setup();
     setState(STARTUP);
 
+}
+
+void SessionController::resetState(){
+    cout<<"RESET STATE"<<endl;
+    //videorecorder.setup();
+    setState(STARTUP);
+    
 }
 
 void SessionController::close(){

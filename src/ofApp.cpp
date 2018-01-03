@@ -22,7 +22,6 @@ void ofApp::setup(){
     ofBackground(255);
     ofSetVerticalSync(true);
     CGDisplayHideCursor(NULL);
-    reenumerateWebcam();
 
     
     //  ofSleepMillis(1000);
@@ -30,7 +29,7 @@ void ofApp::setup(){
     SC->initialize();
     SC->setup();
 
-    ofSleepMillis(1000);
+    //ofSleepMillis(1000);
 
     cout<<"sleep"<<endl;
  
@@ -299,9 +298,8 @@ void ofApp::onNewMessage(string & message)
     }
     
     if(ofToInt(message)==-2){
-         reenumerateWebcam();
         reenumerateWebcam();
-        reenumerateWebcam();
+
         
         
     }
