@@ -35,7 +35,6 @@ void Videorecorder::setup(){
     // 1. Create a new recorder object.  ofPtr will manage this
     // pointer for us, so no need to delete later.
     
-
     vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
     
     // 3. Make lists of our audio and video devices.
@@ -383,6 +382,24 @@ void Videorecorder::saveBackground(){
     grayImage.blur(19);
     grayBg = grayImage;
 ofSaveImage(grayBg.getPixels(),"background.jpg");
+
+}
+
+void Videorecorder::close(){
+    vidRecorder->close();
+    vidGrabber.close();
+
+
+}
+
+void Videorecorder::setCamera(){
+    vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
+    vidRecorder->setVideoDeviceID(0);
+
+    vidGrabber.setGrabber(vidRecorder);
+
+
+
 
 }
 

@@ -478,3 +478,13 @@ void SessionController::reset(){
     setState(STARTUP);
 
 }
+
+void SessionController::close(){
+
+    videorecorder.close();
+}
+
+void SessionController::openvideorecorder(){
+
+    videorecorder.setCamera();
+}

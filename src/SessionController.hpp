@@ -73,7 +73,8 @@ public:
     
     
     Videorecorder videorecorder;
-    
+    void close();
+    void openvideorecorder();
     
     void startRecording();
     void stopRecording();

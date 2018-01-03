@@ -22,16 +22,18 @@ void ofApp::setup(){
     ofBackground(255);
     ofSetVerticalSync(true);
     CGDisplayHideCursor(NULL);
-    
     reenumerateWebcam();
+
     
-    ofSleepMillis(1000);
+    //  ofSleepMillis(1000);
 
     SC->initialize();
     SC->setup();
+
     ofSleepMillis(1000);
+
     cout<<"sleep"<<endl;
-    
+ 
     serial.listDevices();
     vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
     
@@ -72,13 +74,15 @@ void ofApp::draw(){
 
 
 void ofApp::reenumerateWebcam(){
+  //  SC->close();
+
     
     cout<<"REENUMERATE! "<<endl;
     mach_port_t             masterPort;
     CFMutableDictionaryRef  matchingDict;
     kern_return_t           kr;
     SInt32                  usbVendor =0x046d;
-    SInt32                  usbProduct = 0x0825;
+    SInt32                  usbProduct =0x082d;
     
     io_service_t                usbDevice;
     IOCFPlugInInterface         **plugInInterface = NULL;
@@ -146,23 +150,25 @@ void ofApp::reenumerateWebcam(){
         kr = (*deviceInterface)->USBDeviceOpen(deviceInterface);
         if(kr == kIOReturnSuccess)
         {
-            kr = (*deviceInterface)->USBDeviceReEnumerate(deviceInterface, 0);
+           kr = (*deviceInterface)->USBDeviceReEnumerate(deviceInterface, 0);
         }
         
         (*deviceInterface)->USBDeviceClose(deviceInterface);
         (*deviceInterface)->Release(deviceInterface);
     }
     IOObjectRelease(iterator);
-
-
-
+    SC->openvideorecorder();
+   
 }
+
+
 
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == ' '){
   // SC->videorecorder.toggleRecording();
+        reenumerateWebcam();
     }
 
     //no data gets saved unless you hit the s key
@@ -275,13 +281,30 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
+void ofApp::exit(){
+    SC->close();
+}
+
 
 
 void ofApp::onNewMessage(string & message)
 {
     cout << "onNewMessage, message: " << message << "\n";
     if(ofToInt(message)==1)SC->buttonPushed();
-    if(ofToInt(message)==-1)SC->reset();
+    if(ofToInt(message)==-1){
+       // reenumerateWebcam();
+        
+
+        SC->reset();
+    }
+    
+    if(ofToInt(message)==-2){
+         reenumerateWebcam();
+        reenumerateWebcam();
+        reenumerateWebcam();
+        
+        
+    }
 
 
 }

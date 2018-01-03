@@ -58,6 +58,8 @@ public:
     
     
     void saveBackground();
+	void close();
+	void setCamera();
 
 
     ofxCvColorImage			colorImg;
